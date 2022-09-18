@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*--------Start @medias----------*/
+/* Small Screens */
+@media (min-width: 768px) {
+  .cont {
+    width: 750px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 992px) {
+  .cont {
+    width: 970px;
+  }
+}
+/* Large Screens */
+@media (min-width: 1200px) {
+  .cont {
+    width: 1150px;
+  }
+}
+/*--------End @medias----------*/
