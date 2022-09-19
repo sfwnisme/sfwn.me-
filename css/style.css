@@ -126,7 +126,7 @@ nav {
   /*background-color: white;
   */
   position: fixed;
-  bottom: 0.1rem;
+  bottom: 2rem;
   left: 50%;
   transform: translate(-50%, 105%);
   -webkit-transform: translate(-50%, 105%);
