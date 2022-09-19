@@ -17,8 +17,7 @@ navIcon.addEventListener("click", function (e) {
 document.onclick = function (e) {
   if (
     e.target.id !== "nav" &&
-    e.target.id !== "nav-icon" &&
-    e.target.id !== "overly"
+    e.target.id !== "nav-icon"
   ) {
     nav.classList.remove("nav-active");
     navIcon.classList.remove("displayInitial");
