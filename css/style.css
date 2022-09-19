@@ -15,6 +15,7 @@
   --main-lighter-2: hsla(278, 28%, 31%, 0.4);
   --main-lighter-3: hsla(0, 100%, 69%, 0.4);
   --main-lighter-4: hsla(34, 100%, 71%, 0.4);
+  --main-lightest-1: hsla(240, 18%, 52%, 0.05);
   --box-title-font-color: #7373ad;
   --light-mode: #fff3e5;
   --hero-title-laptop: 6rem;
@@ -382,11 +383,10 @@ section .container .skills {
   gap: 2rem;
 }
 section .container .skills .skill {
-  background-color: var(--main-lighter-1);
+  background-color: var(--main-lightest-1);
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: var(--large-radius);
   -webkit-border-radius: var(--large-radius);
@@ -394,12 +394,6 @@ section .container .skills .skill {
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
   gap: 2rem;
-}
-@media (max-width: 767px) {
-  section .container .skills .skill {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 section .container .skills .skill .skill-name {
   color: var(--h1);
@@ -488,7 +482,6 @@ article .container .articles {
   }
 }
 article .container .articles .article {
-  background-color: var(--main-lighter-1);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -565,9 +558,16 @@ article
   color: var(--main-1);
 }
 article .container .articles .article p.article-brief {
+  background-color: var(--main-lightest-1);
   color: var(--h2);
   font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
   font-weight: 200;
+  padding: 0.5rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
 }
 article .container .articles .article .article-links {
   display: flex;
