@@ -26,19 +26,19 @@ a {
 /*--------Start @medias----------*/
 /* Small Screens */
 @media (min-width: 768px) {
-  .cont {
+  .container {
     width: 750px;
   }
 }
 /* Medium Screens */
 @media (min-width: 992px) {
-  .cont {
+  .container {
     width: 970px;
   }
 }
 /* Large Screens */
 @media (min-width: 1200px) {
-  .cont {
+  .container {
     width: 1150px;
   }
 }
