@@ -460,7 +460,6 @@ section .container .skills .skill .progress .src-btn:hover a {
 /*Start Article */
 
 article {
-  min-height: 100vh;
   padding-block: var(--section-padding);
 }
 article .container {
