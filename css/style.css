@@ -347,7 +347,7 @@ main .container .image {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  box-shadow: -0.5rem 0.5rem 0rem var(--main-4);
+/*   box-shadow: -0.5rem 0.5rem 0rem var(--main-4); */
   overflow: hidden;
 }
 main .container .image img {
