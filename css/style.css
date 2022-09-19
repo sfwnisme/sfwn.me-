@@ -148,6 +148,13 @@ nav {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
 }
+.nav-disable {
+  transform: translate(-50%, 105%);
+  -webkit-transform: translate(-50%, 105%);
+  -moz-transform: translate(-50%, 105%);
+  -ms-transform: translate(-50%, 105%);
+  -o-transform: translate(-50%, 105%);
+}
 @media (max-width: 767px) {
   nav {
     inline-size: 100%;
