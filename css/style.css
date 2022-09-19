@@ -38,12 +38,12 @@
   --hero-text-phone: 1.6rem;
   --section-title-laptop: 4.5rem;
   --section-title-phone: 3rem;
-  --box-title-laptop: 2rem;
-  --box-title-phone: 1.6rem;
+  --box-title-laptop: 3rem;
+  --box-title-phone: 2rem;
   --box-text-laptop: 1.8rem;
-  --box-text-phone: 1.5rem;
+  --box-text-phone: 1.6rem;
   --box-link-laptop: 1.8rem;
-  --box-link-phone: 1.5rem;
+  --box-link-phone: 1.4rem;
   --section-padding: 6rem;
   --title-padding: 5rem;
   --large-radius: 10px;
@@ -62,7 +62,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .container {
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
   margin-inline: auto;
 }
 
@@ -272,7 +272,7 @@ nav .container ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1.2rem;
   border-radius: var(--large-radius);
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
@@ -347,7 +347,7 @@ main .container .image {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-/*   box-shadow: -0.5rem 0.5rem 0rem var(--main-4); */
+  /* box-shadow: -0.5rem 0.5rem 0rem var(--main-4); */
   overflow: hidden;
 }
 main .container .image img {
@@ -359,7 +359,7 @@ main .container .hero-box {
 main .container .hero-box h1 {
   color: var(--h1);
   font-size: clamp(var(--hero-title-phone), 6vw, var(--hero-title-laptop));
-  text-shadow: -2px 2px 0px var(--main-lighter-2);
+  text-shadow: -2px 2px 2px var(--main-lighter-1);
 }
 main .container .hero-box p {
   color: var(--h2);
@@ -443,14 +443,14 @@ section .container .skills .skill .progress .src-btn {
 section .container .skills .skill .progress .src-btn a {
   background-color: var(--main-4);
   color: var(--main-1);
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2.4rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
-  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
-  font-weight: 400;
+  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
+  font-weight: 500;
   transition: var(--tran-4);
   -webkit-transition: var(--tran-4);
   -moz-transition: var(--tran-4);
@@ -489,7 +489,7 @@ article .container .article-title h2 {
 article .container .articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
   padding-inline: 2rem;
 }
 @media (max-width: 767px) {
@@ -508,7 +508,7 @@ article .container .articles .article {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  gap: 1rem;
+  gap: 0.8rem;
 }
 article .container .articles .article .article-box-title {
   display: flex;
@@ -578,7 +578,7 @@ article .container .articles .article p.article-brief {
   color: var(--h2);
   font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
   font-weight: 200;
-  padding: 0.5rem;
+  padding: 1.2rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -603,14 +603,14 @@ article .container .articles .article .article-links div {
 article .container .articles .article .article-links div a {
   background-color: var(--main-4);
   color: var(--main-1);
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 1.6rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
   font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
-  font-weight: 400;
+  font-weight: 500;
   transition: var(--tran-4);
   -webkit-transition: var(--tran-4);
   -moz-transition: var(--tran-4);
