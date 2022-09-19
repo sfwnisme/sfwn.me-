@@ -24,7 +24,7 @@
   --section-title-laptop: 4.5rem;
   --section-title-phone: 3rem;
   --box-title-laptop: 2rem;
-  --box-title-phone: 1.8rem;
+  --box-title-phone: 1.6rem;
   --box-text-laptop: 1.8rem;
   --box-text-phone: 1.5rem;
   --box-link-laptop: 1.8rem;
@@ -39,7 +39,8 @@
   --tran-4: 0.15s;
 }
 ::selection {
-  background-color: var(--h4);
+  background-color: var(--main-lighter-4);
+  color: var(--main-4);
 }
 body {
   background-color: var(--main-1);
@@ -433,7 +434,7 @@ section .container .skills .skill .progress .src-btn {
 section .container .skills .skill .progress .src-btn a {
   background-color: var(--main-4);
   color: var(--main-1);
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -566,6 +567,7 @@ article
 article .container .articles .article p.article-brief {
   color: var(--h2);
   font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
+  font-weight: 200;
 }
 article .container .articles .article .article-links {
   display: flex;
