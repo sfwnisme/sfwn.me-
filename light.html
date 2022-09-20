@@ -17,8 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <!-- Css Files -->
-    <link rel="stylesheet" href="css/light.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/rest.css" />
+    <link rel="stylesheet" href="css/components.css" />
     <!-- Browser Icon -->
     <link rel="shortcut icon" href="imgs/icon.ico" />
     <title>Sfwn</title>
@@ -26,11 +27,11 @@
 
   <body>
     <!-- Start Header -->
-    <header>
+    <header id="about">
       <div class="container">
         <img src="imgs/sfwnLogo.svg" alt="" />
         <div class="clr-btn" id="clr-btn">
-          <a href="index.html">color</a>
+          <a href="light.html">color</a>
         </div>
       </div>
     </header>
@@ -45,7 +46,7 @@
           <span id="span-two"></span>
         </div>
         <ul class="nav-list" id="nav-list">
-          <li id="nav-link" class="nav-link"><a href="">About</a></li>
+          <li id="nav-link" class="nav-link"><a href="#about">About</a></li>
           <li><a href="#work-space">Work Space</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#articles">Articles</a></li>
@@ -71,7 +72,7 @@
     </main>
     <section id="skills">
       <div class="container">
-        <div class="section-title">
+        <div class="skills-title section-title">
           <h2>Skills</h2>
         </div>
         <ul class="skills">
@@ -171,7 +172,7 @@
     </section>
     <article id="articles">
       <div class="container">
-        <div class="article-title">
+        <div class="article-title section-title">
           <h2>Articles</h2>
         </div>
         <div class="articles">
@@ -346,6 +347,11 @@
         </div>
       </div>
     </article>
+    <div class="timeline">
+      <div class="container">
+        <div class="box"></div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
