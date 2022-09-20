@@ -55,7 +55,7 @@
   --tran-4: 0.15s;
 }
 ::selection {
-  background-color: var(--main-lighter-4);
+  background-color: var(--main-lighter-1);
   color: var(--main-4);
 }
 body {
@@ -89,40 +89,6 @@ header .container img {
 @media (max-width: 767px) {
   header .container img {
     inline-size: 5rem;
-  }
-}
-header .container .clr-btn {
-  background-color: var(--main-3);
-  display: flex;
-  border-radius: var(--small-radius);
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-}
-header .container a {
-  background-color: var(--main-4);
-  color: var(--main-1);
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
-  font-weight: 400;
-  border-radius: var(--small-radius);
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-  position: relative;
-  overflow: hidden;
-  transition: var(--tran-4);
-  -webkit-transition: var(--tran-4);
-  -moz-transition: var(--tran-4);
-  -ms-transition: var(--tran-4);
-  -o-transition: var(--tran-4);
-}
-@media (max-width: 767px) {
-  header .container a {
-    padding: 1rem 2rem;
   }
 }
 header .container .clr-btn:hover a {
@@ -216,11 +182,11 @@ nav .container .icon {
   top: -5rem;
   background-color: var(--main-lighter-1);
   padding: 7px;
-  transform: translateY(-2rem);
-  -webkit-transform: translateY(-2rem);
-  -moz-transform: translateY(-2rem);
-  -ms-transform: translateY(-2rem);
-  -o-transform: translateY(-2rem);
+  transform: translateY(-1.6rem);
+  -webkit-transform: translateY(-1.6rem);
+  -moz-transform: translateY(-1.6rem);
+  -ms-transform: translateY(-1.6rem);
+  -o-transform: translateY(-1.6rem);
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -409,8 +375,6 @@ section .container .skills::before {
 article {
   padding-block: var(--section-padding);
 }
-article .container {
-}
 
 article .container .articles {
   display: grid;
@@ -424,3 +388,102 @@ article .container .articles {
 }
 
 /*End Article */
+/* Start Work Space */
+
+.work-space {
+  /* block-size: 100vh; */
+  /* inline-size: 100%; */
+  padding-block: var(--section-padding);
+}
+.work-space .container {
+}
+.work-space .container .works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .work-space .container .works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 20px;
+  }
+}
+.work-space .container .works .work {
+  border-radius: var(--large-radius);
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  overflow: hidden;
+  position: relative;
+}
+.work-space .container .works .work img {
+  width: 100%;
+  display: flex;
+  transform: scale(2) rotate(3deg);
+  -webkit-transform: scale(2) rotate(3deg);
+  -moz-transform: scale(2) rotate(3deg);
+  -ms-transform: scale(2) rotate(3deg);
+  -o-transform: scale(2) rotate(3deg);
+  transition: var(--tran-3);
+  -webkit-transition: var(--tran-3);
+  -moz-transition: var(--tran-3);
+  -ms-transition: var(--tran-3);
+  -o-transition: var(--tran-3);
+}
+.work-space .container .works .work:hover img {
+  transform: scale(1) rotate(0);
+  -webkit-transform: scale(1) rotate(0);
+  -moz-transform: scale(1) rotate(0);
+  -ms-transform: scale(1) rotate(0);
+  -o-transform: scale(1) rotate(0);
+}
+.work-space .container .works .work .box-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  background-image: linear-gradient(
+    -30deg,
+    var(--main-light-2),
+    var(--main-light-2) 5%,
+    var(--h2)
+  );
+  width: 100%;
+  transition: var(--tran-2);
+  -webkit-transition: var(--tran-2);
+  -moz-transition: var(--tran-2);
+  -ms-transition: var(--tran-2);
+  -o-transition: var(--tran-2);
+}
+.work-space .container .works .work:hover .box-text {
+  background-image: linear-gradient(
+    -50deg,
+    var(--main-light-2),
+    var(--main-light-2) 20%,
+    var(--h2)
+  );
+  width: 100%;
+}
+.work-space .container .works .work .box-text a {
+  color: var(--main-2);
+  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: var(--tran-4);
+  -webkit-transition: var(--tran-4);
+  -moz-transition: var(--tran-4);
+  -ms-transition: var(--tran-4);
+  -o-transition: var(--tran-4);
+}
+.work-space .container .works .work .box-text:hover a {
+  color: var(--main-light-2);
+}
+
+/* End Work Space */
