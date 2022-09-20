@@ -1,3 +1,25 @@
+.up {
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  transition: var(--tran-4);
+  -webkit-transition: var(--tran-4);
+  -moz-transition: var(--tran-4);
+  -ms-transition: var(--tran-4);
+  -o-transition: var(--tran-4);
+}
+.up span {
+  background-color: var(--main-lighter-1);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--main-4);
+  font-size: 4rem;
+  font-weight: 100;
+}
+
 .section-title {
   padding-bottom: var(--title-padding);
   position: relative;
@@ -10,4 +32,221 @@
     4vw,
     var(--section-title-laptop)
   );
+}
+
+.btn-box {
+  background-color: var(--main-3);
+  display: flex;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.btn-box .btn {
+  background-color: var(--main-4);
+  color: var(--main-1);
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
+  font-weight: 500;
+  transition: var(--tran-4);
+  -webkit-transition: var(--tran-4);
+  -moz-transition: var(--tran-4);
+  -ms-transition: var(--tran-4);
+  -o-transition: var(--tran-4);
+}
+.btn-box:hover a {
+  transform: translate(3px, -3px);
+  -webkit-transform: translate(3px, -3px);
+  -moz-transform: translate(3px, -3px);
+  -ms-transform: translate(3px, -3px);
+  -o-transform: translate(3px, -3px);
+}
+
+/* -------------------box-model-one--------------------------- */
+
+.box-model-one {
+  background-color: var(--main-lightest-1);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--large-radius);
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  gap: 2rem;
+  position: relative;
+}
+.box-model-one::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: var(--main-4);
+  inline-size: 1rem;
+  block-size: 1rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.box-model-one .skill-name {
+  color: var(--h1);
+  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  font-weight: 500;
+  flex: 1;
+  display: flex;
+}
+.box-model-one .progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.box-model-one .progress span {
+  color: var(--main-4);
+  font-size: var(--section-title-phone);
+  font-weight: 100;
+}
+.box-model-one .progress a:first-of-type {
+}
+.box-model-one .progress a:first-of-type img {
+  display: flex;
+}
+
+/* -------------------box-model-two--------------------------- */
+
+.box-model-two {
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: initial;
+  border-radius: var(--large-radius);
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  gap: 0.8rem;
+}
+.box-model-two .article-box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--main-lightest-1);
+  padding: 0.5rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.box-model-two .article-box-title h4.article-name {
+  color: var(--h1);
+  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  font-weight: 500;
+}
+.box-model-two .article-box-title .technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.box-model-two .article-box-title .technologies div {
+  background-color: var(--h1);
+  /* color: var(--main-1); */
+  display: flex;
+  padding: 0px 5px;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+article
+  .container
+  .articles
+  .article
+  .article-box-title
+  .technologies
+  .tech-one {
+  background-color: var(--main-3);
+}
+article
+  .container
+  .articles
+  .article
+  .article-box-title
+  .technologies
+  .tech-two {
+  background-color: var(--main-light-2);
+}
+article
+  .container
+  .articles
+  .article
+  .article-box-title
+  .technologies
+  .tech-three {
+  background-color: var(--main-4);
+}
+article
+  .container
+  .articles
+  .article
+  .article-box-title
+  .technologies
+  div
+  span {
+  color: var(--main-1);
+}
+.box-model-two .article-brief-content {
+  background-color: var(--main-lightest-1);
+  color: var(--h2);
+  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
+  font-weight: 200;
+  padding: 1.2rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.box-model-two p.article-brief {
+  color: var(--h2);
+  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
+  font-weight: 200;
+  margin-bottom: 0.8rem;
+}
+.box-model-two .article-links {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  gap: 1rem;
+}
+.box-model-two .article-links div {
+  background-color: var(--main-3);
+  display: flex;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.box-model-two .article-links div a.source {
+}
+.box-model-two .article-links div a.dev {
 }
