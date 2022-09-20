@@ -1,3 +1,9 @@
+.theme {
+}
+.theme span {
+  color: var(--main-4);
+  font-size: clamp(3rem, 5vw, 4rem);
+}
 .up {
   position: fixed;
   bottom: 1.6rem;
@@ -7,6 +13,7 @@
   -moz-transition: var(--tran-4);
   -ms-transition: var(--tran-4);
   -o-transition: var(--tran-4);
+  cursor: pointer;
 }
 .up span {
   background-color: var(--main-lighter-1);
