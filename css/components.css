@@ -1,0 +1,13 @@
+.section-title {
+  padding-bottom: var(--title-padding);
+  position: relative;
+  text-align: initial;
+}
+.section-title h2 {
+  color: var(--h1);
+  font-size: clamp(
+    var(--section-title-phone),
+    4vw,
+    var(--section-title-laptop)
+  );
+}
