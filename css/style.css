@@ -373,28 +373,59 @@ main .container .hero-box p {
 /* Start Skills */
 
 section {
-  /* block-size: 100vh; */
   inline-size: 100%;
   padding-block: var(--section-padding);
 }
-section .container {
-  text-align: center;
+section .container .skills-title {
+  position: relative;
 }
-section .container .section-title {
-  padding-bottom: var(--title-padding);
-}
-section .container .section-title h2 {
-  color: var(--h1);
-  font-size: clamp(
-    var(--section-title-phone),
-    4vw,
-    var(--section-title-laptop)
-  );
+section .container .skills-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+  background-color: var(--h1);
+  inline-size: 0.1rem;
+  /* block-size: calc(50% - 1rem); */
 }
 section .container .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  row-gap: 2rem;
+  position: relative;
+}
+section .container .skills::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: var(--h1);
+  inline-size: 0.1rem;
+  block-size: calc(100% + 6rem);
+}
+section .container .skills::after {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: var(--h1);
+  block-size: 0.1rem;
+  inline-size: calc(15% + 1rem);
 }
 section .container .skills .skill {
   background-color: var(--main-lightest-1);
@@ -408,11 +439,31 @@ section .container .skills .skill {
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
   gap: 2rem;
+  position: relative;
+}
+section .container .skills .skill::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: var(--main-4);
+  inline-size: 1rem;
+  block-size: 1rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
 }
 section .container .skills .skill .skill-name {
   color: var(--h1);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
-  font-weight: 700;
+  font-weight: 500;
   /* margin-bottom: 1.5rem; */
 }
 @media (max-width: 767px) {
@@ -474,23 +525,12 @@ article {
 }
 article .container {
 }
-article .container .article-title {
-  padding-bottom: var(--title-padding);
-  text-align: center;
-}
-article .container .article-title h2 {
-  color: var(--h1);
-  font-size: clamp(
-    var(--section-title-phone),
-    4vw,
-    var(--section-title-laptop)
-  );
-}
+
 article .container .articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   gap: 2.5rem;
-  padding-inline: 2rem;
+  /* padding-inline: 2rem; */
 }
 @media (max-width: 767px) {
   article .container .articles {
@@ -518,6 +558,7 @@ article .container .articles .article .article-box-title {
 article .container .articles .article .article-box-title h4.article-name {
   color: var(--h1);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  font-weight: 500;
 }
 article .container .articles .article .article-box-title .technologies {
   display: flex;
