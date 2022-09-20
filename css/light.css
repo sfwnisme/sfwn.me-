@@ -385,7 +385,7 @@ section .container .section-title {
   padding-bottom: var(--title-padding);
 }
 section .container .section-title h2 {
-  color: var(--main-light-1);
+  color: var(--main-1);
   font-size: clamp(
     var(--section-title-phone),
     4vw,
@@ -411,7 +411,7 @@ section .container .skills .skill {
   gap: 2rem;
 }
 section .container .skills .skill .skill-name {
-  color: var(--main-light-2);
+  color: var(--main-2);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 700;
   /* margin-bottom: 1.5rem; */
@@ -480,7 +480,7 @@ article .container .article-title {
   text-align: center;
 }
 article .container .article-title h2 {
-  color: var(--main-light-1);
+  color: var(--main-1);
   font-size: clamp(
     var(--section-title-phone),
     4vw,
@@ -517,7 +517,7 @@ article .container .articles .article .article-box-title {
   align-items: flex-end;
 }
 article .container .articles .article .article-box-title h4.article-name {
-  color: var(--main-light-2);
+  color: var(--main-2);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
 }
 article .container .articles .article .article-box-title .technologies {
@@ -574,9 +574,9 @@ article
 }
 article .container .articles .article p.article-brief {
   background-color: var(--light-lightest);
-  color: var(--main-light-2);
+  color: var(--main-2);
   font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
-  font-weight: 200;
+  font-weight: 400;
   padding: 1.2rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
