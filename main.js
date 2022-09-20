@@ -11,17 +11,35 @@ navIcon.addEventListener("click", function (e) {
   this.classList.toggle("displayInitial");
   overly.classList.toggle("overly-active");
   e.stopPropagation();
+
+  // Remove The Navigation Bar If Click On Overly Or Links
+  // This Solution Source Is => "https://www.youtube.com/watch?v=iP63fDXk-W8"
+  document.onclick = function (e) {
+    if (e.target.id !== "nav" && e.target.id !== "nav-icon") {
+      nav.classList.remove("nav-active");
+      navIcon.classList.remove("displayInitial");
+      overly.classList.remove("overly-active");
+    }
+    e.stopPropagation();
+  };
 });
 
-// This Solution Source Is => "https://www.youtube.com/watch?v=iP63fDXk-W8"
-document.onclick = function (e) {
-  if (
-    e.target.id !== "nav" &&
-    e.target.id !== "nav-icon"
-  ) {
-    nav.classList.remove("nav-active");
-    navIcon.classList.remove("displayInitial");
-    overly.classList.remove("overly-active");
+/* ----------up Scroll */
+
+let up = document.getElementById("up");
+
+up.onclick = () => {
+  scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
+
+window.onscroll = () => {
+  if (scrollY > 500) {
+    up.style.cssText = "opacity: 1; z-index: 1;";
+  } else {
+    up.style.cssText = "opacity: 0; z-index: -1;";
   }
-  e.stopPropagation();
 };
