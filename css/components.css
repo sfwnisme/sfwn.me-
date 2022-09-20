@@ -1,5 +1,3 @@
-.theme {
-}
 .theme span {
   color: var(--main-4);
   font-size: clamp(3rem, 5vw, 4rem);
@@ -14,6 +12,7 @@
   -ms-transition: var(--tran-4);
   -o-transition: var(--tran-4);
   cursor: pointer;
+  z-index: 2;
 }
 .up span {
   background-color: var(--main-lighter-1);
@@ -128,8 +127,7 @@
   font-size: var(--section-title-phone);
   font-weight: 100;
 }
-.box-model-one .progress a:first-of-type {
-}
+
 .box-model-one .progress a:first-of-type img {
   display: flex;
 }
@@ -252,8 +250,4 @@ article
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
-}
-.box-model-two .article-links div a.source {
-}
-.box-model-two .article-links div a.dev {
 }
