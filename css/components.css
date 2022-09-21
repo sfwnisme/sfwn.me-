@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+  background-color: rgba(174, 117, 117, 0);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    20deg,
+    var(--main-2),
+    var(--main-2) 1%,
+    var(--main-1)
+  );
+}
+
 .theme span {
   color: var(--main-4);
   font-size: clamp(3rem, 5vw, 4rem);
@@ -40,6 +53,47 @@
   );
 }
 
+.box-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.5rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.technologies div {
+  background-color: var(--h1);
+  /* color: var(--main-1); */
+  display: flex;
+  padding: 0px 5px;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.technologies .tech-one {
+  background-color: var(--main-3);
+}
+.technologies .tech-two {
+  background-color: var(--main-light-2);
+}
+.technologies .tech-three {
+  background-color: var(--main-4);
+}
+.technologies div span {
+  color: var(--main-1);
+}
+
 .btn-box {
   background-color: var(--main-3);
   display: flex;
@@ -48,6 +102,7 @@
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
+  width: fit-content;
 }
 .btn-box .btn {
   background-color: var(--main-4);
@@ -72,6 +127,31 @@
   -moz-transform: translate(3px, -3px);
   -ms-transform: translate(3px, -3px);
   -o-transform: translate(3px, -3px);
+}
+.more {
+  background-image: linear-gradient(
+    0deg,
+    var(--main-1),
+    var(--main-1) 20%,
+    hsla(240, 18%, 52%, 0.034)
+  );
+  width: 100%;
+  padding: 100px 0 10px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+.more .btn-box {
+  width: fit-content;
+  margin: 0 auto;
+}
+.more .btn-box .btn {
+  padding-inline: 50px;
 }
 
 /* -------------------box-model-one--------------------------- */
@@ -124,7 +204,7 @@
 }
 .box-model-one .progress span {
   color: var(--main-4);
-  font-size: var(--section-title-phone);
+  font-size: 4rem;
   font-weight: 100;
 }
 
@@ -148,76 +228,14 @@
   gap: 0.8rem;
 }
 .box-model-two .article-box-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   background-color: var(--main-lightest-1);
-  padding: 0.5rem;
-  border-radius: var(--small-radius);
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
 }
 .box-model-two .article-box-title h4.article-name {
   color: var(--h1);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 500;
 }
-.box-model-two .article-box-title .technologies {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.box-model-two .article-box-title .technologies div {
-  background-color: var(--h1);
-  /* color: var(--main-1); */
-  display: flex;
-  padding: 0px 5px;
-  border-radius: var(--small-radius);
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-}
-article
-  .container
-  .articles
-  .article
-  .article-box-title
-  .technologies
-  .tech-one {
-  background-color: var(--main-3);
-}
-article
-  .container
-  .articles
-  .article
-  .article-box-title
-  .technologies
-  .tech-two {
-  background-color: var(--main-light-2);
-}
-article
-  .container
-  .articles
-  .article
-  .article-box-title
-  .technologies
-  .tech-three {
-  background-color: var(--main-4);
-}
-article
-  .container
-  .articles
-  .article
-  .article-box-title
-  .technologies
-  div
-  span {
-  color: var(--main-1);
-}
+
 .box-model-two .article-brief-content {
   background-color: var(--main-lightest-1);
   color: var(--h2);
@@ -250,4 +268,47 @@ article
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
+}
+
+.box-model-four {
+  background-color: var(--main-lightest-1);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: initial;
+  align-items: initial;
+  border-radius: var(--large-radius);
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  gap: 0.8rem;
+  padding: 1rem;
+}
+.box-model-four img {
+  width: 10rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.box-model-four .stdy-brief-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 1rem; */
+  flex: 1;
+}
+.box-model-four .stdy-brief-content h4.stdy-name {
+  color: var(--h1);
+  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  font-weight: 500;
+}
+
+.box-model-four .stdy-brief-content .stdy-links {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  gap: 0.8rem;
+  margin-left: 0.5rem;
 }
