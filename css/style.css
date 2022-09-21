@@ -183,6 +183,7 @@ nav .container .icon {
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
+  cursor: pointer;
 }
 nav .container .displayInitial {
   display: initial;
@@ -356,7 +357,7 @@ section .container .skills::before {
   -o-transform: translateY(-50%);
   background-color: var(--main-lighter-1);
   inline-size: 0.1rem;
-  block-size: calc(100% - 5rem);
+  block-size: calc(100% - 6rem);
 }
 
 /* End Skills */
@@ -371,6 +372,7 @@ article .container .articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 3rem;
+  position: relative;
 }
 @media (max-width: 767px) {
   article .container .articles {
@@ -415,14 +417,14 @@ article .container .articles {
   left: 50%;
   inline-size: 100%;
   block-size: 100%;
-  background-color: var(--main-lightest-1);
+  background-color: transparent;
   z-index: 1;
-  backdrop-filter: blur(0.3rem);
-  transition: var(--tran-2);
-  -webkit-transition: var(--tran-2);
-  -moz-transition: var(--tran-2);
-  -ms-transition: var(--tran-2);
-  -o-transition: var(--tran-2);
+  backdrop-filter: blur(0.2rem);
+  transition: var(--tran-2) opacity linear;
+  -webkit-transition: var(--tran-2) opacity linear;
+  -moz-transition: var(--tran-2) opacity linear;
+  -ms-transition: var(--tran-2) opacity linear;
+  -o-transition: var(--tran-2) opacity linear;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -437,23 +439,18 @@ article .container .articles {
 .work-space .container .works .work img {
   width: 100%;
   display: flex;
-  transform: scale(2) rotate(3deg);
-  -webkit-transform: scale(2) rotate(3deg);
-  -moz-transform: scale(2) rotate(3deg);
-  -ms-transform: scale(2) rotate(3deg);
-  -o-transform: scale(2) rotate(3deg);
-  transition: var(--tran-3);
-  -webkit-transition: var(--tran-3);
-  -moz-transition: var(--tran-3);
-  -ms-transition: var(--tran-3);
-  -o-transition: var(--tran-3);
+  transition: var(--tran-2);
+  -webkit-transition: var(--tran-2);
+  -moz-transition: var(--tran-2);
+  -ms-transition: var(--tran-2);
+  -o-transition: var(--tran-2);
 }
 .work-space .container .works .work:hover img {
-  transform: scale(1) rotate(0);
-  -webkit-transform: scale(1) rotate(0);
-  -moz-transform: scale(1) rotate(0);
-  -ms-transform: scale(1) rotate(0);
-  -o-transform: scale(1) rotate(0);
+  transform: scale(1.02) rotate(0.2deg);
+  -webkit-transform: scale(1.02) rotate(0.2deg);
+  -moz-transform: scale(1.02) rotate(0.2deg);
+  -ms-transform: scale(1.02) rotate(0.2deg);
+  -o-transform: scale(1.02) rotate(0.2deg);
 }
 
 .work-space .container .works .work .box-text {
@@ -476,7 +473,7 @@ article .container .articles {
   -moz-transition: var(--tran-2);
   -ms-transition: var(--tran-2);
   -o-transition: var(--tran-2);
-  z-index: 1;
+  z-index: 13;
 }
 .work-space .container .works .work:hover .box-text {
   background-image: linear-gradient(
@@ -505,3 +502,17 @@ article .container .articles {
 }
 
 /* End Work Space */
+/* Start Study Sources */
+
+.stdy-srcs {
+  padding-block: var(--section-padding);
+}
+.stdy-srcs .container {
+}
+.stdy-srcs .container .stdys {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+/* End Study Sources */
