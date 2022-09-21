@@ -476,7 +476,7 @@ article .container .articles {
   -moz-transition: var(--tran-2);
   -ms-transition: var(--tran-2);
   -o-transition: var(--tran-2);
-  z-index: 13;
+  z-index: 1;
 }
 .work-space .container .works .work:hover .box-text {
   background-image: linear-gradient(
