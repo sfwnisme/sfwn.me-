@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front End Developer Html CSS Sass Java Script"
+    />
+    <meta name="keywords" content="Work Space Skills Articles" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,17 +28,22 @@
     <!-- Browser Icon -->
     <link rel="shortcut icon" href="imgs/icon.ico" />
     <title>Sfwn</title>
-    <!-- Cursor -->
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
     <!-- Start Header -->
     <header id="about">
       <div class="container">
-        <img src="imgs/sfwnLogo.svg" alt="" />
+        <a href="index.html"> <img src="imgs/sfwnLogo.svg" alt="sfwn.com" /></a>
+
         <div class="theme" id="theme">
           <a href="light.html">
-            <span class="material-symbols-outlined"> wb_sunny </span>
+            <span class="material-symbols-outlined" title="Theme">
+              wb_sunny
+            </span>
           </a>
         </div>
       </div>
@@ -64,9 +74,14 @@
     <main>
       <div class="container">
         <div class="image">
-          <img src="imgs/myimage.jpg" alt="" />
+          <img
+            src="imgs/myimage.jpg"
+            alt="Safwan Mohamed"
+            title="Safwan Mohamed"
+            data-aos="fade-right"
+          />
         </div>
-        <div class="hero-box">
+        <div class="hero-box" data-aos="fade-left">
           <h1>Front End Developer</h1>
           <p>
             Web Apps Developer With UX Wireframes Symbles I’v A Lot Of Projects
@@ -84,37 +99,39 @@
           <h2>Work Space</h2>
         </div>
         <div class="works">
-          <div class="work">
+          <div class="work" data-aos="fade-right">
             <img src="imgs/projects/zak.png" />
             <div class="box-text">
               <a href="https://sfwnisme.github.io/zak.com/">Zak</a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-left">
             <img src="imgs/projects/Draft.png" />
             <div class="box-text">
-              <a href="https://sfwnisme.github.io/draft/">Draft</a>
+              <a href="https://sfwnisme.github.io/draft/" id="work-link"
+                >Draft</a
+              >
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-right">
             <img src="imgs/projects/Elzero.png" />
             <div class="box-text">
               <a href="https://sfwnisme.github.io/Template-Three/">Elzero</a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-left">
             <img src="imgs/projects/Leon.png" />
             <div class="box-text">
               <a href="https://sfwnisme.github.io/Template-One/">Leon</a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-right">
             <img src="imgs/projects/Eldon.png" />
             <div class="box-text">
               <a href="">Eldon</a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-left">
             <img src="imgs/projects/Kasper.png" class="img-five" />
             <div class="box-text">
               <a href="https://sfwnisme.github.io/Template-Two/">Kasper</a>
@@ -136,36 +153,24 @@
             <h4 class="skill-name">Html</h4>
             <div class="progress">
               <span class="material-symbols-outlined"> toggle_on </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
             <h4 class="skill-name">CSS</h4>
             <div class="progress">
               <span class="material-symbols-outlined"> toggle_on </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
             <h4 class="skill-name">Responsive</h4>
             <div class="progress">
               <span class="material-symbols-outlined"> toggle_on </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
             <h4 class="skill-name">Bootstrap</h4>
             <div class="progress">
               <span class="material-symbols-outlined"> toggle_off </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
@@ -174,18 +179,12 @@
               <span class="material-symbols-outlined progressing">
                 Settings
               </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
             <h4 class="skill-name">Sass</h4>
             <div class="progress">
               <span class="material-symbols-outlined"> toggle_off </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
@@ -194,36 +193,26 @@
               <span class="material-symbols-outlined progressing">
                 settings
               </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
             <h4 class="skill-name">React.js</h4>
             <div class="progress">
               <span class="material-symbols-outlined"> toggle_off </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
             <h4 class="skill-name">Node.js</h4>
             <div class="progress">
               <span class="material-symbols-outlined"> toggle_off </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
             </div>
           </li>
           <li class="skill box-model-one">
             <h4 class="skill-name">Figma</h4>
             <div class="progress">
-              <span class="material-symbols-outlined progressing"> settings </span>
-              <div class="src-btn btn-box">
-                <a href="" class="btn">Source</a>
-              </div>
+              <span class="material-symbols-outlined progressing">
+                settings
+              </span>
             </div>
           </li>
         </ul>
@@ -237,8 +226,8 @@
           <h2>Articles</h2>
         </div>
         <div class="articles">
-          <div class="article box-model-two">
-            <div class="article-box-title">
+          <div class="article box-model-two" data-aos="flip-right">
+            <div class="article-box-title box-title-box">
               <h4 class="article-name">Article</h4>
               <div class="technologies">
                 <div class="tech-one">
@@ -259,16 +248,13 @@
               </p>
               <div class="article-links">
                 <div class="btn-box">
-                  <a href="" class="source btn">Source</a>
-                </div>
-                <div class="btn-box">
-                  <a href="" class="dev btn">Dev</a>
+                  <a href="" class="source btn">Read</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="article box-model-two">
-            <div class="article-box-title">
+          <div class="article box-model-two" data-aos="flip-left">
+            <div class="article-box-title box-title-box">
               <h4 class="article-name">Article</h4>
               <div class="technologies">
                 <div class="tech-one">
@@ -289,16 +275,13 @@
               </p>
               <div class="article-links">
                 <div class="btn-box">
-                  <a href="" class="source btn">Source</a>
-                </div>
-                <div class="btn-box">
-                  <a href="" class="dev btn">Dev</a>
+                  <a href="" class="source btn">Read</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="article box-model-two">
-            <div class="article-box-title">
+          <div class="article box-model-two" data-aos="flip-right">
+            <div class="article-box-title box-title-box">
               <h4 class="article-name">Article</h4>
               <div class="technologies">
                 <div class="tech-one">
@@ -319,16 +302,13 @@
               </p>
               <div class="article-links">
                 <div class="btn-box">
-                  <a href="" class="source btn">Source</a>
-                </div>
-                <div class="btn-box">
-                  <a href="" class="dev btn">Dev</a>
+                  <a href="" class="source btn">Read</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="article box-model-two">
-            <div class="article-box-title">
+          <div class="article box-model-two" data-aos="flip-left">
+            <div class="article-box-title box-title-box">
               <h4 class="article-name">Article</h4>
               <div class="technologies">
                 <div class="tech-one">
@@ -349,16 +329,13 @@
               </p>
               <div class="article-links">
                 <div class="btn-box">
-                  <a href="" class="source btn">Source</a>
-                </div>
-                <div class="btn-box">
-                  <a href="" class="dev btn">Dev</a>
+                  <a href="" class="source btn">Read</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="article box-model-two">
-            <div class="article-box-title">
+          <div class="article box-model-two" data-aos="flip-right">
+            <div class="article-box-title box-title-box">
               <h4 class="article-name">Article</h4>
               <div class="technologies">
                 <div class="tech-one">
@@ -379,16 +356,13 @@
               </p>
               <div class="article-links">
                 <div class="btn-box">
-                  <a href="" class="source btn">Source</a>
-                </div>
-                <div class="btn-box">
-                  <a href="" class="dev btn">Dev</a>
+                  <a href="" class="source btn">Read</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="article box-model-two">
-            <div class="article-box-title">
+          <div class="article box-model-two" data-aos="flip-left">
+            <div class="article-box-title box-title-box">
               <h4 class="article-name">Article</h4>
               <div class="technologies">
                 <div class="tech-one">
@@ -409,18 +383,164 @@
               </p>
               <div class="article-links">
                 <div class="btn-box">
-                  <a href="" class="source btn">Source</a>
-                </div>
-                <div class="btn-box">
-                  <a href="" class="dev btn">Dev</a>
+                  <a href="" class="source btn">Read</a>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="more">
+            <div class="btn-box">
+              <a href="" class="btn">More</a>
             </div>
           </div>
         </div>
       </div>
     </article>
     <!-- End Article -->
+
+    <!-- Start Study Sources -->
+    <div class="stdy-srcs" id="study-sources">
+      <div class="container">
+        <div class="section-title">
+          <h2>Study Sources</h2>
+        </div>
+        <div class="stdys">
+          <div class="stdy box-model-four" data-aos="zoom-out">
+            <img src="imgs/study sources/Osama Elzero.png" alt="" />
+            <div class="stdy-brief-content">
+              <div class="box-title-box">
+                <h4 class="stdy-name">Osama Elzero</h4>
+                <div class="technologies">
+                  <div class="tech-one">
+                    <span class="material-symbols-outlined"> html </span>
+                  </div>
+                  <div class="tech-two">
+                    <span class="material-symbols-outlined"> css </span>
+                  </div>
+                  <div class="tech-three">
+                    <span class="material-symbols-outlined"> javascript </span>
+                  </div>
+                </div>
+              </div>
+              <div class="stdy-links">
+                <div class="btn-box">
+                  <a href="" class="btn">F</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">I</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">G</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stdy box-model-four" data-aos="zoom-in">
+            <img src="imgs/study sources/Codezilla.png" alt="" />
+            <div class="stdy-brief-content">
+              <div class="box-title-box">
+                <h4 class="stdy-name">Islam - Codezilla</h4>
+                <div class="technologies">
+                  <div class="tech-one">
+                    <span class="material-symbols-outlined"> html </span>
+                  </div>
+                  <div class="tech-two">
+                    <span class="material-symbols-outlined"> css </span>
+                  </div>
+                </div>
+              </div>
+              <div class="stdy-links">
+                <div class="btn-box">
+                  <a href="" class="btn">F</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">I</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">G</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stdy box-model-four" data-aos="zoom-out">
+            <img src="imgs/study sources/Ghareeb Elsheekh.png" alt="" />
+            <div class="stdy-brief-content">
+              <div class="box-title-box">
+                <h4 class="stdy-name">Ghareeb Elsheekh</h4>
+                <div class="technologies">
+                  <div class="tech-one">
+                    <span class="material-symbols-outlined"> terminal </span>
+                  </div>
+                </div>
+              </div>
+              <div class="stdy-links">
+                <div class="btn-box">
+                  <a href="" class="btn">F</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">I</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">G</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stdy box-model-four" data-aos="zoom-in">
+            <img src="imgs/study sources/Kevin Powell.jpeg" alt="" />
+            <div class="stdy-brief-content">
+              <div class="box-title-box">
+                <h4 class="stdy-name">Kevin Powell</h4>
+                <div class="technologies">
+                  <div class="tech-two">
+                    <span class="material-symbols-outlined"> css </span>
+                  </div>
+                </div>
+              </div>
+              <div class="stdy-links">
+                <div class="btn-box">
+                  <a href="" class="btn">F</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">I</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">G</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stdy box-model-four" data-aos="zoom-out">
+            <img src="imgs/study sources/Web Dev Simplified.png" alt="" />
+            <div class="stdy-brief-content">
+              <div class="box-title-box">
+                <h4 class="stdy-name">Web Dev Simplified</h4>
+                <div class="technologies">
+                  <div class="tech-two">
+                    <span class="material-symbols-outlined"> css </span>
+                  </div>
+                  <div class="tech-three">
+                    <span class="material-symbols-outlined"> javascript </span>
+                  </div>
+                </div>
+              </div>
+              <div class="stdy-links">
+                <div class="btn-box">
+                  <a href="" class="btn">F</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">I</a>
+                </div>
+                <div class="btn-box">
+                  <a href="" class="btn">G</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Study Sources -->
 
     <!-- Start Fixed Buttons -->
     <div class="up" id="up">
