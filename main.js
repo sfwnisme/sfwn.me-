@@ -1,3 +1,5 @@
+AOS.init();
+
 let navIcon = document.getElementById("nav-icon");
 let nav = document.getElementById("nav");
 // let navLink = document.querySelectorAll("nav ul li a");
@@ -36,10 +38,26 @@ up.onclick = () => {
   });
 };
 
-window.onscroll = () => {
-  if (scrollY > 500) {
+window.onscroll = (e) => {
+  if (scrollY > 1000) {
     up.style.cssText = "opacity: 1; z-index: 1;";
   } else {
     up.style.cssText = "opacity: 0; z-index: -1;";
+    // e.preventDefault()
   }
 };
+
+//
+//
+//
+/* -----------Add The Name Of The Project To The Container Title */
+let work = document.querySelectorAll(".works .work");
+let workImage = document.querySelectorAll(".works .work img");
+let workImageName = document.querySelectorAll(".works .work a");
+console.log(workImage);
+
+for (let i = 0; i < work.length; i++) {
+  work[i].title = work[i].innerText;
+  workImage[i].alt = workImageName[i].innerText;
+  workImageName[i].title = workImageName[i].innerText;
+}
