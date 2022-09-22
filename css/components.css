@@ -25,7 +25,8 @@
   -ms-transition: var(--tran-4);
   -o-transition: var(--tran-4);
   cursor: pointer;
-  z-index: 2;
+  opacity: 0;
+  z-index: -1;
 }
 .up span {
   background-color: var(--main-lighter-1);
