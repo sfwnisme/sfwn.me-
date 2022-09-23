@@ -1,0 +1,68 @@
+/* --Start Colors--------------- */
+
+.bg-lightest {
+	background-color: var(--main-lightest-1);
+}
+.bg-lighter-1 {
+	background-color: var(--main-lighter-1);
+}
+/* --End Colors--------------- */
+
+/* --Start Spaces--------------- */
+
+.pd-6-rem {
+	padding-block: var(--section-padding);
+}
+
+/* --End Spaces--------------- */
+
+/* --Start Structure--------------- */
+.grid {
+	display: grid;
+}
+.grid-t-c {
+	grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+}
+@media (max-width: 767px) {
+	.grid-t-c {
+		grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+	}
+}
+.gap-1-rem {
+	gap: 1rem;
+}
+.gap-2-rem {
+	gap: 2rem;
+}
+.gap-3-rem {
+	gap: 3rem;
+}
+.flex {
+	display: flex;
+}
+.flex-d-r {
+	flex-direction: row;
+}
+.flex-d-c {
+	flex-direction: column;
+}
+.j-c-i {
+	justify-content: initial;
+}
+.j-c-bt {
+	justify-content: space-between;
+}
+.j-c-c {
+	justify-content: center;
+}
+.align-items-s {
+	align-items: flex-start;
+}
+.align-items-e {
+	align-items: flex-end;
+}
+.align-items-c {
+	align-items: center;
+}
+
+/* --End Structure--------------- */
