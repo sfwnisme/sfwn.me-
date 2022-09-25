@@ -3,7 +3,7 @@
 	width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: var(--main-lighter-2);
+	background-color: var(--lter2);
 	border-radius: 0.3rem;
 	-ms-border-radius: 0.3rem;
 	-o-border-radius: 0.3rem;
@@ -15,32 +15,39 @@
 /* -------------------------------------- */
 
 .theme span {
-	color: var(--main-4);
+	color: var(--m4);
 	font-size: clamp(3rem, 5vw, 4rem);
 }
 .up {
+	background-color: var(--lter1);
 	position: fixed;
 	bottom: 1.6rem;
 	right: 1.6rem;
+	padding: 0.3rem;
+	cursor: pointer;
 	transition: var(--tran-4);
 	-webkit-transition: var(--tran-4);
 	-moz-transition: var(--tran-4);
 	-ms-transition: var(--tran-4);
 	-o-transition: var(--tran-4);
-	cursor: pointer;
+	border-radius: var(--small-radius);
+	-webkit-border-radius: var(--small-radius);
+	-moz-border-radius: var(--small-radius);
+	-ms-border-radius: var(--small-radius);
+	-o-border-radius: var(--small-radius);
 	opacity: 0;
 	z-index: -1;
 }
-.up span {
-	background-color: var(--main-lighter-1);
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	color: var(--main-4);
-	font-size: 4rem;
-	font-weight: 100;
+.up i {
+	color: var(--m4);
+	font-size: 3rem;
+	/*font-weight: 100;
+	*/
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
 }
 
 .section-title {
@@ -57,7 +64,7 @@
 	);
 }
 .technologies div {
-	background-color: var(--main-1);
+	background-color: var(--m1);
 	padding: 0px 5px;
 	border-radius: var(--small-radius);
 	-webkit-border-radius: var(--small-radius);
@@ -66,10 +73,10 @@
 	-o-border-radius: var(--small-radius);
 }
 .technologies .tech span {
-	color: var(--main-3);
+	color: var(--m3);
 }
 .btn-box {
-	background-color: var(--main-3);
+	background-color: var(--m3);
 	display: flex;
 	border-radius: var(--small-radius);
 	-webkit-border-radius: var(--small-radius);
@@ -79,8 +86,8 @@
 	width: fit-content;
 }
 .btn-box a {
-	background-color: var(--main-4);
-	color: var(--main-1);
+	background-color: var(--m4);
+	color: var(--m1);
 	padding: 0.8rem;
 	border-radius: var(--small-radius);
 	-webkit-border-radius: var(--small-radius);
@@ -105,8 +112,8 @@
 .more {
 	background-image: linear-gradient(
 		0deg,
-		var(--main-1),
-		var(--main-1) 50%,
+		var(--m1),
+		var(--m1) 50%,
 		transparent
 	);
 	width: 100%;
@@ -149,7 +156,7 @@
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	background-color: var(--main-4);
+	background-color: var(--m4);
 	inline-size: 1rem;
 	block-size: 1rem;
 	border-radius: var(--small-radius);
@@ -171,7 +178,7 @@
 	gap: 0.8rem;
 }
 .skill .progress span {
-	color: var(--main-4);
+	color: var(--m4);
 	font-size: 4rem;
 	font-weight: 100;
 }
@@ -197,7 +204,7 @@
 	font-weight: 500;
 }
 .article .article-box-title {
-	padding: 0.5rem;
+	/* padding: 0.5rem; */
 	border-radius: var(--small-radius);
 	-webkit-border-radius: var(--small-radius);
 	-moz-border-radius: var(--small-radius);
@@ -208,7 +215,7 @@
 	color: var(--h2);
 	font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
 	font-weight: 200;
-	padding: 1.2rem;
+	/* padding: 1.2rem; */
 	border-radius: var(--small-radius);
 	-webkit-border-radius: var(--small-radius);
 	-moz-border-radius: var(--small-radius);
@@ -222,7 +229,7 @@
 	margin-bottom: 0.8rem;
 }
 .article .article-links div {
-	background-color: var(--main-3);
+	/* background-color: var(--m3); */
 	display: flex;
 	border-radius: var(--small-radius);
 	-webkit-border-radius: var(--small-radius);

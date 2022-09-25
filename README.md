@@ -12,5 +12,5 @@
    - Branch Page
 6. ##### Study Sources
 
-![Suggestion](dark.png)
+<!-- ![Suggestion](dark.png) -->
 <!-- ![Main](purple.png) -->
