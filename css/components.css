@@ -20,6 +20,7 @@
 }
 .up {
 	background-color: var(--lter1);
+	color: var(--m4);
 	position: fixed;
 	bottom: 1.6rem;
 	right: 1.6rem;
@@ -37,17 +38,11 @@
 	-o-border-radius: var(--small-radius);
 	opacity: 0;
 	z-index: -1;
+	display: flex;
 }
-.up i {
-	color: var(--m4);
+.up span {
 	font-size: 3rem;
-	/*font-weight: 100;
-	*/
-	transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
+	font-weight: 100;
 }
 
 .section-title {

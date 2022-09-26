@@ -3,6 +3,12 @@
 .bg-ltest {
 	background-color: var(--ltest1);
 }
+.--lter1 {
+	background-color: var(--lter1);
+}
+.--m4 {
+	background-color: var(--m4);
+}
 
 /* --End Colors--------------- */
 
@@ -131,6 +137,9 @@
 /* --End Spaces--------------- */
 
 /* --Start Structure--------------- */
+.none {
+	display: none;
+}
 .grid {
 	display: grid;
 }

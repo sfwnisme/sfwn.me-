@@ -8,14 +8,16 @@
   <meta name="description" content="Front End Developer Html CSS Sass Java Script" />
   <meta name="keywords" content="Work Space Skills Articles" />
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="fonts/fonts.css">
   <!-- Google Icons -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Quot font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.min.css">
   <!-- Css Files -->
@@ -44,7 +46,7 @@
   <nav id="nav" class="nav">
     <span id="overly" class="overly"></span>
     <div class="container">
-      <div class="icon bg-ltest flex flex-d-c gap-1-rem" id="nav-icon">
+      <div class="icon --lter1 flex flex-d-c gap-1-rem" id="nav-icon">
         <span id="span-one"></span>
         <span id="span-two"></span>
       </div>
@@ -62,11 +64,13 @@
 
   <!-- Start Main -->
   <main id="about">
+    <img src="imgs/sfwnLogo.svg" alt="">
     <div class="container flex j-c-c align-items-e gap-2-rem">
-      <div class="image">
+      <div class="image none">
         <img src="imgs/myimage.jpg" alt="Safwan Mohamed" title="Safwan Mohamed" />
       </div>
       <div class="hero-box">
+        <div class="hero-overly"></div>
         <h1>Safwan Mohamed</h1>
         <p>
           Front End Developer. Creating Pure Coding, Best Practice Ways That Result The Highest Possible Performance And
@@ -245,7 +249,9 @@
 
   <!-- Start Fixed Buttons -->
   <div class="up" id="up">
-    <i class="fas fa-angle-double-down fa-2x"></i>
+    <span class="material-symbols-outlined">
+      assistant_navigation
+    </span>
   </div>
   <script src="main.js"></script>
 </body>

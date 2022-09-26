@@ -1,11 +1,11 @@
 html {
-  scroll-behavior: smooth;
-  font-size: 10px;
+	scroll-behavior: smooth;
+	font-size: 10px;
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 h1,
 h2,
@@ -14,37 +14,37 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+	margin: 0;
 }
 li {
-  list-style: none;
+	list-style: none;
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 span {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*--------Start @medias----------*/
 /* Small Screens */
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+	.container {
+		width: 750px;
+	}
 }
 /* Medium Screens */
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+	.container {
+		width: 970px;
+	}
 }
 /* Large Screens */
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+	.container {
+		width: 1170px;
+	}
 }
 /*--------End @medias----------*/
