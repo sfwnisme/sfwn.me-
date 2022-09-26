@@ -273,17 +273,16 @@ main {
 	}
 }
 main > img {
-	/*display: none;
-	*/position: absolute;
+	position: absolute;
 	max-block-size: calc(50vh - 0rem);
 	top: 50%;
 	left: 50%;
 	opacity: 0.05;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 }
 main .container {
 	max-inline-size: 80rem;
@@ -549,15 +548,18 @@ article {
 /* Start Footer */
 
 footer {
-	padding-block: 2rem;
-}
-footer img {
-	inline-size: 2rem;
+	padding-block: 1rem;
+
 }
 footer h6 {
 	color: var(--h1);
 	font-size: 1.5rem;
 	font-weight: 300;
+}
+footer a {
+	color: var(--m4);
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 /* End Footer */

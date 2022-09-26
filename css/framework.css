@@ -121,6 +121,9 @@
 .pd-6 {
 	padding: var(--section-padding);
 }
+.gap-05-rem {
+	gap: 0.5rem;
+}
 .gap-1-rem {
 	gap: 1rem;
 }
