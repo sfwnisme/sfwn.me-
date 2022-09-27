@@ -8,10 +8,10 @@
 - **Skills**
 - **What I Can Do**
 - **Wrok Space**
-- **Blog** _New Html_
+- **Blog** \_ new html
   - Articles
   - Study Sources
-- **Footer** >> _In Js File_
+- **Footer** \_ in Js
 
 ## New To Me
 
