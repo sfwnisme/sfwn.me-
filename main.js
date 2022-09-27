@@ -72,6 +72,7 @@ footerContent.className = "flex j-c-c align-items-c gap-05-rem";
 footerContent.innerText = "Elaborated By";
 
 let footerLink = document.createElement("a");
+footerLink.href = "https://github.com/sfwnisme";
 footerLink.innerText = "Sfwn";
 footerContent.append(footerLink);
 
@@ -81,4 +82,4 @@ footerBox.append(footerContent);
 
 footerContainer.appendChild(footerBox);
 footer.append(footerContainer);
-document.body.appendChild(footer);
+document.body.prepend(footer);
