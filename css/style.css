@@ -56,10 +56,13 @@
 }
 
 ::selection {
-  background-color: var(--lter1);
+  background-color: transparent;
   color: var(--m4);
 }
 body {
+  background-image: url(../imgs/bg/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--m1);
 }
 .container {
