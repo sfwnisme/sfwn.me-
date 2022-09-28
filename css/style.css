@@ -56,7 +56,7 @@
 }
 
 ::selection {
-  background-color: transparent;
+  background-color: var(--m1);
   color: var(--m4);
 }
 body {
