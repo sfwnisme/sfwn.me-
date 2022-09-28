@@ -23,7 +23,7 @@
   background-color: var(--lter1);
   color: var(--m4);
   position: fixed;
-  bottom: 1.6rem;
+  top: 50%;
   right: 1.6rem;
   padding: 0.3rem;
   cursor: pointer;
@@ -40,6 +40,11 @@
   opacity: 0;
   z-index: -1;
   display: flex;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .up span {
   font-size: 3rem;
