@@ -63,12 +63,6 @@ body {
 
 header {
   padding-block: 2rem;
-  block-size: 11rem;
-}
-@media (max-width: 767px) {
-  header {
-    block-size: 9rem;
-  }
 }
 header .container span {
   font-size: 3rem;
@@ -89,11 +83,6 @@ header .container span {
 }
 header .container span:hover {
   background-color: var(--lter3);
-}
-@media (max-width: 767px) {
-  header .container img {
-    inline-size: 5rem;
-  }
 }
 
 /* End Header */
