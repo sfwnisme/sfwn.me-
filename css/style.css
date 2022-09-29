@@ -3,7 +3,6 @@
   -webkit-animation: rotate 5s linear infinite;
 }
 
-
 :root {
   --m1: #202040;
   --m2: #543864;
@@ -47,7 +46,7 @@
 }
 
 ::selection {
-  background-color: var(--m1);
+  background-color: var(--lter3);
   color: var(--m4);
 }
 body {
