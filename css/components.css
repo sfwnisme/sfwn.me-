@@ -36,6 +36,14 @@
   opacity: 0;
   z-index: -1;
   display: flex;
+  transition: var(--tran-4);
+  -webkit-transition: var(--tran-4);
+  -moz-transition: var(--tran-4);
+  -ms-transition: var(--tran-4);
+  -o-transition: var(--tran-4);
+}
+.up:hover {
+  background-color: var(--lter3);
 }
 .up span {
   font-size: 3rem;
