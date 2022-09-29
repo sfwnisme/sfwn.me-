@@ -36,7 +36,6 @@
   opacity: 0;
   z-index: -1;
   display: flex;
-
 }
 .up span {
   font-size: 3rem;
@@ -240,7 +239,7 @@
   padding: 1rem;
 }
 .stdy img {
-  width: 10rem;
+  width: 9rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);

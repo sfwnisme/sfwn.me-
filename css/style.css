@@ -3,15 +3,6 @@
   -webkit-animation: rotate 5s linear infinite;
 }
 
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
-}
 
 :root {
   --m1: #202040;
@@ -40,7 +31,7 @@
   --section-title-laptop: 4.5rem;
   --section-title-phone: 2.8rem;
   --box-title-laptop: 2.2rem;
-  --box-title-phone: 1.5rem;
+  --box-title-phone: 1.6rem;
   --box-text-laptop: 1.8rem;
   --box-text-phone: 1.4rem;
   --box-link-laptop: 1.6rem;
@@ -168,13 +159,7 @@ nav .container .icon {
   background-color: var(--ltest1);
   position: absolute;
   top: -5rem;
-  padding: 0.5rem 2rem;
-  /*transform: translateY(-0.8rem);
-  -webkit-transform: translateY(-0.8rem);
-  -moz-transform: translateY(-0.8rem);
-  -ms-transform: translateY(-0.8rem);
-  -o-transform: translateY(-0.8rem);
-  */
+  padding: 0.7rem 3rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -184,11 +169,6 @@ nav .container .icon {
   border: 1px solid var(--m4);
   animation: nav 5s linear infinite;
   -webkit-animation: nav 5s linear infinite;
-}
-@keyframes nav {
-  50% {
-    background-color: var(--m3);
-  }
 }
 
 nav .container .displayInitial {
@@ -491,6 +471,11 @@ article {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
+}
+@media (max-width: 767px) {
+  .stdy-srcs .container .stdys {
+    padding: 1rem;
+  }
 }
 
 /* End Study Sources */
