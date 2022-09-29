@@ -1,10 +1,11 @@
 ::-webkit-scrollbar {
-  /* background-color: rgba(0, 0, 0, 0); */
-  background-image: url(../imgs/bg/4.jpg);
+  background-color: rgba(0, 0, 0, 0);
+  /* background-image: url(../imgs/bg/4.jpg); */
   width: 10px;
+  display: none;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--lter1);
+  background-color: var(--ltest1);
   border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
@@ -20,18 +21,13 @@
   font-size: clamp(3rem, 5vw, 4rem);
 }
 .up {
-  background-color: var(--lter1);
-  color: var(--m4);
+  background-color: var(--ltest1);
+  border: 1px solid var(--m4);
+  color: var(--m3);
   position: fixed;
-  top: 50%;
+  bottom: 1.6rem;
   right: 1.6rem;
-  padding: 0.3rem;
   cursor: pointer;
-  transition: var(--tran-4);
-  -webkit-transition: var(--tran-4);
-  -moz-transition: var(--tran-4);
-  -ms-transition: var(--tran-4);
-  -o-transition: var(--tran-4);
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -40,11 +36,7 @@
   opacity: 0;
   z-index: -1;
   display: flex;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+
 }
 .up span {
   font-size: 3rem;

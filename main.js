@@ -1,10 +1,8 @@
 let navIcon = document.getElementById("nav-icon");
 let nav = document.getElementById("nav");
-// let navLink = document.querySelectorAll("nav ul li a");
 let iconSpanOne = document.querySelector("#span-one");
 let iconSpanTwo = document.querySelector("#span-two");
 let overly = document.getElementById("overly");
-// console.log(navLink);
 
 navIcon.addEventListener("click", function (e) {
   nav.classList.toggle("nav-active");
@@ -24,6 +22,28 @@ navIcon.addEventListener("click", function (e) {
   };
 });
 
+/* START setTimeout For Attrct Client Of Navigation Bar */
+/* 
+setTimeout(
+  (nav.onloadeddata = function () {
+    nav.classList.add("nav-active");
+    navIcon.classList.add("displayInitial");
+    overly.classList.add("overly-active");
+
+    document.onclick = function (e) {
+      if (e.target.id !== "nav" && e.target.id !== "nav-icon") {
+        nav.classList.remove("nav-active");
+        navIcon.classList.remove("displayInitial");
+        overly.classList.remove("overly-active");
+      }
+      e.stopPropagation();
+    };
+  }),
+  1000
+);
+ */
+/* END setTimeout For Attrct Client Of Navigation Bar */
+
 /* ----------up Scroll */
 
 let up = document.getElementById("up");
@@ -41,7 +61,6 @@ window.onscroll = (e) => {
     up.style.cssText = "opacity: 1; z-index: 1;";
   } else {
     up.style.cssText = "opacity: 0; z-index: -1;";
-    // e.preventDefault()
   }
 };
 
@@ -82,4 +101,4 @@ footerBox.append(footerContent);
 
 footerContainer.appendChild(footerBox);
 footer.append(footerContainer);
-document.body.prepend(footer);
+document.body.append(footer);

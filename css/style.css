@@ -60,7 +60,7 @@
   color: var(--m4);
 }
 body {
-  background-image: url(../imgs/bg/4.jpg);
+  /* background-image: url(../imgs/bg/4.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--m1);
@@ -165,60 +165,37 @@ nav .container {
 }
 
 nav .container .icon {
+  background-color: var(--ltest1);
   position: absolute;
   top: -5rem;
-  padding: 0.7rem;
-  transform: translateY(-1.6rem);
-  -webkit-transform: translateY(-1.6rem);
-  -moz-transform: translateY(-1.6rem);
-  -ms-transform: translateY(-1.6rem);
-  -o-transform: translateY(-1.6rem);
+  padding: 0.5rem 2rem;
+  /*transform: translateY(-0.8rem);
+  -webkit-transform: translateY(-0.8rem);
+  -moz-transform: translateY(-0.8rem);
+  -ms-transform: translateY(-0.8rem);
+  -o-transform: translateY(-0.8rem);
+  */
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
   cursor: pointer;
+  border: 1px solid var(--m4);
+  animation: nav 5s linear infinite;
+  -webkit-animation: nav 5s linear infinite;
 }
-nav .container .displayInitial {
-  display: block;
-  padding: 2rem 0.4rem;
+@keyframes nav {
+  50% {
+    background-color: var(--m3);
+  }
 }
 
-nav .container .displayInitial span:first-of-type {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  position: relative;
-  top: 0.2rem;
+nav .container .displayInitial {
+  /* display: block; */
+  padding: 2rem 0.5rem;
 }
-nav .container .displayInitial span:last-of-type {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  position: relative;
-}
-nav .container .icon span:first-of-type {
-  background-color: var(--m3);
-}
-nav .container .icon span:last-of-type {
-  background-color: var(--m4);
-}
-nav .container .icon span {
-  display: block;
-  inline-size: 4rem;
-  height: 0.3rem;
-  border-radius: 0.1rem;
-  -webkit-border-radius: 0.1rem;
-  -moz-border-radius: 0.1rem;
-  -ms-border-radius: 0.1rem;
-  -o-border-radius: 0.1rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.237);
-}
+
 nav .container ul {
   inline-size: 100%;
   border-radius: var(--large-radius);
