@@ -2,15 +2,29 @@
 
 [Live Demo](https://sfwnisme.github.io/mysite/)
 
-### Web App Structure
+## Web App Structure
 
-1. ##### Intro
-2. ##### Skills
-3. ##### What I Can Do
-4. ##### Wrok Space
-5. ##### Articles
-   - Branch Page
-6. ##### Study Sources
+- **Intro**
+- **Skills**
+- **What I Can Do**
+- **Wrok Space**
+- **Blog** \_ new html
+  - Articles
+  - Study Sources
+- **Footer** \_ in Js
 
-<!-- ![Suggestion](dark.png) -->
-<!-- ![Main](purple.png) -->
+## New To Me
+
+- Remove The Navigation Bar If Click On Out Range Or Links
+  [Solution Link](https://www.youtube.com/watch?v=iP63fDXk-W8)
+
+```javascript
+document.onclick = function (e) {
+  if (e.target.id !== "nav" && e.target.id !== "nav-icon") {
+    nav.classList.remove("nav-active");
+    navIcon.classList.remove("displayInitial");
+    overly.classList.remove("overly-active");
+  }
+  e.stopPropagation();
+};
+```
