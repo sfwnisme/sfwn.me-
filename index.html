@@ -1,226 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front End Developer Html CSS Sass Java Script"
+    />
+    <meta name="keywords" content="Work Space Skills Articles" />
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,100,0,-25"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Browser Icon -->
+    <link rel="shortcut icon" href="imgs/icon.ico" />
+    <title>Sfwn</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Front End Developer Html CSS Sass Java Script" />
-  <meta name="keywords" content="Work Space Skills Articles" />
-  <!-- Google Icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,100,0,-25" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.min.css">
-  <!-- Css Files -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/rest.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/framework.css" />
-  <link rel="stylesheet" href="css/keyframes.css">
-  <!-- Browser Icon -->
-  <link rel="shortcut icon" href="imgs/icon.ico" />
-  <title>Sfwn</title>
-</head>
-
-<body>
-
-  <!-- Start Nav -->
-  <nav id="nav" class="nav">
-    <span id="overly" class="overly"></span>
-    <div class="container">
-      <div class="icon flex flex-d-c gap-1-rem" id="nav-icon">
+  <body>
+    <!-- Start Nav -->
+    <nav id="nav" class="nav">
+      <span id="overly" class="overly"></span>
+      <div class="container">
+        <div class="icon flex flex-d-c gap-1-rem" id="nav-icon"></div>
+        <ul
+          class="nav-list flex flex-d-c j-c-c align-items-c gap-1-rem"
+          id="nav-list"
+        >
+          <li class="bg-lighter-1"><a href="#about">About</a></li>
+          <li class="bg-lighter-1"><a href="#work-space">Work Space</a></li>
+          <li class="bg-lighter-1"><a href="#skills">Skills</a></li>
+          <li class="bg-lighter-1"><a href="blog.html">Blog</a></li>
+          <li class="bg-lighter-1">
+            <a href="blog.html#study-sources">Study Sources</a>
+          </li>
+          <li class="bg-lighter-1"><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <ul class="nav-list flex flex-d-c j-c-c align-items-c gap-1-rem id=" nav-list">
-        <li class="bg-lighter-1"><a href="#about">About</a></li>
-        <li class="bg-lighter-1"><a href="#work-space">Work Space</a></li>
-        <li class="bg-lighter-1"><a href="#skills">Skills</a></li>
-        <li class="bg-lighter-1"><a href="blog.html">Blog</a></li>
-        <li class="bg-lighter-1"><a href="blog.html#study-sources">Study Sources</a></li>
-        <li class="bg-lighter-1"><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- End Nav -->
+    </nav>
+    <!-- End Nav -->
 
-  <!-- Start Main -->
-  <main id="about">
-    <img src="imgs/sfwnLogo.svg" alt="">
-    <div class="container flex j-c-c align-items-e gap-2-rem">
-      <div class="image none">
-        <img src="imgs/myimage.jpg" alt="Safwan Mohamed" title="Safwan Mohamed" />
-      </div>
-      <div class="hero-box">
-        <div class="hero-overly"></div>
-        <h1>Safwan Mohamed</h1>
-        <p>
-          Front End Developer. Creating Pure Coding, Best Practice Ways That Result The Highest Possible Performance And
-          Flexibility For
-          Your Web Application Interface, And Attract Your Client From The First Impression
-        </p>
-      </div>
-    </div>
-  </main>
-  <!-- End Main -->
-
-  <!-- Start Work Space -->
-  <div class="work-space" id="work-space" data-value="work-space">
-    <div class="container">
-      <div class="section-title">
-        <h2>Work Space</h2>
-      </div>
-      <div class="works grid grid-t-c gap-3-rem" data-value="works">
-        <div class="work">
-          <img src="imgs/projects/zak.webp" />
-          <div class="box-text">
-            <a href="https://sfwnisme.github.io/zak.com/">Zak </a>
-          </div>
+    <!-- Start Main -->
+    <main id="about">
+      <img src="imgs/sfwnLogo.svg" alt="" />
+      <div class="container flex j-c-c align-items-e gap-2-rem">
+        <div class="image none">
+          <img
+            src="imgs/myimage.jpg"
+            alt="Safwan Mohamed"
+            title="Safwan Mohamed"
+          />
         </div>
-        <div class="work">
-          <img src="imgs/projects/Draft.webp" />
-          <div class="box-text">
-            <a href="https://sfwnisme.github.io/draft/" id="work-link">Draft</a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/Elzero.webp" />
-          <div class="box-text">
-            <a href="https://sfwnisme.github.io/Template-Three/">Elzero</a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/Leon.webp" />
-          <div class="box-text">
-            <a href="https://sfwnisme.github.io/Template-One/">Leon</a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/Eldon.webp" />
-          <div class="box-text">
-            <a href="https://eldonn.com">Eldon</a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/Kasper.webp" />
-          <div class="box-text">
-            <a href="https://sfwnisme.github.io/Template-Two/">Kasper</a>
-          </div>
+        <div class="hero-box">
+          <div class="hero-overly"></div>
+          <h1>Safwan Mohamed</h1>
+          <p>
+            Front End Developer. Creating Pure Coding, Best Practice Ways That
+            Result The Highest Possible Performance And Flexibility For Your Web
+            Application Interface, And Attract Your Client From The First
+            Impression
+          </p>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- End Work Space -->
+    </main>
+    <!-- End Main -->
 
-  <!-- Start Section -->
-  <section id="skills" class=" pd-6-rem">
-    <div class="container">
-      <div class="skills-title section-title">
-        <h2>Skills</h2>
-      </div>
-      <ul class="skills">
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Html</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined"> toggle_on </span>
+    <!-- Start Work Space -->
+    <div class="work-space" id="work-space" data-value="work-space">
+      <div class="container">
+        <div class="section-title">
+          <h2>Work Space</h2>
+        </div>
+        <div class="works grid grid-t-c gap-3-rem" data-value="works">
+          <div class="work">
+            <img src="imgs/projects/zak.webp" />
+            <div class="box-text">
+              <a href="https://sfwnisme.github.io/zak.com/">Zak </a>
+            </div>
           </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>CSS</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined"> toggle_on </span>
+          <div class="work">
+            <img src="imgs/projects/Draft.webp" />
+            <div class="box-text">
+              <a href="https://sfwnisme.github.io/draft/" id="work-link"
+                >Draft</a
+              >
+            </div>
           </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Responsive</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined"> toggle_on </span>
+          <div class="work">
+            <img src="imgs/projects/Elzero.webp" />
+            <div class="box-text">
+              <a href="https://sfwnisme.github.io/Template-Three/">Elzero</a>
+            </div>
           </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Bootstrap</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined"> toggle_off </span>
+          <div class="work">
+            <img src="imgs/projects/Leon.webp" />
+            <div class="box-text">
+              <a href="https://sfwnisme.github.io/Template-One/">Leon</a>
+            </div>
           </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Git & Github</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined progressing">
-              Settings
-            </span>
+          <div class="work">
+            <img src="imgs/projects/Eldon.webp" />
+            <div class="box-text">
+              <a href="https://eldonn.com">Eldon</a>
+            </div>
           </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Command Line</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined progressing">
-              Settings
-            </span>
+          <div class="work">
+            <img src="imgs/projects/Kasper.webp" />
+            <div class="box-text">
+              <a href="https://sfwnisme.github.io/Template-Two/">Kasper</a>
+            </div>
           </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Sass</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined"> toggle_off </span>
-          </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Java Script</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined progressing">
-              settings
-            </span>
-          </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>React.js</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined"> toggle_off </span>
-          </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Node.js</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined"> toggle_off </span>
-          </div>
-        </li>
-        <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
-          <h4>Figma</h4>
-          <div class="progress">
-            <span class="material-symbols-outlined progressing">
-              settings
-            </span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- End Section -->
-  <!-- Start Contact -->
-
-  <div class="contact pd-b-6 flex j-c-c align-items-c " id="contact">
-    <div class="container">
-      <div class="contacts flex j-c-c align-items-c flex-d-r gap-3-rem">
-        <a href="https://www.facebook.com/sfwnisme"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.instagram.com/sfwnisme/"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://github.com/sfwnisme"><i class="fa-brands fa-square-github"></i></i></a>
-        <a href="https://codepen.io/your-work"><i class="fa-brands fa-codepen"></i></a>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- End Work Space -->
 
-  <!-- End Contact -->
+    <!-- Start Section -->
+    <section id="skills" class="pd-6-rem">
+      <div class="container">
+        <div class="skills-title section-title">
+          <h2>Skills</h2>
+        </div>
+        <ul class="skills">
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Html</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined"> toggle_on </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>CSS</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined"> toggle_on </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Responsive</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined"> toggle_on </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Bootstrap</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined"> toggle_off </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Git & Github</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined progressing">
+                Settings
+              </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Command Line</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined progressing">
+                Settings
+              </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Sass</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined"> toggle_off </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Java Script</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined progressing">
+                settings
+              </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>React.js</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined"> toggle_off </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Node.js</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined"> toggle_off </span>
+            </div>
+          </li>
+          <li class="skill bg-ltest flex j-c-bt align-items-c gap-2-rem">
+            <h4>Figma</h4>
+            <div class="progress">
+              <span class="material-symbols-outlined progressing">
+                settings
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Section -->
+    <!-- Start Contact -->
 
-  <!-- Start Footer -->
+    <div class="contact pd-b-6 flex j-c-c align-items-c" id="contact">
+      <div class="container">
+        <div class="contacts flex j-c-c align-items-c flex-d-r gap-3-rem">
+          <a href="https://www.facebook.com/sfwnisme"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/sfwnisme/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a href="https://github.com/sfwnisme"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a href="https://codepen.io/your-work"
+            ><i class="fa-brands fa-codepen"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
     <!-- Footer Created On js -->
-  <!-- End Footer -->
+    <!-- End Footer -->
 
-  <!-- Start Fixed Buttons -->
-  <div class="up" id="up">
-    <span class="material-symbols-outlined">
-      expand_less
-    </span>
-  </div>
-  <script src="main.js"></script>
-</body>
-
+    <!-- Start Fixed Buttons -->
+    <div class="up" id="up">
+      <span class="material-symbols-outlined"> expand_less </span>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
