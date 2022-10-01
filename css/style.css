@@ -184,8 +184,6 @@ body {
 /* Start Components */
 
 .up {
-  background-color: var(--ltest1);
-  border: 1px solid var(--m4);
   color: var(--m3);
   position: fixed;
   bottom: 1.6rem;
@@ -204,13 +202,10 @@ body {
   -moz-transition: var(--tran-4);
   -ms-transition: var(--tran-4);
   -o-transition: var(--tran-4);
+  padding: 0.1rem;
 }
-.up:hover {
-  background-color: var(--lter3);
-}
-.up span {
-  font-size: 3rem;
-  font-weight: 100;
+.up img {
+  width: 3rem;
 }
 
 .section-title {
@@ -327,7 +322,9 @@ header .container span {
 header .container span:hover {
   background-color: var(--lter3);
 }
-
+header .container a .back {
+  width: 3rem;
+}
 /* End Header */
 
 /* Start Nav */
@@ -833,8 +830,8 @@ article {
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 500;
 }
-.stdy .btn-box  img {
-display: flex;
+.stdy .btn-box img {
+  display: flex;
   width: 2rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
