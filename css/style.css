@@ -536,8 +536,8 @@ main .container .hero-box::before {
   -moz-transform: rotate(200deg);
   -ms-transform: rotate(200deg);
   -o-transform: rotate(200deg);
-  animation: 1s shake infinite;
-  -webkit-animation: 1s shake-top infinite;
+  animation: 2s shake-top infinite;
+  -webkit-animation: 2s shake-top infinite;
 }
 main .container .hero-box::after {
   content: "";
@@ -555,8 +555,8 @@ main .container .hero-box::after {
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   -o-transform: rotate(20deg);
-  animation: 1s shake-bottom infinite;
-  -webkit-animation: 1s shake-bottom infinite;
+  animation: 2s shake-bottom infinite;
+  -webkit-animation: 2s shake-bottom infinite;
 }
 main .container .hero-box h1 {
   color: var(--h1);
