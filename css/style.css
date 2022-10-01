@@ -241,6 +241,8 @@ body {
 .btn-box {
   background-color: var(--m4);
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -815,7 +817,7 @@ article {
     padding: 1rem;
   }
 }
-.stdy img {
+.stdy > img {
   width: 9rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
@@ -830,6 +832,15 @@ article {
   color: var(--h1);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 500;
+}
+.stdy .btn-box  img {
+display: flex;
+  width: 2rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
 }
 
 /* End Study Sources */
