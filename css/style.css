@@ -609,7 +609,7 @@ section .container .skills {
   position: relative;
 }
 section .container .skills::before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 50%;
   left: -1rem;
@@ -621,6 +621,77 @@ section .container .skills::before {
   background-color: var(--lter1);
   inline-size: 0.1rem;
   block-size: calc(100% - 6rem);
+}
+section .container .skills > img {
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.skill {
+  padding: 1.2rem;
+  border-radius: var(--large-radius);
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  position: relative;
+}
+.skill::before {
+  /* content: ""; */
+  position: absolute;
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: var(--m4);
+  inline-size: 1rem;
+  block-size: 1rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+.skill > img {
+  position: absolute;
+  left: -17px;
+  width: 15px;
+}
+.skill h4 {
+  color: var(--h1);
+  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  font-weight: 500;
+  flex: 1;
+}
+.skill .progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.skill .progress span {
+  color: var(--m4);
+  font-size: 4rem;
+  font-weight: 100;
+}
+.skill .progress img {
+  width: 30px;
+}
+.progressing {
+  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+}
+.skill .progress a:first-of-type img {
+  display: flex;
 }
 
 /* End Skills */
@@ -740,76 +811,6 @@ article {
 /* End Work Space */
 
 /* Start Skills */
-
-.skill {
-  padding: 1.2rem;
-  border-radius: var(--large-radius);
-  -webkit-border-radius: var(--large-radius);
-  -moz-border-radius: var(--large-radius);
-  -ms-border-radius: var(--large-radius);
-  -o-border-radius: var(--large-radius);
-  position: relative;
-}
-.skill::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -1.5rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  background-color: var(--m4);
-  inline-size: 1rem;
-  block-size: 1rem;
-  border-radius: var(--small-radius);
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-}
-.skill h4 {
-  color: var(--h1);
-  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
-  font-weight: 500;
-  flex: 1;
-}
-.skill .progress {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-}
-.skill .progress span {
-  color: var(--m4);
-  font-size: 4rem;
-  font-weight: 100;
-}
-.skill .progress img {
-  width: 30px;
-}
-.progressing {
-  animation: rotate 5s linear infinite;
-  -webkit-animation: rotate 5s linear infinite;
-}
-.done {
-  /* transform: rotate(20deg);
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg); */
-}
-.pin {
-  /* transform: rotate(20deg);
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg); */
-}
-.skill .progress a:first-of-type img {
-  display: flex;
-}
 
 /* End Skills */
 
