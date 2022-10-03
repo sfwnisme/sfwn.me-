@@ -426,18 +426,20 @@ nav .container {
   position: relative;
 }
 
-nav .container .icon {
+nav .container .nav-icon {
+  color: var(--m4);
   position: absolute;
   top: -5rem;
+  left: 50%;
   cursor: pointer;
-  transform: translateY(-20px);
-  -webkit-transform: translateY(-20px);
-  -moz-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  -o-transform: translateY(-20px);
+  transform: translate(-50%, -20px);
+  -webkit-transform: translate(-50%, -20px);
+  -moz-transform: translate(-50%, -20px);
+  -ms-transform: translate(-50%, -20px);
+  -o-transform: translate(-50%, -20px);
 }
-nav .container .icon img {
-  width: 70px;
+nav .container .nav-icon svg {
+
 }
 nav .container ul {
   inline-size: 100%;
@@ -683,8 +685,8 @@ section .container .skills .line > img {
   font-size: 4rem;
   font-weight: 100;
 }
-.skill .progress img {
-  width: 30px;
+.skill .progress svg {
+  color: var(--m4);
 }
 .progressing {
   animation: rotate 5s linear infinite;
@@ -878,13 +880,13 @@ article {
   -o-border-radius: var(--large-radius);
   gap: 0.8rem;
 }
-article .container .articles h3{
-font-weight: 200;
-font-size: 2rem;
+article .container .articles h3 {
+  font-weight: 200;
+  font-size: 2rem;
 }
-article .container .section-title h2 sup{
-font-size: 1.2rem;
-font-weight: 100;
+article .container .section-title h2 sup {
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 /* End Articles */
@@ -900,6 +902,7 @@ font-weight: 100;
   height: 100%;
 }
 .contact .container .contact-icon {
+  color: var(--m4);
   max-width: 40px;
   transition: var(--tran-3);
   -webkit-transition: var(--tran-3);
