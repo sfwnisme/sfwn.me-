@@ -198,7 +198,9 @@ body {
 /*--------End @medias----------*/
 
 /* Start Components */
-
+svg {
+  stroke-width: 0.7px;
+}
 .up {
   color: var(--m3);
   position: fixed;
@@ -220,10 +222,20 @@ body {
   -o-transition: var(--tran-4);
   padding: 0.1rem;
 }
-.up img {
-  width: 3rem;
+.up svg {
+  fill: var(--m3);
+  border: 0.5px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
-
+/* svg {
+  stroke-width: 0.5px !important;
+} */
 .section-title {
   padding-bottom: var(--title-padding);
   position: relative;
@@ -263,7 +275,6 @@ body {
 }
 .btn-box a {
   background-color: #fab760;
-  color: var(--m1);
   padding: 0.8rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
@@ -287,6 +298,11 @@ body {
   -moz-transform: translatey(-4px);
   -ms-transform: translatey(-4px);
   -o-transform: translatey(-4px);
+}
+.btn-box a svg {
+  color: var(--m1);
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .btn-box:hover a {
   transform: translatey(0px);
@@ -427,7 +443,6 @@ nav .container {
 }
 
 nav .container .nav-icon {
-  color: var(--m4);
   position: absolute;
   top: -5rem;
   left: 50%;
@@ -439,7 +454,10 @@ nav .container .nav-icon {
   -o-transform: translate(-50%, -20px);
 }
 nav .container .nav-icon svg {
-
+  color: var(--m4);
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.5px;
 }
 nav .container ul {
   inline-size: 100%;
@@ -543,43 +561,37 @@ main .container .hero-box {
   z-index: 1;
   padding-inline: 2rem;
 }
-main .container .hero-box::before {
+main .container .hero-box svg {
+  width: 30px;
+  height: 30px;
+  opacity: 0.1;
+  color: var(--h1);
+  animation: 2s infinite;
+  -webkit-animation: 2s infinite;
+}
+main .container .hero-box svg:first-of-type {
   content: "";
   position: absolute;
-  top: -3rem;
-  left: -0rem;
-  background-image: url("../imgs/icons/qouat.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 2.5rem;
-  height: 2.5rem;
-  opacity: 0.5;
+  top: -2rem;
+  left: 0rem;
   transform: rotate(200deg);
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
   -ms-transform: rotate(200deg);
   -o-transform: rotate(200deg);
-  animation: 2s shake-top infinite;
-  -webkit-animation: 2s shake-top infinite;
+  animation-name: shake-top;
 }
-main .container .hero-box::after {
+main .container .hero-box svg:last-of-type {
   content: "";
   position: absolute;
   bottom: -2rem;
-  right: -0rem;
-  background-image: url("../imgs/icons/qouat.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 2.5rem;
-  height: 2.5rem;
-  opacity: 0.5;
+  right: 0rem;
   transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   -o-transform: rotate(20deg);
-  animation: 2s shake-bottom infinite;
-  -webkit-animation: 2s shake-bottom infinite;
+  animation-name: shake-bottom;
 }
 main .container .hero-box h1 {
   color: var(--h1);
@@ -611,7 +623,7 @@ section .container .skills {
   position: relative;
 }
 section .container .skills::before {
-  /* content: ""; */
+  content: "";
   position: absolute;
   top: 50%;
   left: -1rem;
@@ -624,17 +636,6 @@ section .container .skills::before {
   inline-size: 0.1rem;
   block-size: calc(100% - 6rem);
 }
-section .container .skills .line > img {
-  position: absolute;
-  top: 50%;
-  left: -1rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-}
-
 .skill {
   padding: 1.2rem;
   border-radius: var(--large-radius);
@@ -645,7 +646,7 @@ section .container .skills .line > img {
   position: relative;
 }
 .skill::before {
-  /* content: ""; */
+  content: "";
   position: absolute;
   top: 50%;
   left: -1.5rem;
@@ -663,11 +664,7 @@ section .container .skills .line > img {
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
 }
-.skill > img {
-  position: absolute;
-  left: -17px;
-  width: 15px;
-}
+
 .skill h4 {
   color: var(--h1);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
@@ -680,13 +677,10 @@ section .container .skills .line > img {
   align-items: center;
   gap: 0.8rem;
 }
-.skill .progress span {
-  color: var(--m4);
-  font-size: 4rem;
-  font-weight: 100;
-}
 .skill .progress svg {
   color: var(--m4);
+  width: 30px;
+  height: 30px;
 }
 .progressing {
   animation: rotate 5s linear infinite;
@@ -847,7 +841,7 @@ article {
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
   padding: 1rem;
-  box-shadow: -40px 40px 50px inset var(--n-bg-light);
+  /* box-shadow: -40px 40px 50px inset var(--n-bg-light); */
 }
 
 .stdy .stdy-brief-content {
@@ -902,7 +896,6 @@ article .container .section-title h2 sup {
   height: 100%;
 }
 .contact .container .contact-icon {
-  color: var(--m4);
   max-width: 40px;
   transition: var(--tran-3);
   -webkit-transition: var(--tran-3);
@@ -910,19 +903,21 @@ article .container .section-title h2 sup {
   -ms-transition: var(--tran-3);
   -o-transition: var(--tran-3);
 }
-.contact .container .contact-icon:hover {
-  transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-}
-.contact .container .contact-icon img {
-  max-width: 100%;
+.contact .container .contact-icon svg {
+  color: var(--m4);
+  stroke-width: 0.5px !important;
+  width: 40px;
+  height: 40px;
   animation: shake 1.5s linear infinite;
   -webkit-animation: shake 1.5s linear infinite;
 }
-
+.contact .container .contact-icon:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
 /* End Contact */
 
 /* Start Footer */
@@ -1000,7 +995,6 @@ footer a {
     -moz-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
     -o-transform: rotate(-1deg);
-    color: rgb(208, 208, 255);
   }
 }
 

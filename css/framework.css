@@ -1,18 +1,17 @@
 /* --Start Colors--------------- */
 
 .bg-ltest {
-  /* background-color: var(--n-bg-light); */
+  background-color: #18243958;
 
   /* background-color: var(--ltest1); */
 }
 .--lter1 {
   /* background-color: var(--topic-link-color); */
-  
-		background-color: var(--lter1);
-	
+
+  background-color: var(--lter1);
 }
 .box-bg-grade {
-	/* background-color:var(--n-bg-light); */
+  /* background-color:var(--n-bg-light); */
 }
 .--m4 {
   background-color: var(--m4);
