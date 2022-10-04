@@ -908,8 +908,6 @@ article .container .section-title h2 sup {
   stroke-width: 0.5px !important;
   width: 40px;
   height: 40px;
-  animation: shake 1.5s linear infinite;
-  -webkit-animation: shake 1.5s linear infinite;
 }
 .contact .container .contact-icon:hover {
   transform: scale(1.1);
@@ -973,29 +971,4 @@ footer a {
     -o-transform: rotate(10deg);
   }
 }
-
-@keyframes shake {
-  0% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
-  }
-  50% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
-  }
-}
-
 /* End Keyframes */
