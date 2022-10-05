@@ -197,6 +197,9 @@ body {
 /*--------End @medias----------*/
 
 /* Start Components */
+a + svg {
+  cursor: pointer;
+}
 svg {
   stroke-width: 0.7px;
 }
@@ -205,7 +208,6 @@ svg {
   position: fixed;
   bottom: 1.6rem;
   right: 1.6rem;
-  cursor: pointer;
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
