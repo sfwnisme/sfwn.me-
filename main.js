@@ -22,28 +22,6 @@ navIcon.addEventListener("click", function (e) {
   };
 });
 
-/* START setTimeout For Attrct Client Of Navigation Bar */
-/* 
-setTimeout(
-  (nav.onloadeddata = function () {
-    nav.classList.add("nav-active");
-    navIcon.classList.add("displayInitial");
-    overly.classList.add("overly-active");
-
-    document.onclick = function (e) {
-      if (e.target.id !== "nav" && e.target.id !== "nav-icon") {
-        nav.classList.remove("nav-active");
-        navIcon.classList.remove("displayInitial");
-        overly.classList.remove("overly-active");
-      }
-      e.stopPropagation();
-    };
-  }),
-  1000
-);
- */
-/* END setTimeout For Attrct Client Of Navigation Bar */
-
 /* ----------up Scroll */
 
 let up = document.getElementById("up");
@@ -68,6 +46,7 @@ window.onscroll = (e) => {
 //
 //
 /* -----------Add The Name Of The Project To The Container Title */
+/* 
 let work = document.querySelectorAll(".works .work");
 let workImage = document.querySelectorAll(".works .work img");
 let workImageName = document.querySelectorAll(".works .work a");
@@ -77,7 +56,8 @@ for (let i = 0; i < work.length; i++) {
   work[i].title = work[i].innerText;
   workImage[i].alt = workImageName[i].innerText;
   workImageName[i].title = workImageName[i].innerText;
-}
+} 
+*/
 
 /* --footer------------------- */
 
@@ -91,7 +71,7 @@ contactContainer.className =
 // contact.innerText = "hlkjlkjsalkdfjlknmlkmoaksdnfonlknmlkjmasdfi";
 
 //icons
-let fbSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon">
+let fbSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="visit facebook">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-brand-facebook"
@@ -110,7 +90,7 @@ let fbSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon">
   ></path>
 </svg>
 </a>`;
-let emailSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon">
+let emailSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="contact email">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-at"
@@ -130,7 +110,7 @@ let emailSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon"
   ></path>
 </svg>
 </a>`;
-let gitHubSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon">
+let gitHubSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="visit github">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-brand-github"
@@ -149,7 +129,7 @@ let gitHubSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon
   ></path>
 </svg>
 </a>`;
-let instaSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon">
+let instaSvg = `<a href="https://www.facebook.com/sfwnisme" aria-label="visit instagram">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-brand-instagram"
@@ -168,7 +148,7 @@ let instaSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon"
   <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
 </svg>
 </a>`;
-let codepenSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-icon">
+let codepenSvg = `<a href="https://www.facebook.com/sfwnisme" aria-label="visit codepen">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-brand-codepen"
@@ -193,8 +173,7 @@ let codepenSvg = `<a href="https://www.facebook.com/sfwnisme" class="contact-ico
 let contactArr = [fbSvg, emailSvg, gitHubSvg, instaSvg, codepenSvg];
 
 for (let i = 0; i < contactArr.length; i++) {
-  let contactLink = document.createElement("a");
-  contactLink.classList.add("contact-icon");
+  let contactLink = document.createElement("div");
   contactLink.innerHTML = contactArr[i];
   contactContainer.append(contactLink);
 }
@@ -210,7 +189,7 @@ footer.className = "bg-ltest";
 let footerContainer = document.createElement("div");
 footerContainer.className = "container";
 
-let footerContent = document.createElement("h6");
+let footerContent = document.createElement("p");
 footerContent.className = "flex j-c-c align-items-c gap-05-rem";
 footerContent.innerText = "Elaborated By";
 
