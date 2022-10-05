@@ -26,6 +26,8 @@ navIcon.addEventListener("click", function (e) {
 
 let up = document.getElementById("up");
 
+let logo = document.querySelector("[data-value=logo]");
+
 up.onclick = () => {
   scroll({
     top: 0,
@@ -35,6 +37,13 @@ up.onclick = () => {
 };
 
 window.onscroll = (e) => {
+  //logo
+  if (scrollY > 200) {
+    logo.style.cssText = "opacity: 0; top: -20rem ;";
+  } else {
+    logo.style.cssText = "opacity: 1;";
+  }
+  //up
   if (scrollY > 700) {
     up.style.cssText = "opacity: 1; z-index: 1;";
   } else {
@@ -43,17 +52,6 @@ window.onscroll = (e) => {
 };
 
 /* ----------logo Scroll */
-
-let logo = document.querySelector("[data-value=logo]");
-console.log(logo);
-
-window.onscroll = (e) => {
-  if (scrollY > 200) {
-    logo.style.cssText = "opacity: 0; top: -20rem ;";
-  } else {
-    logo.style.cssText = "opacity: 1;";
-  }
-};
 
 //
 //
