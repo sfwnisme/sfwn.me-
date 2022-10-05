@@ -436,21 +436,32 @@ main {
   block-size: 100vh;
   position: relative;
 }
-main > img {
-  display: inline-block;
+/* main > img {
   position: fixed;
-  max-inline-size: calc(50vh - 0rem);
+  max-inline-size: calc(40vh - 0rem);
   height: 100%;
   top: 50%;
   left: 50%;
-  opacity: 0.5;
+  opacity: 0.1;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  opacity: 0.5;
   z-index: -1;
+} */
+main > img {
+  position: fixed;
+  width: 10rem;
+  height: 10rem;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  -webkit-transition: var(--tran-2);
+  -moz-transition: var(--tran-2);
+  -ms-transition: var(--tran-2);
+  -o-transition: var(--tran-2);
+  transition: var(--tran-2);
 }
 main .container {
   max-inline-size: 80rem;

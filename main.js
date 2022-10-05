@@ -42,6 +42,19 @@ window.onscroll = (e) => {
   }
 };
 
+/* ----------logo Scroll */
+
+let logo = document.querySelector("[data-value=logo]");
+console.log(logo);
+
+window.onscroll = (e) => {
+  if (scrollY > 200) {
+    logo.style.cssText = "opacity: 0; top: -20rem ;";
+  } else {
+    logo.style.cssText = "opacity: 1;";
+  }
+};
+
 //
 //
 //
