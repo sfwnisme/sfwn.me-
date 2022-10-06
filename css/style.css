@@ -676,13 +676,13 @@ footer {
 }
 footer p {
   color: var(--h1);
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 footer a {
   color: var(--m3);
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 
 /* End Footer */

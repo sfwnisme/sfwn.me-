@@ -202,11 +202,11 @@ footerContainer.className = "container";
 
 let footerContent = document.createElement("p");
 footerContent.className = "flex j-c-c align-items-c gap-05-rem";
-footerContent.innerText = "Elaborated By";
+footerContent.innerHTML = "&copy;2022 Elaborated By";
 
 let footerLink = document.createElement("a");
 footerLink.href = "https://github.com/sfwnisme";
-footerLink.innerText = "Sfwn";
+footerLink.innerHTML = "SFWN";
 footerContent.append(footerLink);
 
 let footerBox = document.createElement("div");
