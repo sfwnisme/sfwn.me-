@@ -70,10 +70,10 @@ for (let i = 0; i < work.length; i++) {
 } 
 */
 
-/* --footer------------------- */
+/* --Contact------------------- */
 
 let contact = document.createElement("div");
-contact.className = "contact pd-b-6 flex j-c-c align-items-c";
+contact.className = "contact pd-b-2 flex j-c-c align-items-c";
 contact.id = "contact";
 
 let contactContainer = document.createElement("div");
