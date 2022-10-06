@@ -610,7 +610,7 @@ section .container .skills::before {
 
 .stdy > img {
   width: 9rem;
-  height: 100%;
+  height: 9rem;
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
