@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 1rem;
+  font-size: 10px;
 }
 * {
   margin: 0;
@@ -19,7 +19,7 @@ html {
 
 ::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0);
-  width: 1rem;
+  width: 10px;
   display: none;
 }
 ::-webkit-scrollbar-thumb {
@@ -178,14 +178,14 @@ a + svg,
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 30px;
 }
 .section-title {
   padding-bottom: var(--title-padding);
 }
 .section-title h2 {
-  color: var(--m4);
+  color: var(--font);
   font-size: clamp(
     var(--section-title-phone),
     4vw,
@@ -222,11 +222,11 @@ a + svg,
   align-items: center;
   width: 100%;
   height: 100%;
-  -webkit-transform: translatey(-0.4rem);
-  -moz-transform: translatey(-0.4rem);
-  -ms-transform: translatey(-0.4rem);
-  -o-transform: translatey(-0.4rem);
-  transform: translatey(-0.4rem);
+  -webkit-transform: translatey(-4px);
+  -moz-transform: translatey(-4px);
+  -ms-transform: translatey(-4px);
+  -o-transform: translatey(-4px);
+  transform: translatey(-4px);
 }
 .btn-box a svg {
   width: 2.5rem;
@@ -316,15 +316,15 @@ nav .container .nav-icon {
   top: -5rem;
   left: 50%;
   cursor: pointer;
-  -webkit-transform: translate(-50%, -2rem);
-  -moz-transform: translate(-50%, -2rem);
-  -ms-transform: translate(-50%, -2rem);
-  -o-transform: translate(-50%, -2rem);
-  transform: translate(-50%, -2rem);
+  -webkit-transform: translate(-50%, -20px);
+  -moz-transform: translate(-50%, -20px);
+  -ms-transform: translate(-50%, -20px);
+  -o-transform: translate(-50%, -20px);
+  transform: translate(-50%, -20px);
 }
 nav .container .nav-icon svg {
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   stroke-width: 1.5px;
 }
 nav .container ul {
@@ -381,8 +381,8 @@ main > img {
   position: fixed;
   width: 10rem;
   height: 10rem;
-  top: 2rem;
-  left: 2rem;
+  top: 20px;
+  left: 20px;
   z-index: -1;
   -webkit-transition: var(--tran-2);
   -moz-transition: var(--tran-2);
@@ -413,6 +413,7 @@ main .container .hero-box h1 {
   color: var(--font);
   font-size: clamp(var(--hero-title-phone), 6vw, var(--hero-title-laptop));
   margin-top: 1rem;
+  text-shadow: 3px 3px 0 var(--ltest3);
 }
 main .container .hero-box p {
   color: var(--h1);
@@ -596,8 +597,8 @@ section .container .skills::before {
   gap: 0.8rem;
 }
 .skill .progress svg {
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 30px;
 }
 .progressing {
   -webkit-animation: rotate 5s linear infinite;
@@ -647,12 +648,12 @@ section .container .skills::before {
   height: 100%;
 }
 .contact .container a {
-  max-width: 4rem;
+  max-width: 40px;
 }
 .contact .container a svg {
   stroke-width: 0.5px !important;
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   -webkit-transition: var(--tran-3);
   -moz-transition: var(--tran-3);
   -ms-transition: var(--tran-3);
