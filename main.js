@@ -181,7 +181,7 @@ let codepenSvg = `<a href="https://www.facebook.com/sfwnisme" aria-label="visit 
   <line x1="12" y1="15" x2="12" y2="21"></line>
 </svg>
 </a>`;
-let contactArr = [fbSvg, emailSvg, gitHubSvg, instaSvg, codepenSvg];
+let contactArr = [fbSvg, instaSvg, gitHubSvg, codepenSvg, emailSvg];
 
 for (let i = 0; i < contactArr.length; i++) {
   let contactLink = document.createElement("div");

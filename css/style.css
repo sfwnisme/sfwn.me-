@@ -39,7 +39,7 @@ h5,
 h6,
 p {
   margin: 0;
-  color: var(--font) !important;
+  /* color: var(--font) !important; */
 }
 li {
   list-style: none;
@@ -185,7 +185,7 @@ a + svg,
   padding-bottom: var(--title-padding);
 }
 .section-title h2 {
-  color: var(--h1);
+  color: var(--m4);
   font-size: clamp(
     var(--section-title-phone),
     4vw,
@@ -410,13 +410,12 @@ main .container .hero-box > span {
   font-weight: 200;
 }
 main .container .hero-box h1 {
-  color: var(--h1);
+  color: var(--font);
   font-size: clamp(var(--hero-title-phone), 6vw, var(--hero-title-laptop));
   margin-top: 1rem;
-  text-shadow: -0.2rem 0.2rem 0.1rem var(--lter1);
 }
 main .container .hero-box p {
-  color: var(--h1) !important;
+  color: var(--h1);
   font-size: clamp(var(--hero-text-phone), 2vw, var(--hero-text-laptop));
   margin-top: 1rem;
   line-height: 1.5;
@@ -585,7 +584,7 @@ section .container .skills::before {
 }
 
 .skill p {
-  color: var(--h1);
+  color: var(--font);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 500;
   flex: 1;
@@ -630,7 +629,7 @@ section .container .skills::before {
   flex: 1;
 }
 .stdy .stdy-brief-content p {
-  color: var(--h1);
+  color: var(--font);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 500;
 }
@@ -675,7 +674,7 @@ footer {
   padding-block: 1rem;
 }
 footer p {
-  color: var(--h1);
+  color: var(--font);
   font-size: 1.4rem;
   font-weight: 200;
 }
