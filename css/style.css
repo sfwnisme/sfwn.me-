@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
+  font-size: 1rem;
 }
 * {
   margin: 0;
@@ -19,7 +19,7 @@ html {
 
 ::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0);
-  width: 10px;
+  width: 1rem;
   display: none;
 }
 ::-webkit-scrollbar-thumb {
@@ -178,8 +178,8 @@ a + svg,
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 }
 .section-title {
   padding-bottom: var(--title-padding);
@@ -222,11 +222,11 @@ a + svg,
   align-items: center;
   width: 100%;
   height: 100%;
-  -webkit-transform: translatey(-4px);
-  -moz-transform: translatey(-4px);
-  -ms-transform: translatey(-4px);
-  -o-transform: translatey(-4px);
-  transform: translatey(-4px);
+  -webkit-transform: translatey(-0.4rem);
+  -moz-transform: translatey(-0.4rem);
+  -ms-transform: translatey(-0.4rem);
+  -o-transform: translatey(-0.4rem);
+  transform: translatey(-0.4rem);
 }
 .btn-box a svg {
   width: 2.5rem;
@@ -316,15 +316,15 @@ nav .container .nav-icon {
   top: -5rem;
   left: 50%;
   cursor: pointer;
-  -webkit-transform: translate(-50%, -20px);
-  -moz-transform: translate(-50%, -20px);
-  -ms-transform: translate(-50%, -20px);
-  -o-transform: translate(-50%, -20px);
-  transform: translate(-50%, -20px);
+  -webkit-transform: translate(-50%, -2rem);
+  -moz-transform: translate(-50%, -2rem);
+  -ms-transform: translate(-50%, -2rem);
+  -o-transform: translate(-50%, -2rem);
+  transform: translate(-50%, -2rem);
 }
 nav .container .nav-icon svg {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   stroke-width: 1.5px;
 }
 nav .container ul {
@@ -381,8 +381,8 @@ main > img {
   position: fixed;
   width: 10rem;
   height: 10rem;
-  top: 20px;
-  left: 20px;
+  top: 2rem;
+  left: 2rem;
   z-index: -1;
   -webkit-transition: var(--tran-2);
   -moz-transition: var(--tran-2);
@@ -596,8 +596,8 @@ section .container .skills::before {
   gap: 0.8rem;
 }
 .skill .progress svg {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 }
 .progressing {
   -webkit-animation: rotate 5s linear infinite;
@@ -647,12 +647,12 @@ section .container .skills::before {
   height: 100%;
 }
 .contact .container a {
-  max-width: 40px;
+  max-width: 4rem;
 }
 .contact .container a svg {
   stroke-width: 0.5px !important;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   -webkit-transition: var(--tran-3);
   -moz-transition: var(--tran-3);
   -ms-transition: var(--tran-3);
