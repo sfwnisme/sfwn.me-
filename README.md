@@ -70,55 +70,6 @@ I Used Google Fonts Library By Downloaded The Font For Localy Using, But It Take
  font-weight: 100;
  src: url(Montserrat/static/Montserrat-Thin.ttf);
 }
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 200;
- src: url(Montserrat/static/Montserrat-ExtraLight.ttf);
-}
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 300;
- src: url(Montserrat/static/Montserrat-Light.ttf);
-}
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 400;
- src: url(Montserrat/static/Montserrat-Regular.ttf);
-}
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 500;
- src: url(Montserrat/static/Montserrat-Medium.ttf);
-}
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 600;
- src: url(Montserrat/static/Montserrat-SemiBold.ttf);
-}
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 700;
- src: url(Montserrat/static/Montserrat-Bold.ttf);
-}
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 800;
- src: url(Montserrat/static/Montserrat-ExtraBold.ttf);
-}
-@font-face {
- font-family: "Montserrat";
- font-style: normal;
- font-weight: 900;
- src: url(Montserrat/static/Montserrat-Black.ttf);
-}
-
 ```
 
 That Got Me Using Link Instead Of Local Fonts
@@ -134,5 +85,9 @@ That Got Me Using Link Instead Of Local Fonts
     />
 
 ```
+
+But even using link it raised the latnecy up to 900ms of loading time
+then tried the last chance => `@import url();`
+<u>finally</u> it dose great with no even 1ms latency
 
 ...Still **_Diggin_** For Bugs🤦‍♂️

@@ -6,9 +6,11 @@
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
       }
     ],
-    "highest-available-document-mode": "off"
+    "highest-available-document-mode": "off",
+    "button-type": "off"
   }
 }

@@ -192,6 +192,7 @@ a + svg,
     var(--section-title-laptop)
   );
 }
+
 .btn-box {
   background-color: var(--ltest3);
   -webkit-border-radius: var(--small-radius);
@@ -914,3 +915,84 @@ footer a {
 /* --End Structure--------------- */
 
 /* ---- End Framework */
+
+/* slide */
+.services {
+  height: 60vh;
+}
+.services .container {
+  max-height: 100%;
+}
+.services .container .service {
+  max-width: 70rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .container .service .content {
+  /* background-color: var(--ltest1); */
+  max-width: 100%;
+  min-height: 20rem;
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
+  text-align: left;
+  position: relative;
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  border-radius: var(--large-radius);
+}
+.services .container .service .content p:first-of-type {
+  margin-bottom: 1.5rem;
+}
+.services .container .service .content p:last-of-type {
+  color: var(--h1);
+  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
+  line-height: 1.5;
+}
+.services .container .service .content .button-container {
+}
+.services .container .service .content button {
+  background-color: transparent;
+  /* height: 100%; */
+  border: 1px solid var(--m3);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+  border-radius: var(--small-radius);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.services .container .service .content .button-container svg {
+}
+.services .container .service .content .button-container .prev-btn {
+  left: -3rem;
+}
+.services .container .service .content .button-container .next-btn {
+  right: -3rem;
+}
+
+/* --------------------------- */
+.box-text-content {
+}
+.box-text-content p:first-of-type {
+  color: var(--font);
+  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  font-weight: 600;
+}
