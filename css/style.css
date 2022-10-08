@@ -172,7 +172,7 @@ a + svg,
   padding: 0.1rem;
 }
 .up svg {
-  border: 0.7px solid;
+  border: 1px solid;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -192,7 +192,13 @@ a + svg,
     var(--section-title-laptop)
   );
 }
-
+.box-text-content {
+}
+.box-text-content p:first-of-type {
+  color: var(--font);
+  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  font-weight: 500;
+}
 .btn-box {
   background-color: var(--ltest3);
   -webkit-border-radius: var(--small-radius);
@@ -586,9 +592,6 @@ section .container .skills::before {
 }
 
 .skill p {
-  color: var(--font);
-  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
-  font-weight: 500;
   flex: 1;
 }
 .skill .progress {
@@ -626,16 +629,9 @@ section .container .skills::before {
   border-radius: var(--large-radius);
   padding: 1rem;
 }
-
 .stdy .stdy-brief-content {
   flex: 1;
 }
-.stdy .stdy-brief-content p {
-  color: var(--font);
-  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
-  font-weight: 500;
-}
-
 /* End Study Sources */
 
 /* Start Contact */
@@ -918,7 +914,7 @@ footer a {
 
 /* slide */
 .services {
-  min-height: 70vh;
+  min-height: 40vh;
 }
 .services .container {
   height: 100%;
@@ -990,10 +986,3 @@ footer a {
 }
 
 /* --------------------------- */
-.box-text-content {
-}
-.box-text-content p:first-of-type {
-  color: var(--font);
-  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
-  font-weight: 600;
-}
