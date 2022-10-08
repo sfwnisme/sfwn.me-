@@ -258,7 +258,6 @@ let currentItem = 0;
 window.addEventListener("DOMContentLoaded", function () {
   const item = reviews[currentItem];
   ability.textContent = item.name;
-
   info.textContent = item.text;
 });
 

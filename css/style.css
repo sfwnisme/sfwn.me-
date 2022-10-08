@@ -146,6 +146,7 @@ body {
 
 /* Start Components */
 a + svg,
+button,
 .up {
   cursor: pointer;
 }
@@ -194,10 +195,16 @@ a + svg,
 }
 .box-text-content {
 }
-.box-text-content p:first-of-type {
+.box-text-content p.box-name-content {
   color: var(--font);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 500;
+}
+.box-text-content p.box-info-content {
+  color: var(--h1);
+  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
+  line-height: 1.5;
+  font-weight: 200;
 }
 .btn-box {
   background-color: var(--ltest3);
@@ -427,7 +434,7 @@ main .container .hero-box p {
   font-size: clamp(var(--hero-text-phone), 2vw, var(--hero-text-laptop));
   margin-top: 1rem;
   line-height: 1.5;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* End Main Landing */
@@ -534,6 +541,83 @@ main .container .hero-box p {
 
 /* End Work Space */
 
+/* Start Slide */
+
+.services {
+  min-height: 40vh;
+}
+.services .container {
+  height: 100%;
+}
+.services .container .service {
+  max-width: 70rem;
+  max-height: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .container .service .content {
+  background-color: var(--ltest3);
+  max-width: 100%;
+  min-height: 21rem;
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
+  text-align: left;
+  position: relative;
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  border-radius: var(--large-radius);
+}
+.services .container .service .content p:first-of-type {
+  margin-bottom: 1.5rem;
+}
+.services .container .service .content button {
+  background-color: transparent;
+  height: 4rem;
+  border: 1px solid var(--m3);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+  border-radius: var(--small-radius);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: var(--tran-3) background-color;
+  -moz-transition: var(--tran-3) background-color;
+  -ms-transition: var(--tran-3) background-color;
+  -o-transition: var(--tran-3) background-color;
+  transition: var(--tran-3) background-color;
+}
+.services .container .service .content button:hover {
+  background-color: var(--ltest3);
+}
+.services .container .service .content button:active {
+  background-color: var(--lter3);
+}
+.services .container .service .content .button-container .prev-btn {
+  left: -3.5rem;
+}
+.services .container .service .content .button-container .next-btn {
+  right: -3.5rem;
+}
+
+/* End Slide */
+
 /* Start Skills */
 
 section {
@@ -562,7 +646,7 @@ section .container .skills::before {
   inline-size: 0.1rem;
   block-size: calc(100% - 6rem);
 }
-.skill {
+section .container .skills .skill {
   padding: 1.2rem;
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
@@ -571,7 +655,7 @@ section .container .skills::before {
   border-radius: var(--large-radius);
   position: relative;
 }
-.skill::before {
+section .container .skills .skill::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -591,20 +675,20 @@ section .container .skills::before {
   border-radius: var(--small-radius);
 }
 
-.skill p {
+section .container .skills .skill p {
   flex: 1;
 }
-.skill .progress {
+section .container .skills .skill .progress {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
 }
-.skill .progress svg {
+section .container .skills .skill .progress svg {
   width: 30px;
   height: 30px;
 }
-.progressing {
+section .container .skills .skill .progressing {
   -webkit-animation: rotate 5s linear infinite;
   animation: rotate 5s linear infinite;
 }
@@ -911,78 +995,5 @@ footer a {
 /* --End Structure--------------- */
 
 /* ---- End Framework */
-
-/* slide */
-.services {
-  min-height: 40vh;
-}
-.services .container {
-  height: 100%;
-}
-.services .container .service {
-  max-width: 70rem;
-  max-height: 100%;
-  margin-inline: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.services .container .service .content {
-  background-color: var(--ltest3);
-  max-width: 100%;
-  min-height: 21rem;
-  padding: 2rem;
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: initial;
-  justify-content: initial;
-  text-align: left;
-  position: relative;
-  -webkit-border-radius: var(--large-radius);
-  -moz-border-radius: var(--large-radius);
-  -ms-border-radius: var(--large-radius);
-  -o-border-radius: var(--large-radius);
-  border-radius: var(--large-radius);
-}
-.services .container .service .content p:first-of-type {
-  margin-bottom: 1.5rem;
-}
-.services .container .service .content p:last-of-type {
-  color: var(--h1);
-  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
-  line-height: 1.5;
-}
-.services .container .service .content .button-container {
-}
-.services .container .service .content button {
-  background-color: transparent;
-  height: 4rem;
-  border: 1px solid var(--m3);
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-  border-radius: var(--small-radius);
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.services .container .service .content .button-container svg {
-}
-.services .container .service .content .button-container .prev-btn {
-  left: -3.5rem;
-}
-.services .container .service .content .button-container .next-btn {
-  right: -3.5rem;
-}
 
 /* --------------------------- */
