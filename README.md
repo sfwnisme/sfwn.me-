@@ -59,7 +59,7 @@ And I Gathered Them In Three Files `style.css` And `frameworks.css`
 
 Even Thu Fontawesome `all.min.css` File Still Eating 1350ms Of Loading Performance
 
-### @font-face Property
+### Fonts
 
 I Used Google Fonts Library By Downloaded The Font For Localy Using, But It Take More Than 900ms Of Loading Performance
 
@@ -97,12 +97,6 @@ then tried the last chance => `@import url();`
 
 ### Performance
 
-- **`<img/>`**
-  - `alt="image name"` Adding `alt` to `<img>` it supports the client
-  - Should be on `img.webp` format
-  - Decrease the image size to the lowest as posible as you can
-  - Image aspect ratio should be the same pixel you add on css
-    - Ex. If you add an image it width and height `100px` then it should be `100px` by default
 - **External Files => `<link/>`**
 
   - While we prefer to separate files to many branches`(like css files => style.css, font.css, colors.css, framework.css)` on google LIGHTHOUSE side it brach files eats a large part of the performance and increase the delay
@@ -110,6 +104,25 @@ then tried the last chance => `@import url();`
   - Large files as `css` make latency play around your project, that we should decrease css lines as possible as we can.
   -
 
+### Accessibility
+
+- **`<img/>`**
+
+  - `alt="image name"` Adding `alt` to `<img>` it supports the client if the image not working the `alt` appears instead of the image
+  - Should be on `img.webp` format
+  - Decrease the image size to the lowest as posible as you can
+  - Image aspect ratio should be the same pixel you add on css
+    - Ex. If you add an image it width and height `100px` then it should be `100px` by default
+
 - **`<a></a>`**
 
+  - `aria-label="Link discription"` attribute defines a string value that labels an interactive element
+    - Description => Sometimes the default accessible name of an element is missing, or does not accurately describe its contents, and there is no content visible in the DOM that can be associated with the object to give it meaning. A common example is a button containing an SVG or icon font (which you shouldn't be using) without any text.
+      In cases where an interactive element has no accessible name, or an accessible name that isn't accurate, and there is no content visible in the DOM that can be referenced via the aria-labelledby attribute, the `aria-label` attribute can be used to define a string that labels the interactive element on which it is set. This provides the element with its accessible name.
+      [Read more](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+
 - **`<button>`**
+  - `aria-label="Link discription"` attribute defines a string value that labels an interactive element
+    - Description => Sometimes the default accessible name of an element is missing, or does not accurately describe its contents, and there is no content visible in the DOM that can be associated with the object to give it meaning. A common example is a button containing an SVG or icon font (which you shouldn't be using) without any text.
+      In cases where an interactive element has no accessible name, or an accessible name that isn't accurate, and there is no content visible in the DOM that can be referenced via the aria-labelledby attribute, the `aria-label` attribute can be used to define a string that labels the interactive element on which it is set. This provides the element with its accessible name.
+      [Read more](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
