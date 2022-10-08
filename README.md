@@ -31,7 +31,8 @@ document.onclick = function (e) {
 
 ## Issues
 
-**External Css Files**
+### External Css Files
+
 I Used More Than 3 Css Files That Effected Badly On Lighthous Rates
 
 ```Html
@@ -58,7 +59,7 @@ And I Gathered Them In Three Files `style.css` And `frameworks.css`
 
 Even Thu Fontawesome `all.min.css` File Still Eating 1350ms Of Loading Performance
 
-**@font-face Property**
+### @font-face Property
 
 I Used Google Fonts Library By Downloaded The Font For Localy Using, But It Take More Than 900ms Of Loading Performance
 
@@ -91,3 +92,18 @@ then tried the last chance => `@import url();`
 <u>finally</u> it dose great with no even 1ms latency
 
 ...Still **_Diggin_** For Bugs🤦‍♂️
+
+## Lighthouse
+
+### Performance
+
+- **imgs**
+  - Should be on `img.webp` format
+  - Decrease the image size to the smallest as posible as you can
+  - Image aspect ratio should be the same pixel you add on css
+    - Ex. If you add an image it width and height `100px` then it should be `100px` by default
+- **External Files**
+  - While we prefer to separate files to many branches`(like css files => style.css, font.css, colors.css, framework.css)` on google LIGHTHOUSE side it brach files eats a large part of the performance and increase the latency
+    sometimes it toke more than `10seconds` to load a single page, while the save zoon of the best performace should be less than `2seconds`
+  - Large files as `css` make latency play around your project, that we should decrease css lines as possible as we can.
+  - 
