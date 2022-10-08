@@ -91,19 +91,25 @@ But even using link it raised the latnecy up to 900ms of loading time
 then tried the last chance => `@import url();`
 <u>finally</u> it dose great with no even 1ms latency
 
-...Still **_Diggin_** For Bugs🤦‍♂️
+... Keep **_Diggin_** For Bugs🤦‍♂️
 
 ## Lighthouse
 
 ### Performance
 
-- **imgs**
+- **`<img/>`**
+  - `alt="image name"` Adding `alt` to `<img>` it supports the client
   - Should be on `img.webp` format
-  - Decrease the image size to the smallest as posible as you can
+  - Decrease the image size to the lowest as posible as you can
   - Image aspect ratio should be the same pixel you add on css
     - Ex. If you add an image it width and height `100px` then it should be `100px` by default
-- **External Files**
-  - While we prefer to separate files to many branches`(like css files => style.css, font.css, colors.css, framework.css)` on google LIGHTHOUSE side it brach files eats a large part of the performance and increase the latency
-    sometimes it toke more than `10seconds` to load a single page, while the save zoon of the best performace should be less than `2seconds`
+- **External Files => `<link/>`**
+
+  - While we prefer to separate files to many branches`(like css files => style.css, font.css, colors.css, framework.css)` on google LIGHTHOUSE side it brach files eats a large part of the performance and increase the delay
+    sometimes tokes more than `10seconds` to load a single page, while the save zoon of the best performace should be less than `2seconds`
   - Large files as `css` make latency play around your project, that we should decrease css lines as possible as we can.
-  - 
+  -
+
+- **`<a></a>`**
+
+- **`<button>`**
