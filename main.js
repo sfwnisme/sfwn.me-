@@ -224,12 +224,12 @@ const reviews = [
   {
     id: 1,
     name: "Pure Code",
-    text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    text: "Tiny issue in web development effect sorely on your client's experience. Web project must be flexible with google guides for getting the most performance, that you we go for clean and pure codeing and avoide using libraries only on nesseccery situations",
   },
   {
     id: 2,
     name: "Fixing Css Bugs",
-    text: "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+    text: "No one can avoiding bugs due to it's flexibility of changing, Usually appears will the project working , Then it needs testing and updating the project periodic",
   },
   {
     id: 3,
@@ -239,7 +239,7 @@ const reviews = [
   {
     id: 4,
     name: "Flexible Designs",
-    text: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+    text: "Programming languages updates constantly and stop supporting some codes and methods for improve the development environment. So you should test and update your web project at yearly least. ",
   },
 ];
 // select items
@@ -285,4 +285,3 @@ prevBtn.addEventListener("click", function () {
 });
 
 /* Start Services Slide */
-

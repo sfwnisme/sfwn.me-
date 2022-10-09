@@ -582,7 +582,7 @@ main .container .hero-box p {
 .services .container .service {
   /* max-width: 70rem; */
   display: flex;
-  justify-content: center;
+  justify-content: initial;
   align-items: initial;
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
@@ -1013,7 +1013,7 @@ footer a {
   display: grid;
 }
 .grid-t-c {
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
 }
 @media (max-width: 767px) {
   .grid-t-c {
