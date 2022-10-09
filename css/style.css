@@ -544,31 +544,64 @@ main .container .hero-box p {
 /* Start Slide */
 
 .services {
-  min-height: 40vh;
+  /* min-height: 100vh; */
 }
 .services .container {
   height: 100%;
 }
+.services .container .service-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 3rem;
+}
+@media (max-width: 991px) {
+  .services .container .service-box {
+    flex-direction: column-reverse;
+  }
+}
+.services .container .service-box .service-image {
+  max-width: 50rem;
+  height: 100%;
+  /* flex: 1; */
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  border-radius: var(--large-radius);
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .services .container .service-box .service-image {
+    max-width: 100%;
+  }
+}
+.services .container .service-box .service-image img {
+  max-width: 100%;
+}
 .services .container .service {
-  max-width: 70rem;
-  max-height: 100%;
-  margin-inline: auto;
+  /* max-width: 70rem; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: initial;
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  border-radius: var(--large-radius);
+  position: relative;
+  flex: 1;
+  padding-right: 4rem;
 }
 .services .container .service .content {
-  background-color: var(--ltest3);
-  max-width: 100%;
-  min-height: 21rem;
-  padding: 2rem;
-  margin: 2rem;
+  /* background-color: var(--ltest1); */
+  min-height: 20rem;
+  /* padding: 2rem; */
   display: flex;
   flex-direction: column;
   align-items: initial;
   justify-content: initial;
   text-align: left;
-  position: relative;
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
@@ -578,22 +611,41 @@ main .container .hero-box p {
 .services .container .service .content p:first-of-type {
   margin-bottom: 1.5rem;
 }
+.services .container .service .content .button-container {
+  position: absolute;
+  left: 50%;
+  bottom: 0rem;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+}
+/* @media (max-width: 991px) {
+  .services .container .service .content .button-container {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+  }
+} */
 .services .container .service .content button {
   background-color: transparent;
-  height: 4rem;
   border: 1px solid var(--m3);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
   border-radius: var(--small-radius);
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  width: 5rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -603,6 +655,12 @@ main .container .hero-box p {
   -o-transition: var(--tran-3) background-color;
   transition: var(--tran-3) background-color;
 }
+/* @media (max-width: 991px) {
+  .services .container .service .content button {
+    width: 3rem;
+    height: 5rem;
+  }
+} */
 .services .container .service .content button:hover {
   background-color: var(--ltest3);
 }
@@ -610,10 +668,8 @@ main .container .hero-box p {
   background-color: var(--lter3);
 }
 .services .container .service .content .button-container .prev-btn {
-  left: -3.5rem;
 }
 .services .container .service .content .button-container .next-btn {
-  right: -3.5rem;
 }
 
 /* End Slide */
