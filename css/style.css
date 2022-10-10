@@ -117,10 +117,14 @@ span {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--n-bg);
+  /* overflow-y: hidden; */
+}
+body > div, body > section , body > main {
+  overflow: hidden;
 }
 .container {
   padding-inline: 2rem;
-  margin-inline: auto;
+  margin-inline: auto;  
 }
 
 /*--------Start @medias----------*/

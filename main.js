@@ -1,3 +1,5 @@
+AOS.init();
+
 let navIcon = document.getElementById("nav-icon");
 let nav = document.getElementById("nav");
 let iconSpanOne = document.querySelector("#span-one");
