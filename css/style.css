@@ -578,6 +578,11 @@ main .container .hero-box p {
 }
 .services .container .service-box .service-image img {
   max-width: 100%;
+  transform: scalex(-1);
+  -webkit-transform: scalex(-1);
+  -moz-transform: scalex(-1);
+  -ms-transform: scalex(-1);
+  -o-transform: scalex(-1);
 }
 .services .container .service {
   /* max-width: 70rem; */
