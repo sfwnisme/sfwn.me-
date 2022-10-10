@@ -28,6 +28,10 @@ let up = document.getElementById("up");
 
 let logo = document.querySelector("[data-value=logo]");
 
+window.onload = () => {
+  logo.style.cssText = "top: 20px;";
+};
+
 up.onclick = () => {
   scroll({
     top: 0,
@@ -41,7 +45,7 @@ window.onscroll = (e) => {
   if (scrollY > 200) {
     logo.style.cssText = "opacity: 0; top: -20rem ;";
   } else {
-    logo.style.cssText = "opacity: 1;";
+    logo.style.cssText = "opacity: 1; top: 20px";
   }
   //up
   if (scrollY > 700) {
