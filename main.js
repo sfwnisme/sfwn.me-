@@ -224,22 +224,22 @@ const reviews = [
   {
     id: 1,
     name: "Pure Code",
-    text: "Tiny issue in web development effect sorely on your client's experience. Web project must be flexible with google guides for getting the most performance, that you we go for clean and pure codeing and avoide using libraries only on nesseccery situations",
+    text: "A single tiny issue effects sorely on your client's experience. Web project must be flexible with google terms to break the best performance. We working on pure codeing and avoide using libraries only on nesseccery situations.",
   },
   {
     id: 2,
     name: "Fixing Css Bugs",
-    text: "No one can avoiding bugs due to it's flexibility of changing, Usually appears will the project working , Then it needs testing and updating the project periodic",
+    text: "No one can avoiding bugs due to it's flexibility of changing, Usually appears will the project working , Then it needs testing and updating the project periodic.",
   },
   {
     id: 3,
     name: "Commercial Landing Page",
-    text: "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+    text: "Some products or services you offers must has it's own landing page to make it well known for clients by having free space to presents it on whole single page, even though it show the client how much your service is trustable and worth to try.",
   },
   {
     id: 4,
-    name: "Flexible Designs",
-    text: "Programming languages updates constantly and stop supporting some codes and methods for improve the development environment. So you should test and update your web project at yearly least. ",
+    name: "Flexible Structure",
+    text: "Programming languages updates constantly and stop supporting some codes and methods for improve the development environment. So you should test and update your web project yearly at least.",
   },
 ];
 // select items
