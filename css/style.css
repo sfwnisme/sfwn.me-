@@ -398,11 +398,11 @@ main > img {
   top: -100px;
   left: 20px;
   z-index: -1;
-  -webkit-transition: var(--tran-1) ease-in;
-  -moz-transition: var(--tran-1) ease-in;
-  -ms-transition: var(--tran-1) ease-in;
-  -o-transition: var(--tran-1) ease-in;
-  transition: var(--tran-1) ease-in;
+  -webkit-transition: var(--tran-2) ease-in;
+  -moz-transition: var(--tran-2) ease-in;
+  -ms-transition: var(--tran-2) ease-in;
+  -o-transition: var(--tran-2) ease-in;
+  transition: var(--tran-2) ease-in;
 }
 main .container {
   max-inline-size: 80rem;
