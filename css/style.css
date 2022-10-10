@@ -573,7 +573,7 @@ main .container .hero-box p {
 }
 @media (max-width: 991px) {
   .services .container .service-box .service-image {
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 }
 .services .container .service-box .service-image img {
@@ -596,7 +596,6 @@ main .container .hero-box p {
 .services .container .service .content {
   /* background-color: var(--ltest1); */
   min-height: 20rem;
-  /* padding: 2rem; */
   display: flex;
   flex-direction: column;
   align-items: initial;
@@ -611,7 +610,7 @@ main .container .hero-box p {
 .services .container .service .content p:first-of-type {
   margin-bottom: 1.5rem;
 }
-.services .container .service .content .button-container {
+.services .container .button-container {
   position: absolute;
   left: 50%;
   bottom: 0rem;
@@ -627,16 +626,17 @@ main .container .hero-box p {
   gap: 1rem;
   width: fit-content;
   height: fit-content;
+  /* padding-top: 5rem; */
 }
 /* @media (max-width: 991px) {
-  .services .container .service .content .button-container {
+  .services .container  .button-container {
     position: absolute;
     top: 0;
     left: 100%;
     flex-direction: column;
   }
 } */
-.services .container .service .content button {
+.services .container button {
   background-color: transparent;
   border: 1px solid var(--m3);
   -webkit-border-radius: var(--small-radius);
@@ -656,20 +656,20 @@ main .container .hero-box p {
   transition: var(--tran-3) background-color;
 }
 /* @media (max-width: 991px) {
-  .services .container .service .content button {
+  .services .container  button {
     width: 3rem;
     height: 5rem;
   }
 } */
-.services .container .service .content button:hover {
+.services .container button:hover {
   background-color: var(--ltest3);
 }
-.services .container .service .content button:active {
+.services .container button:active {
   background-color: var(--lter3);
 }
-.services .container .service .content .button-container .prev-btn {
+.services .container .button-container .prev-btn {
 }
-.services .container .service .content .button-container .next-btn {
+.services .container .button-container .next-btn {
 }
 
 /* End Slide */
