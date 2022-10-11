@@ -73,8 +73,8 @@ span {
   --font: #fff;
   --m1: #202040;
   --m2: #543864;
-  /* --m3: #ff6363; */
-  --m3: #ffbd69;
+  --m3: #ff6363;
+  --m4: #ffbd69;
   --l1: #6f6f9b;
   --l2: #a581b9;
   --l3: #ff9797;
@@ -85,12 +85,12 @@ span {
   --h4: #ffe8ca;
   --lter1: hsla(240, 18%, 52%, 0.4);
   --lter2: hsla(278, 28%, 31%, 0.4);
-  /* --lter3: hsla(0, 100%, 69%, 0.4); */
-  --lter3: hsla(34, 100%, 71%, 0.4);
+  --lter3: hsla(0, 100%, 69%, 0.4);
+  --lter4: hsla(34, 100%, 71%, 0.4);
   --ltest1: hsla(240, 18%, 52%, 0.05);
   --ltest2: hsla(278, 28%, 31%, 0.05);
-  /* --ltest3: hsla(0, 100%, 69%, 0.05); */
-  --ltest3: hsla(34, 100%, 71%, 0.05);
+  --ltest3: hsla(0, 100%, 69%, 0.05);
+  --ltest4: hsla(34, 100%, 71%, 0.05);
   --box-title-font-color: #7373ad;
   --light-mode: #fff3e5;
   --hero-title-laptop: 5rem;
@@ -159,7 +159,7 @@ button,
 }
 .icon-tabler {
   stroke-width: 0.7px;
-  color: var(--m3);
+  color: var(--m4);
 }
 .up {
   position: fixed;
@@ -233,7 +233,7 @@ button,
   font-weight: 200;
 }
 .btn-box {
-  background-color: var(--ltest3);
+  background-color: var(--ltest4);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
@@ -243,7 +243,7 @@ button,
   overflow: hidden;
 }
 .btn-box a {
-  background-color: var(--ltest3);
+  background-color: var(--ltest4);
   padding: 0.8rem;
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -578,8 +578,8 @@ main .container .main-image img {
 
 .services .container button {
   background-color: transparent;
-  color: var(--m3);
-  border: 1px solid var(--m3);
+  color: var(--m4);
+  border: 1px solid var(--m4);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
@@ -705,7 +705,7 @@ main .container .main-image img {
   transition: var(--tran-3);
 }
 .work-space .container .works .work .box-text:hover a {
-  color: var(--m3);
+  color: var(--m4);
   letter-spacing: 2px;
   font-weight: 400;
 }
