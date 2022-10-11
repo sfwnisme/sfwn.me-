@@ -235,17 +235,17 @@ const reviews = [
   {
     id: 2,
     name: "Fixing Css Bugs",
-    text: "No one can avoiding bugs due to it's flexibility of changing, Usually appears will the project working , Then it needs testing and updating the project periodic.",
+    text: "No one can avoiding bugs due to it's flexibility of changing, Usually appears while the project is working , it needs testing and updating the project periodically.",
   },
   {
     id: 3,
     name: "Commercial Landing Page",
-    text: "Some products or services you offers must has it's own landing page to make it well known for clients by having free space to presents it on whole single page, even though it show the client how much your service is trustable and worth to try.",
+    text: "Some products or services you offer must have their own landing page to make it well known for clients through having free space to present them on the whole single page, even though they show the client how much your service is trustable and worth to try.",
   },
   {
     id: 4,
     name: "Flexible Structure",
-    text: "Programming languages updates constantly and stop supporting some codes and methods for improve the development environment. So you should test and update your web project yearly at least.",
+    text: "Programming languages updates constantly and stop supporting some codes and methods for improve the development environment. Thus you should test and update your web project yearly at least",
   },
 ];
 // select items
