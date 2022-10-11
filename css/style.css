@@ -93,7 +93,7 @@ span {
   --ltest4: hsla(34, 100%, 71%, 0.05);
   --box-title-font-color: #7373ad;
   --light-mode: #fff3e5;
-  --hero-title-laptop: 6rem;
+  --hero-title-laptop: 5rem;
   --hero-title-phone: 3rem;
   --hero-text-laptop: 1.8rem;
   --hero-text-phone: 1.6rem;
@@ -118,13 +118,16 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--n-bg);
   /* overflow-y: hidden; */
+  position: relative;
 }
-body > div, body > section , body > main {
+body > div,
+body > section,
+body > main {
   overflow: hidden;
 }
 .container {
   padding-inline: 2rem;
-  margin-inline: auto;  
+  margin-inline: auto;
 }
 
 /*--------Start @medias----------*/
@@ -196,6 +199,26 @@ button,
     4vw,
     var(--section-title-laptop)
   );
+  position: relative;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  left: -1.75rem;
+  top: 50%;
+  background-color: var(--lter1);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .box-text-content {
 }
@@ -409,23 +432,53 @@ main > img {
   transition: var(--tran-2) ease-in;
 }
 main .container {
-  max-inline-size: 80rem;
+  margin-top: 10rem;
+}
+
+main .container .hero-box {
+  /* max-inline-size: 50rem; */
+  flex-basis: 50%;
+}
+@media (max-width: 991px) {
+  main .container .hero-box {
+    flex-basis: 100%;
+  }
 }
 main .container .hero-box > span {
-  background-color: var(--ltest4);
-  color: var(--m4);
+  color: var(--h1);
   font-size: clamp(
-    var(--section-title-phone),
+    var(--box-title-phone) + 0.3rem,
     2vw,
-    var(--section-title-laptop)
+    var(--box-title-laptop) + 0.3rem
   );
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
   border-radius: var(--small-radius);
-  padding: 0.2rem 1rem;
-  font-weight: 200;
+  /* padding: 0.2rem 1rem; */
+  font-weight: 400;
+  position: relative;
+}
+
+main .container .hero-box > span::after {
+  /* content: ""; */
+  position: absolute;
+  left: -1.75rem;
+  top: 50%;
+  background-color: var(--lter1);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 main .container .hero-box h1 {
   color: var(--font);
@@ -440,7 +493,20 @@ main .container .hero-box p {
   line-height: 1.5;
   font-weight: 200;
 }
-
+main .container .main-image {
+  width: 80rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 991px) {
+  main .container .main-image {
+    display: none;
+  }
+}
+main .container .main-image img {
+  max-width: 100%;
+}
 /* End Main Landing */
 
 /* Start Slide */
@@ -789,7 +855,9 @@ section .container .skills .skill .progressing {
 
 footer {
   padding-block: 1rem;
+  position: relative;
 }
+
 footer p {
   color: var(--font);
   font-size: 1.4rem;
