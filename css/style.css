@@ -206,21 +206,20 @@ button,
   position: absolute;
   left: -1.75rem;
   top: 50%;
-  background-color: var(--lter1);
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: var(--small-radius);
+  background-color: var(--lter3);
+  border: 2px solid var(--m3);
+  width: 1rem;
+  height: 60%;
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
-  transform: translateY(-50%);
+  border-radius: var(--small-radius);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-}
-.box-text-content {
+  transform: translateY(-50%);
 }
 .box-text-content p.box-name-content {
   color: var(--font);
@@ -462,23 +461,24 @@ main .container .hero-box > span {
 }
 
 main .container .hero-box > span::after {
-  /* content: ""; */
+  /*content: "";
+  */
   position: absolute;
   left: -1.75rem;
   top: 50%;
   background-color: var(--lter1);
   width: 1.5rem;
   height: 1.5rem;
-  border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
-  transform: translateY(-50%);
+  border-radius: var(--small-radius);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 main .container .hero-box h1 {
   color: var(--font);
@@ -511,8 +511,6 @@ main .container .main-image img {
 
 /* Start Slide */
 
-.services {
-}
 .services .container {
   height: 100%;
 }
@@ -610,11 +608,6 @@ main .container .main-image img {
 .services .container button:active {
   background-color: var(--lter3);
 }
-.services .container .button-container .prev-btn {
-}
-.services .container .button-container .next-btn {
-}
-
 /* End Slide */
 
 /* Start Work Space */
@@ -766,7 +759,7 @@ section .container .skills .skill::before {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--m3);
+  background-color: var(--lter1);
   inline-size: 1rem;
   block-size: 1rem;
   -webkit-border-radius: var(--small-radius);
