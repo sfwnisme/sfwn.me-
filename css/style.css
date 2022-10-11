@@ -519,10 +519,23 @@ main .container .main-image img {
   flex-direction: row;
   justify-content: space-between;
   gap: 3rem;
+  padding: 3rem;
+  background-image: linear-gradient(
+    300deg,
+    var(--m1) 0%,
+    var(--m1) 40%,
+    var(--lter1)
+  );
+  border-radius: var(--large-radius);
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
 }
 @media (max-width: 991px) {
   .services .container .service-box {
     flex-direction: column;
+    padding: 1rem;
   }
 }
 .services .container .service-box .service-image {
@@ -678,10 +691,10 @@ main .container .main-image img {
   align-items: flex-end;
   gap: 1rem;
   background-image: linear-gradient(
-    -30deg,
-    var(--icon-color),
-    var(--icon-color) 0%,
-    var(--topic-link-important)
+    300deg,
+    var(--m1) 0%,
+    var(--m1) 40%,
+    var(--l1)
   );
   width: 100%;
   -webkit-transition: var(--tran-2);
@@ -737,6 +750,7 @@ section .container .skills::before {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: var(--lter1);
+  opacity: 0.3;
   inline-size: 0.1rem;
   block-size: calc(100% - 6rem);
 }
@@ -762,11 +776,11 @@ section .container .skills .skill::before {
   background-color: var(--lter1);
   inline-size: 1rem;
   block-size: 1rem;
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-  border-radius: var(--small-radius);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 
 section .container .skills .skill p {
@@ -800,6 +814,12 @@ section .container .skills .skill .progressing {
   border-radius: var(--small-radius);
 }
 .stdy {
+  background-image: linear-gradient(
+    300deg,
+    var(--lter2) 0%,
+    var(--lter2) 40%,
+    var(--lter1)
+  );
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
