@@ -563,10 +563,10 @@ main .container .main-image img {
   transition: var(--tran-3) background-color;
 }
 .services .container button:hover {
-  background-color: var(--ltest3);
+  background-color: var(--ltest4);
 }
 .services .container button:active {
-  background-color: var(--lter3);
+  background-color: var(--lter4);
 }
 /* End Slide */
 
