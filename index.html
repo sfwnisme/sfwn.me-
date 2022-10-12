@@ -24,6 +24,31 @@
   </head>
 
   <body>
+    <div class="theme" data-theme="theme">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-brightness-down"
+        width="40"
+        height="40"
+        viewBox="0 0 24 24"
+        stroke-width="1"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+        <line x1="12" y1="5" x2="12" y2="5.01"></line>
+        <line x1="17" y1="7" x2="17" y2="7.01"></line>
+        <line x1="19" y1="12" x2="19" y2="12.01"></line>
+        <line x1="17" y1="17" x2="17" y2="17.01"></line>
+        <line x1="12" y1="19" x2="12" y2="19.01"></line>
+        <line x1="7" y1="17" x2="7" y2="17.01"></line>
+        <line x1="5" y1="12" x2="5" y2="12.01"></line>
+        <line x1="7" y1="7" x2="7" y2="7.01"></line>
+      </svg>
+    </div>
     <!-- Start Nav -->
     <nav id="nav" class="nav">
       <span id="overly" class="overly"></span>
@@ -47,14 +72,24 @@
           </svg>
         </div>
         <ul class="nav-list flex flex-d-c j-c-c align-items-c" id="nav-list">
-          <li class="bg-lighter-1"><a href="#about">About</a></li>
-          <li class="bg-lighter-1"><a href="#services">Services</a></li>
-          <li class="bg-lighter-1"><a href="#work-space">Work Space</a></li>
-          <li class="bg-lighter-1"><a href="#skills">Skills</a></li>
           <li class="bg-lighter-1">
-            <a href="#study-sources">Study Sources</a>
+            <a href="#about" class="main-color">About</a>
           </li>
-          <li class="bg-lighter-1"><a href="#contact">Contact</a></li>
+          <li class="bg-lighter-1">
+            <a href="#services" class="main-color">Services</a>
+          </li>
+          <li class="bg-lighter-1">
+            <a href="#work-space" class="main-color">Work Space</a>
+          </li>
+          <li class="bg-lighter-1">
+            <a href="#skills" class="main-color">Skills</a>
+          </li>
+          <li class="bg-lighter-1">
+            <a href="#study-sources" class="main-color">Study Sources</a>
+          </li>
+          <li class="bg-lighter-1">
+            <a href="#contact" class="main-color">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -70,9 +105,9 @@
       <div class="container flex j-c-bt align-items-c gap-2-rem">
         <div class="hero-box" data-aos="fade-up">
           <div class="hero-overly"></div>
-          <span>Safwan Mohamed</span>
-          <h1>Front-End Developer</h1>
-          <p>
+          <span class="access-color">Safwan Mohamed</span>
+          <h1 class="main-color">Front-End Developer</h1>
+          <p class="access-color">
             Implements Pure Code Structure, Best Practice Ways Results Ultimate
             Possible Performance With Flexibility For Your Web Application
             Interface, And Attract Your Client By The First Blush
@@ -93,7 +128,7 @@
       <div class="container">
         <!-- title -->
         <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
+          <h2 class="main-color">Services</h2>
         </div>
 
         <!-- service -->
@@ -107,10 +142,14 @@
           <div class="service" data-aos="fade-up">
             <div class="content">
               <div class="box-text-content">
-                <p id="ability" data="ability" class="box-name-content">
+                <p
+                  id="ability"
+                  data="ability"
+                  class="box-name-content main-color"
+                >
                   Service Name
                 </p>
-                <p id="info" data="info" class="box-info-content">
+                <p id="info" data="info" class="box-info-content access-color">
                   Description
                 </p>
               </div>
@@ -135,7 +174,7 @@
     <div class="work-space" id="work-space" data-value="work-space">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>Workspace</h2>
+          <h2 class="main-color">Workspace</h2>
         </div>
         <div class="works grid grid-t-c gap-3-rem" data-value="works">
           <div class="work" data-aos="fade-up">
@@ -214,7 +253,7 @@
     <section id="skills" class="pd-b-6">
       <div class="container">
         <div class="skills-title section-title" data-aos="fade-up">
-          <h2>Technologies</h2>
+          <h2 class="main-color">Technologies</h2>
         </div>
         <ul class="skills">
           <li
@@ -223,7 +262,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Html</p>
+              <p class="box-name-content main-color">Html</p>
             </div>
             <div class="progress">
               <svg
@@ -250,7 +289,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">CSS</p>
+              <p class="box-name-content main-color">CSS</p>
             </div>
             <div class="progress">
               <svg
@@ -277,7 +316,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Responsive</p>
+              <p class="box-name-content main-color">Responsive</p>
             </div>
             <div class="progress">
               <svg
@@ -304,7 +343,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Bootstrap</p>
+              <p class="box-name-content main-color">Bootstrap</p>
             </div>
             <div class="progress">
               <svg
@@ -332,7 +371,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Git & Github</p>
+              <p class="box-name-content main-color">Git & Github</p>
             </div>
             <div class="progress">
               <svg
@@ -359,7 +398,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Command Line</p>
+              <p class="box-name-content main-color">Command Line</p>
             </div>
             <div class="progress">
               <svg
@@ -386,7 +425,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Sass</p>
+              <p class="box-name-content main-color">Sass</p>
             </div>
             <div class="progress">
               <svg
@@ -414,7 +453,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Java Script</p>
+              <p class="box-name-content main-color">Java Script</p>
             </div>
             <div class="progress">
               <svg
@@ -443,7 +482,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">React.js</p>
+              <p class="box-name-content main-color">React.js</p>
             </div>
             <div class="progress">
               <svg
@@ -471,7 +510,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Node.js</p>
+              <p class="box-name-content main-color">Node.js</p>
             </div>
             <div class="progress">
               <svg
@@ -499,7 +538,7 @@
             data-aos-anchor-placement="bottom-bottom"
           >
             <div class="box-text-content">
-              <p class="box-name-content">Figma</p>
+              <p class="box-name-content main-color">Figma</p>
             </div>
             <div class="progress">
               <svg
@@ -531,7 +570,7 @@
     <div class="stdy-srcs pd-b-6" id="study-sources">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>Study Sources</h2>
+          <h2 class="main-color">Study Sources</h2>
         </div>
         <div class="stdys grid grid-t-c gap-3-rem">
           <div
@@ -541,7 +580,7 @@
             <img src="imgs/study sources/Osama Elzero.webp" alt="" />
             <div class="stdy-brief-content flex flex-d-c j-c-bt gap-1-rem">
               <div class="box-text-content">
-                <p class="box-name-content">Osama Elzero</p>
+                <p class="box-name-content main-color">Osama Elzero</p>
               </div>
               <div class="stdy-links flex j-c-i aling-items-i gap-1-rem">
                 <div class="btn-box">
@@ -631,7 +670,7 @@
             <img src="imgs/study sources/Codezilla.webp" alt="" />
             <div class="stdy-brief-content flex flex-d-c j-c-bt gap-1-rem">
               <div class="box-text-content">
-                <p class="box-name-content">Islam - Codezilla</p>
+                <p class="box-name-content main-color">Islam - Codezilla</p>
               </div>
               <div class="stdy-links flex j-c-i aling-items-i gap-1-rem">
                 <div class="btn-box">
@@ -666,7 +705,7 @@
             <img src="imgs/study sources/Ghareeb Elsheekh.webp" alt="" />
             <div class="stdy-brief-content flex flex-d-c j-c-bt gap-1-rem">
               <div class="box-text-content">
-                <p class="box-name-content">Ghareeb Elshaikh</p>
+                <p class="box-name-content main-color">Ghareeb Elshaikh</p>
               </div>
               <div class="stdy-links flex j-c-i aling-items-i gap-1-rem">
                 <div class="btn-box">
@@ -702,7 +741,7 @@
             <img src="imgs/study sources/Kevin Powell.webp" alt="" />
             <div class="stdy-brief-content flex flex-d-c j-c-bt gap-1-rem">
               <div class="box-text-content">
-                <p class="box-name-content">Kevin Powell</p>
+                <p class="box-name-content main-color">Kevin Powell</p>
               </div>
               <div class="stdy-links flex j-c-i aling-items-i gap-1-rem">
                 <div class="btn-box">
@@ -737,7 +776,7 @@
             <img src="imgs/study sources/Web Dev Simplified.webp" alt="" />
             <div class="stdy-brief-content flex flex-d-c j-c-bt gap-1-rem">
               <div class="box-text-content">
-                <p class="box-name-content">Web Dev Simplified</p>
+                <p class="box-name-content main-color">Web Dev Simplified</p>
               </div>
 
               <div class="stdy-links flex j-c-i aling-items-i gap-1-rem">
@@ -774,7 +813,7 @@
             <div class="stdy-brief-content flex flex-d-c j-c-bt gap-1-rem">
               <div class="box-title-box">
                 <div class="box-text-content">
-                  <p class="box-name-content">Ahmed Shadeed</p>
+                  <p class="box-name-content main-color">Ahmed Shadeed</p>
                 </div>
               </div>
               <div class="stdy-links flex j-c-i aling-items-i gap-1-rem">

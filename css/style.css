@@ -97,8 +97,14 @@ span {
   --tran-4: 0.15s;
 }
 body {
+  /* background-color: var(--bg); */
+  background-image: linear-gradient(
+    130deg,
+    var(--m1) 0%,
+    var(--m1) 10%,
+    var(--m2)
+  );
   font-family: "Montserrat", sans-serif;
-  background-color: var(--bg);
   position: relative;
 }
 /* Fix AOS library mobile inline responsiveness */
@@ -129,6 +135,24 @@ body > main {
 }
 
 /* Start Components */
+.main-color {
+  color: var(--font);
+}
+.access-color {
+  color: var(--h1);
+}
+.theme {
+  position: fixed;
+  right: 1.6rem;
+  top: 1.6rem;
+  z-index: 2;
+  cursor: pointer;
+}
+.theme svg {
+  width: 5rem;
+  height: 5rem;
+}
+
 a + svg,
 button,
 .up {
@@ -209,7 +233,6 @@ button,
   font-weight: 500;
 }
 .box-text-content p.box-info-content {
-  color: var(--h1);
   font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
   line-height: 1.5;
   font-weight: 200;
@@ -372,18 +395,23 @@ nav .container ul li {
 nav .container ul li:hover {
   background-color: var(--ltest4);
 }
+nav .container ul li.active-li {
+  background-color: var(--lter4);
+}
 
 nav .container ul li a {
-  color: var(--font);
   inline-size: 100%;
   text-align: center;
   display: inline-block;
   font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
-  font-weight: 400;
+  font-weight: 100;
   padding-block: 3rem;
   z-index: 22;
 }
 nav .container ul li:hover a {
+  color: var(--m4);
+}
+nav .container ul li.active-link {
   color: var(--m4);
 }
 /* End Nav */
@@ -424,7 +452,6 @@ main .container .hero-box {
   }
 }
 main .container .hero-box > span {
-  color: var(--h1);
   font-size: clamp(
     var(--box-title-phone) + 0.3rem,
     2vw,
@@ -439,12 +466,10 @@ main .container .hero-box > span {
   position: relative;
 }
 main .container .hero-box h1 {
-  color: var(--font);
   font-size: clamp(var(--hero-title-phone), 6vw, var(--hero-title-laptop));
   margin-top: 1rem;
 }
 main .container .hero-box p {
-  color: var(--h1);
   margin-top: 1rem;
   font-size: clamp(var(--hero-text-phone), 2vw, var(--hero-text-laptop));
   font-weight: 200;
@@ -1023,3 +1048,15 @@ footer a {
 /* --End Structure--------------- */
 
 /* ---- End Framework */
+
+/* --LIGHT THEME-=---------------------------------------------------- */
+
+.svg-light {
+  color: red;
+}
+.body-light {
+  background-color: white;
+}
+.main-color-light {
+  color: var(--bg) !important;
+}

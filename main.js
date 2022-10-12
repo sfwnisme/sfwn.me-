@@ -5,6 +5,9 @@ let nav = document.getElementById("nav");
 let iconSpanOne = document.querySelector("#span-one");
 let iconSpanTwo = document.querySelector("#span-two");
 let overly = document.getElementById("overly");
+let navLis = document.querySelectorAll("nav ul li");
+let navLinks = document.querySelectorAll("nav ul li a");
+console.log(navLis);
 
 navIcon.addEventListener("click", function (e) {
   nav.classList.toggle("nav-active");
@@ -22,6 +25,12 @@ navIcon.addEventListener("click", function (e) {
     }
     e.stopPropagation();
   };
+});
+
+navLis.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    li.classList.add("active-li");
+  });
 });
 
 /* ----------up Scroll */
@@ -291,3 +300,21 @@ prevBtn.addEventListener("click", function () {
 });
 
 /* Start Services Slide */
+
+let theme = document.querySelector("[data-theme = theme]");
+console.log(theme);
+let svgs = document.querySelectorAll("svg");
+let body = document.querySelector("body");
+let mainColor = document.querySelectorAll(".main-color");
+console.log(mainColor);
+/* 
+theme.addEventListener("click", (e) => {
+  svgs.forEach((e) => {
+    e.classList.toggle("svg-light");
+    // e.style.color = "red";
+  });
+  body.classList.toggle("body-light");
+  mainColor.forEach((e) => {
+    e.classList.toggle("main-color-light");
+  });
+}); */
