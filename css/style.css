@@ -599,6 +599,7 @@ main .container .main-image img {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
   border: 1px solid var(--m4);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -610,6 +611,11 @@ main .container .main-image img {
   -ms-transition: var(--tran-3) background-color;
   -o-transition: var(--tran-3) background-color;
   transition: var(--tran-3) background-color;
+}
+@media (max-width: 767px) {
+  .services .container button {
+    min-inline-size: 8.5rem;
+  }
 }
 .services .container button:hover {
   background-color: var(--ltest4);
