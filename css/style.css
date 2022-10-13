@@ -123,6 +123,7 @@ body > div,
 body > section,
 body > main {
   overflow: hidden;
+ position: relative;
 }
 .container {
   padding-inline: 2rem;
@@ -322,7 +323,7 @@ nav {
   -ms-transition: var(--tran-4);
   -o-transition: var(--tran-4);
   transition: var(--tran-4);
-  z-index: 2;
+  z-index: 3;
 }
 .nav-active {
   bottom: 1.6rem;

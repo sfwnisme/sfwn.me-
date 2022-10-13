@@ -27,6 +27,7 @@ navIcon.addEventListener("click", function (e) {
   };
 });
 
+// Active highlight nav links on cliking
 navLis.forEach((li) => {
   li.addEventListener("click", (e) => {
     navLis.forEach((e) => {
@@ -60,6 +61,7 @@ up.onclick = () => {
     left: 0,
     behavior: "smooth",
   });
+  // Inactive the hightlight colors from nav links onclicking on up icon
   navLis.forEach((e) => {
     e.classList.remove("active-li");
   });
@@ -315,7 +317,7 @@ prevBtn.addEventListener("click", function () {
   showPerson(currentItem);
 });
 
-/* Start Services Slide */
+/* End Services Slide */
 
 let theme = document.querySelector("[data-theme = theme]");
 console.log(theme);
@@ -323,14 +325,3 @@ let svgs = document.querySelectorAll("svg");
 let body = document.querySelector("body");
 let mainColor = document.querySelectorAll(".main-color");
 console.log(mainColor);
-/* 
-theme.addEventListener("click", (e) => {
-  svgs.forEach((e) => {
-    e.classList.toggle("svg-light");
-    // e.style.color = "red";
-  });
-  body.classList.toggle("body-light");
-  mainColor.forEach((e) => {
-    e.classList.toggle("main-color-light");
-  });
-}); */
