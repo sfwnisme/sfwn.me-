@@ -114,16 +114,13 @@ body::before {
   background-color: #202040ab;
   width: 100%;
   height: 100%;
-  filter: blur(10px);
-  -webkit-filter: blur(1px);
-  backdrop-filter: blur(1px);
 }
 /* Fix AOS library mobile inline responsiveness */
 body > div,
 body > section,
 body > main {
   overflow: hidden;
- position: relative;
+  position: relative;
 }
 .container {
   padding-inline: 2rem;
