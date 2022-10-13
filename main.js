@@ -155,7 +155,7 @@ let emailSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="contact
   ></path>
 </svg>
 </a>`;
-let gitHubSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="visit github">
+let gitHubSvg = `<a href="https://www.github.com/sfwnisme"  aria-label="visit github">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-brand-github"
@@ -174,7 +174,7 @@ let gitHubSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="visit 
   ></path>
 </svg>
 </a>`;
-let instaSvg = `<a href="https://www.facebook.com/sfwnisme" aria-label="visit instagram">
+let instaSvg = `<a href="https://www.instagram.com/sfwnisme" aria-label="visit instagram">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-brand-instagram"
@@ -193,7 +193,7 @@ let instaSvg = `<a href="https://www.facebook.com/sfwnisme" aria-label="visit in
   <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
 </svg>
 </a>`;
-let codepenSvg = `<a href="https://www.facebook.com/sfwnisme" aria-label="visit codepen">
+let codepenSvg = `<a href="https://codepen.io/sfwnisme" aria-label="visit codepen">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-brand-codepen"
