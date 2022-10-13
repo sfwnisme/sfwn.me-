@@ -29,7 +29,18 @@ navIcon.addEventListener("click", function (e) {
 
 navLis.forEach((li) => {
   li.addEventListener("click", (e) => {
+    navLis.forEach((e) => {
+      e.classList.remove("active-li");
+    });
     li.classList.add("active-li");
+  });
+});
+navLinks.forEach((a) => {
+  a.addEventListener("click", (e) => {
+    navLinks.forEach((e) => {
+      e.classList.remove("active-li-a");
+    });
+    a.classList.add("active-li-a");
   });
 });
 
@@ -48,6 +59,12 @@ up.onclick = () => {
     top: 0,
     left: 0,
     behavior: "smooth",
+  });
+  navLis.forEach((e) => {
+    e.classList.remove("active-li");
+  });
+  navLinks.forEach((e) => {
+    e.classList.remove("active-li-a");
   });
 };
 
@@ -211,7 +228,6 @@ document.body.appendChild(contact);
 /* --footer------------------- */
 
 let footer = document.createElement("footer");
-footer.className = "bg-ltest";
 let footerContainer = document.createElement("div");
 footerContainer.className = "container";
 

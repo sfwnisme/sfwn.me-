@@ -107,6 +107,17 @@ body {
   font-family: "Montserrat", sans-serif;
   position: relative;
 }
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #202040ab;
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  -webkit-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
 /* Fix AOS library mobile inline responsiveness */
 body > div,
 body > section,
@@ -140,6 +151,14 @@ body > main {
 }
 .access-color {
   color: var(--h1);
+}
+.bg-gradient {
+  background-image: linear-gradient(
+    300deg,
+    var(--lter2) 0%,
+    var(--lter2) 10%,
+    var(--lter1)
+  );
 }
 .theme {
   position: fixed;
@@ -231,6 +250,7 @@ button,
   color: var(--font);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 500;
+  position: relative;
 }
 .box-text-content p.box-info-content {
   font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
@@ -396,9 +416,11 @@ nav .container ul li:hover {
   background-color: var(--ltest4);
 }
 nav .container ul li.active-li {
-  background-color: var(--lter4);
+  background-color: var(--ltest4);
 }
-
+nav .container ul li a.active-li-a {
+  color: var(--m4);
+}
 nav .container ul li a {
   inline-size: 100%;
   text-align: center;
@@ -493,14 +515,7 @@ main .container .main-image img {
 /* End Main Landing */
 
 /* Start Slide */
-
 .services .container .service-box {
-  background-image: linear-gradient(
-    300deg,
-    var(--lter2) 0%,
-    var(--lter2) 10%,
-    var(--lter1)
-  );
   padding: 3rem;
   display: flex;
   flex-direction: row;
@@ -608,6 +623,7 @@ main .container .main-image img {
   border-radius: var(--large-radius);
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 .work-space .container .works .work::before {
   content: "";
@@ -616,8 +632,6 @@ main .container .main-image img {
   left: 50%;
   inline-size: 100%;
   block-size: 100%;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
   -webkit-transition: var(--tran-2) opacity linear;
   -moz-transition: var(--tran-2) opacity linear;
   -ms-transition: var(--tran-2) opacity linear;
@@ -631,10 +645,6 @@ main .container .main-image img {
   z-index: 1;
 }
 .work-space .container .works .work:hover::before {
-  -webkit-backdrop-filter: blur(0);
-  backdrop-filter: blur(0);
-  opacity: 0;
-  z-index: -1;
 }
 .work-space .container .works .work img {
   inline-size: 100%;
@@ -656,54 +666,9 @@ main .container .main-image img {
   transform: scale(1.02) rotate(0.2deg);
 }
 
-.work-space .container .works .work .box-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 1rem;
-  background-image: linear-gradient(
-    300deg,
-    var(--m2) 0%,
-    var(--m2) 10%,
-    var(--l1)
-  );
-  inline-size: 100%;
-  -webkit-transition: var(--tran-2);
-  -moz-transition: var(--tran-2);
-  -ms-transition: var(--tran-2);
-  -o-transition: var(--tran-2);
-  transition: var(--tran-2);
-  z-index: 1;
-}
-.work-space .container .works .work .box-text a {
-  color: var(--font);
-  inline-size: 100%;
-  padding: 1rem;
-  text-align: center;
-  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
-  font-weight: 200;
-  -webkit-transition: var(--tran-3);
-  -moz-transition: var(--tran-3);
-  -ms-transition: var(--tran-3);
-  -o-transition: var(--tran-3);
-  transition: var(--tran-3);
-}
-.work-space .container .works .work .box-text:hover a {
-  color: var(--m4);
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
 /* End Work Space */
 
 /* Start Skills */
-
-section .container .skills-title {
-  position: relative;
-}
 section .container .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -753,6 +718,7 @@ section .container .skills .skill::before {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
+
 section .container .skills .skill .progress {
   display: flex;
   justify-content: center;
@@ -769,7 +735,14 @@ section .container .skills .skill .progressing {
 /* End Skills */
 
 /* Start Study Sources */
-
+.stdy {
+  padding: 1rem;
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  border-radius: var(--large-radius);
+}
 .stdy > img {
   inline-size: 9rem;
   block-size: 9rem;
@@ -779,25 +752,13 @@ section .container .skills .skill .progressing {
   -o-border-radius: var(--small-radius);
   border-radius: var(--small-radius);
 }
-.stdy {
-  background-image: linear-gradient(
-    300deg,
-    var(--lter2) 0%,
-    var(--lter2) 10%,
-    var(--lter1)
-  );
-  padding: 1rem;
-  -webkit-border-radius: var(--large-radius);
-  -moz-border-radius: var(--large-radius);
-  -ms-border-radius: var(--large-radius);
-  -o-border-radius: var(--large-radius);
-  border-radius: var(--large-radius);
-}
 
 /* End Study Sources */
 
 /* Start Contact */
-
+.contact {
+  position: relative;
+}
 .contact .container a {
   max-inline-size: 40px;
 }
@@ -868,9 +829,6 @@ footer a {
 
 /* --Start Colors--------------- */
 
-.bg-ltest {
-  background-color: #19233747;
-}
 /* --End Colors--------------- */
 
 /*-- Start Framework---------- */
