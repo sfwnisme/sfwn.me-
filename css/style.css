@@ -390,6 +390,15 @@ nav .container .nav-icon svg {
   inline-size: 4rem;
   block-size: 4rem;
   stroke-width: 1.5px;
+  transition: var(--tran-4);
+  -webkit-transition: var(--tran-4);
+  -moz-transition: var(--tran-4);
+  -ms-transition: var(--tran-4);
+  -o-transition: var(--tran-4);
+}
+nav .container .nav-icon:hover svg line {
+  inline-size: 8rem;
+  stroke-width: 2px;
 }
 nav .container ul {
   inline-size: 100%;
@@ -521,11 +530,11 @@ main .container .main-image img {
   flex-direction: row;
   justify-content: space-between;
   gap: 3rem;
-  -webkit-border-radius: var(--large-radius);
-  -moz-border-radius: var(--large-radius);
-  -ms-border-radius: var(--large-radius);
-  -o-border-radius: var(--large-radius);
-  border-radius: var(--large-radius);
+  border-radius: calc(var(--large-radius) + 0rem);
+  -webkit-border-radius: calc(var(--large-radius) + 0rem);
+  -moz-border-radius: calc(var(--large-radius) + 0rem);
+  -ms-border-radius: calc(var(--large-radius) + 0rem);
+  -o-border-radius: calc(var(--large-radius) + 0rem);
 }
 @media (max-width: 991px) {
   .services .container .service-box {
