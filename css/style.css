@@ -459,6 +459,7 @@ main > img {
   -ms-transition: var(--tran-2) ease-in;
   -o-transition: var(--tran-2) ease-in;
   transition: var(--tran-2) ease-in;
+  z-index: 2;
 }
 main .container {
   margin-top: 10rem;
