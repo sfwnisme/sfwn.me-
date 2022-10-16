@@ -157,9 +157,9 @@ body > main {
   ); */
   background-image: linear-gradient(
     -310deg,
-    hsl(252, 26%, 4%) 0%,
-    hsl(252, 26%, 4%) 0%,
-    hsl(250, 27%, 4%)
+    hsl(255, 36%, 4%) 0%,
+    hsl(255, 36%, 4%) 0%,
+    hsl(250, 60%, 2%)
   );
 }
 .theme {
