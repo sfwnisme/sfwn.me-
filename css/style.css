@@ -97,7 +97,8 @@ span {
   --tran-4: 0.15s;
 }
 body {
-  /* background-color: var(--bg); */
+  /*background-color: var(--bg);
+  */
   background-image: linear-gradient(
     130deg,
     var(--m1) 0%,
@@ -106,6 +107,11 @@ body {
   );
   font-family: "Montserrat", sans-serif;
   position: relative;
+  transition: 0.75s !important;
+  -webkit-transition: 0.75s !important;
+  -moz-transition: 0.75s !important;
+  -ms-transition: 0.75s !important;
+  -o-transition: 0.75s !important;
 }
 /* Fix AOS library mobile inline responsiveness */
 body > div,
