@@ -675,6 +675,9 @@ main .container .main-image img {
 /* End Work Space */
 
 /* Start Skills */
+section {
+  position: relative;
+}
 section .container .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -826,6 +829,50 @@ footer a {
 @keyframes nav {
   50% {
     background-color: var(--m3);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatex(0rem);
+    -webkit-transform: translatex(0rem);
+    -moz-transform: translatex(0rem);
+    -ms-transform: translatex(0rem);
+    -o-transform: translatex(0rem);
+  }
+  20% {
+    transform: translatex(10rem);
+    -webkit-transform: translatex(10rem);
+    -moz-transform: translatex(10rem);
+    -ms-transform: translatex(10rem);
+    -o-transform: translatex(10rem);
+  }
+  40% {
+    transform: translatey(10rem);
+    -webkit-transform: translatey(10rem);
+    -moz-transform: translatey(10rem);
+    -ms-transform: translatey(10rem);
+    -o-transform: translatey(10rem);
+  }
+  60% {
+    transform: translatey(-10rem);
+    -webkit-transform: translatey(-10rem);
+    -moz-transform: translatey(-10rem);
+    -ms-transform: translatey(-10rem);
+    -o-transform: translatey(-10rem);
+  }
+  80% {
+    transform: translatex(-10rem);
+    -webkit-transform: translatex(-10rem);
+    -moz-transform: translatex(-10rem);
+    -ms-transform: translatex(-10rem);
+    -o-transform: translatex(-10rem);
+  }
+  100% {
+    transform: translatex(0rem);
+    -webkit-transform: translatex(0rem);
+    -moz-transform: translatex(0rem);
+    -ms-transform: translatex(0rem);
+    -o-transform: translatex(0rem);
   }
 }
 /* End Keyframes */
