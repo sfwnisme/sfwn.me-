@@ -325,3 +325,5 @@ let svgs = document.querySelectorAll("svg");
 let body = document.querySelector("body");
 let mainColor = document.querySelectorAll(".main-color");
 console.log(mainColor);
+
+/* ------------------------------------------------------------- */
