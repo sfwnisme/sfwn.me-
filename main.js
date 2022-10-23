@@ -135,7 +135,7 @@ let fbSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="visit face
   ></path>
 </svg>
 </a>`;
-let emailSvg = `<a href="https://www.facebook.com/sfwnisme"  aria-label="contact email">
+let emailSvg = `<a href="mailto:safwan@sfwn.me"  aria-label="contact email">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="icon icon-tabler icon-tabler-at"
