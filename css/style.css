@@ -122,7 +122,7 @@ span {
   --l2: #a581b9;
   --l3: #ff9797;
   --l4: #ffd8a6;
-  --h1: #3b3ba8;
+  --h1: #1d1d5d;
   --h2: #eed0ff;
   --h3: #ffcece;
   --h4: #ffe8ca;
@@ -204,7 +204,8 @@ body > main {
 .access-color {
   color: var(--h1);
 }
-.bg-gradient {
+.bg-gradient,
+.work {
   background-image: var(--box-grade);
   /* background-image: linear-gradient(
     -310deg,
@@ -212,6 +213,7 @@ body > main {
     hsl(255, 36%, 4%) 0%,
     hsl(250, 60%, 2%)
   ); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.051);
 }
 
 a + svg,
