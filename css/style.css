@@ -104,18 +104,13 @@ span {
   --tran-4: 0.15s;
 }
 [data-theme="dark"] {
-  --bg-main: linear-gradient(130deg, var(--m1) 0%, var(--m1) 50%, #fbf7ff);
-  --box-grade: linear-gradient(
-    -310deg,
-    var(--m2) 0%,
-    var(--m2) 0%,
-    hsl(0, 0%, 100%)
-  );
+  --bg-main: linear-gradient(130deg, #fffaf3 0%, #fffaf3 50%, #fff7ed);
+  --box-grade: linear-gradient(-310deg, var(--m2) 0%, var(--m2) 0%, #fff6ea);
   --bg: #151f32;
   --bg-light: #1a253ba1;
   --font: rgb(0, 0, 0);
   --m1: #ffffff;
-  --m2: #fbf5ff;
+  --m2: #fffbf5;
   --m4: #ff6363;
   --m3: #ffbd69;
   --l1: #6f6f9b;

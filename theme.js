@@ -1,4 +1,3 @@
-
 // Get the theme toggle input
 const themeToggle = document.querySelector(
   '.theme-switch input[type="checkbox"]'
