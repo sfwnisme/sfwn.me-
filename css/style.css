@@ -601,8 +601,8 @@ main .container .hero-box h1 {
   /* color: transparent; */
   -webkit-text-stroke: var(--m4) 0.7px;
   font-weight: 900;
-  text-decoration: underline;
-  line-height:0.9;
+  text-decoration: underline var(--m4) clamp(5px, 1vw, 10px);
+  line-height:1;
 }
 main .container .hero-box p {
   margin-top: 1rem;
