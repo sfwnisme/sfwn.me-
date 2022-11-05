@@ -1,5 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-Italic.woff2);
+  font-family: big-font;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-Medium.woff2);
+  font-family: big-font;
+  font-weight:500;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-MediumItalic.woff2);
+  font-family: big-font;
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-DemiBold.woff2);
+  font-family: big-font;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-DemiBoldItalic.woff2);
+  font-family: big-font;
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-Bold.woff2);
+  font-family: big-font;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-ExtraBold.woff2);
+  font-family: big-font;
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-Black.woff2);
+  font-family: big-font;
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* Start Reset Page */
 
 html {
@@ -82,8 +131,8 @@ span {
   --ltest4: hsla(34, 100%, 71%, 0.05);
   --box-title-font-color: #7373ad;
   --light-mode: #fff3e5;
-  --hero-title-laptop: 5rem;
-  --hero-title-phone: 3rem;
+  --hero-title-laptop: 20rem;
+  --hero-title-phone: 4rem;
   --hero-text-laptop: 1.8rem;
   --hero-text-phone: 1.6rem;
   --section-title-laptop: 4.5rem;
@@ -131,7 +180,7 @@ span {
   --ltest4: hsla(34, 100%, 71%, 0.05);
   --box-title-font-color: #7373ad;
   --light-mode: #fff3e5;
-  --hero-title-laptop: 5rem;
+  --hero-title-laptop: 15rem;
   --hero-title-phone: 3rem;
   --hero-text-laptop: 1.8rem;
   --hero-text-phone: 1.6rem;
@@ -156,7 +205,8 @@ body {
   /* background-color: black; */
 
   background-image: var(--bg-main);
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: big-font;
   position: relative;
   transition: 0.75s !important;
   -webkit-transition: 0.75s !important;
@@ -218,7 +268,7 @@ button,
 }
 .icon-tabler {
   color: var(--m4);
-  stroke-width: 0.7px;
+  stroke-width: 1.5px;
 }
 .up {
   position: fixed;
@@ -235,7 +285,7 @@ button,
 .up svg {
   inline-size: 30px;
   block-size: 30px;
-  border: 1px solid;
+  border: 2px solid;
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
@@ -288,7 +338,7 @@ button,
 .box-text-content p.box-name-content {
   color: var(--font);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
 .box-text-content p.box-info-content {
@@ -523,8 +573,8 @@ main .container {
 }
 
 main .container .hero-box {
-  /* max-inline-size: 50rem; */
-  flex-basis: 50%;
+  max-inline-size: 80rem;
+  /* flex-basis: 50%; */
 }
 @media (max-width: 991px) {
   main .container .hero-box {
@@ -537,7 +587,7 @@ main .container .hero-box > span {
     2vw,
     var(--box-title-laptop) + 0.3rem
   );
-  font-weight: 400;
+  font-weight: 600;
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
@@ -550,18 +600,23 @@ main .container .hero-box h1 {
   margin-top: 1rem;
   /* color: transparent; */
   -webkit-text-stroke: var(--m4) 0.7px;
+  font-weight: 900;
+  text-decoration: underline;
+  line-height:0.9;
 }
 main .container .hero-box p {
   margin-top: 1rem;
   font-size: clamp(var(--hero-text-phone), 2vw, var(--hero-text-laptop));
   font-weight: 200;
   line-height: 1.5;
+  
 }
 main .container .main-image {
   inline-size: 80rem;
   display: flex;
   justify-content: flex-end;
   flex: 1;
+  display: none;
 }
 @media (max-width: 991px) {
   main .container .main-image {
@@ -840,7 +895,7 @@ section .container .skills .skill .progressing {
 .contact .container a svg {
   inline-size: 40px;
   block-size: 40px;
-  stroke-width: 0.5px;
+  /* stroke-width: 0.5px; */
   -webkit-transition: var(--tran-3);
   -moz-transition: var(--tran-3);
   -ms-transition: var(--tran-3);
@@ -1206,12 +1261,6 @@ input:checked + .slider:before {
   -moz-transform: translate(12px, -50%);
   -ms-transform: translate(12px, -50%);
   -o-transform: translate(12px, -50%);
-}
-.slider svg {
-  color: #222;
-  position: absolute;
-  transition: opacity 0.2s ease 0s, transform 0.35s ease 0s;
-  pointer-events: none;
 }
 .feather-moon {
   opacity: 0;
