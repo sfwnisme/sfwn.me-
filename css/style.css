@@ -131,7 +131,7 @@ span {
   --ltest4: hsla(34, 100%, 71%, 0.05);
   --box-title-font-color: #7373ad;
   --light-mode: #fff3e5;
-  --hero-title-laptop: 20rem;
+  --hero-title-laptop: 25rem;
   --hero-title-phone: 4rem;
   --hero-text-laptop: 1.8rem;
   --hero-text-phone: 1.6rem;
@@ -573,9 +573,14 @@ main > img {
 main .container {
   margin-top: 10rem;
 }
+@media (max-width: 767px) {
+  main .container {
+    margin-top: 10rem;
+  }
+}
 
 main .container .hero-box {
-  max-inline-size: 80rem;
+  max-inline-size: 65rem;
   /* flex-basis: 50%; */
 }
 @media (max-width: 991px) {
@@ -613,31 +618,11 @@ main .container .hero-box p {
   line-height: 1.5;
   
 }
-main .container .main-image {
-  inline-size: 80rem;
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
-  display: none;
-}
-@media (max-width: 991px) {
-  main .container .main-image {
-    display: none;
-  }
-}
-main .container .main-image img {
-  max-inline-size: 100%;
-  block-size: 100%;
-}
 /* End Main Landing */
 
 /* Start Slide */
 .services .container .service-box {
   padding: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 3rem;
   border-radius: calc(var(--large-radius) + 0rem);
   -webkit-border-radius: calc(var(--large-radius) + 0rem);
   -moz-border-radius: calc(var(--large-radius) + 0rem);
@@ -649,22 +634,6 @@ main .container .main-image img {
     flex-direction: column;
     padding: 2rem;
   }
-}
-.services .container .service-box .service-image {
-  max-inline-size: 50rem;
-  max-block-size: 100%;
-  flex: 1;
-  -webkit-border-radius: var(--large-radius);
-  -moz-border-radius: var(--large-radius);
-  -ms-border-radius: var(--large-radius);
-  -o-border-radius: var(--large-radius);
-  border-radius: var(--large-radius);
-  overflow: hidden;
-  display: none;
-}
-.services .container .service-box .service-image img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
 }
 .services .container .service {
   display: flex;
@@ -865,9 +834,6 @@ section .container .skills .skill .progressing {
 /* End Skills */
 
 /* Start Study Sources */
-.stdy-srcs {
-  display: none;
-}
 .stdy {
   padding: 1rem;
   -webkit-border-radius: var(--large-radius);

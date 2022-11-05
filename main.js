@@ -327,3 +327,8 @@ let mainColor = document.querySelectorAll(".main-color");
 console.log(mainColor);
 
 /* ------------------------------------------------------------- */
+
+/* REMOVE */
+
+let stdySrcs = document.querySelector(".stdy-srcs")
+stdySrcs.remove();
