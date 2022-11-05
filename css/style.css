@@ -201,12 +201,14 @@ span {
   --tran-3: 0.25s;
   --tran-4: 0.15s;
 }
+body, button {
+  font-family: big-font;
+}
 body {
   /* background-color: black; */
 
   background-image: var(--bg-main);
   /* font-family: "Montserrat", sans-serif; */
-  font-family: big-font;
   position: relative;
   transition: 0.75s !important;
   -webkit-transition: 0.75s !important;
