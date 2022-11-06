@@ -9,7 +9,7 @@
 @font-face {
   src: url(../fonts/TTFirstNeue-Black/TTFirsNeue-Medium.woff2);
   font-family: big-font;
-  font-weight:500;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -201,7 +201,8 @@ span {
   --tran-3: 0.25s;
   --tran-4: 0.15s;
 }
-body, button {
+body,
+button {
   font-family: big-font;
 }
 body {
@@ -301,6 +302,17 @@ button,
 }
 .up:hover svg {
   background-color: var(--lter4);
+}
+.scroller {
+  /* display: none; */
+  background-color: var(--lter2);
+  background-image: linear-gradient(130deg, var(--m1) 0%, var(--m1) 50%, #46325c);
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .section-title {
   padding-bottom: var(--title-padding);
@@ -609,14 +621,13 @@ main .container .hero-box h1 {
   -webkit-text-stroke: var(--m4) 0.7px;
   font-weight: 900;
   text-decoration: underline var(--m4) clamp(5px, 1vw, 10px);
-  line-height:1;
+  line-height: 1;
 }
 main .container .hero-box p {
   margin-top: 1rem;
   font-size: clamp(var(--hero-text-phone), 2vw, var(--hero-text-laptop));
   font-weight: 200;
   line-height: 1.5;
-  
 }
 /* End Main Landing */
 
@@ -685,7 +696,6 @@ main .container .hero-box p {
 }
 .services .container .service .content p:last-of-type {
   font-weight: 200;
-
 }
 .services .container .button-container {
   display: flex;
@@ -1241,6 +1251,10 @@ input:checked + .slider:before {
   right: 10px;
   bottom: 9px;
   transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
 }
 input:checked + .slider .feather-moon {
   opacity: 1;

@@ -332,3 +332,18 @@ console.log(mainColor);
 
 let stdySrcs = document.querySelector(".stdy-srcs")
 stdySrcs.remove();
+
+
+/* --Start Page Scroll Progress */
+let el = document.querySelector(".scroller");
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+console.log(document.documentElement.scrollHeight);
+console.log(document.documentElement.clientHeight);
+console.log(height);
+
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+  el.style.width = `${(scrollTop / height) * 100}%`;
+});
+/* --End Page Scroll Progress */
