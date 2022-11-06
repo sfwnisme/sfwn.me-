@@ -304,15 +304,20 @@ button,
   background-color: var(--lter4);
 }
 .scroller {
-  /* display: none; */
-  background-color: var(--lter2);
+  /*display: none;
+  */background-color: var(--lter2);
   background-image: linear-gradient(130deg, var(--m1) 0%, var(--m1) 50%, #46325c);
   width: 0;
   height: 100%;
   position: fixed;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translatey(-50%);
   z-index: -1;
+  -webkit-transform: translatey(-50%);
+  -moz-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+  -o-transform: translatey(-50%);
 }
 .section-title {
   padding-bottom: var(--title-padding);
