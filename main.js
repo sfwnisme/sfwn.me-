@@ -28,14 +28,6 @@ navIcon.addEventListener("click", function (e) {
 });
 
 // Active highlight nav links on cliking
-navLis.forEach((li) => {
-  li.addEventListener("click", (e) => {
-    navLis.forEach((e) => {
-      e.classList.remove("active-li");
-    });
-    li.classList.add("active-li");
-  });
-});
 navLinks.forEach((a) => {
   a.addEventListener("click", (e) => {
     navLinks.forEach((e) => {

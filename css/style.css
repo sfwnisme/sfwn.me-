@@ -206,10 +206,7 @@ button {
   font-family: big-font;
 }
 body {
-  /* background-color: black; */
-
   background-image: var(--bg-main);
-  /* font-family: "Montserrat", sans-serif; */
   position: relative;
   transition: 0.75s !important;
   -webkit-transition: 0.75s !important;
@@ -255,12 +252,6 @@ body > main {
 .bg-gradient,
 .work {
   background-image: var(--box-grade);
-  /* background-image: linear-gradient(
-    -310deg,
-    hsl(255, 36%, 4%) 0%,
-    hsl(255, 36%, 4%) 0%,
-    hsl(250, 60%, 2%)
-  ); */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.051);
 }
 
@@ -304,20 +295,14 @@ button,
   background-color: var(--lter4);
 }
 .scroller {
-  /*display: none;
-  */background-color: var(--lter2);
-  background-image: linear-gradient(130deg, var(--m1) 0%, var(--m1) 50%, #46325c);
+  background-color: var(--lter1);
+  /* background-image: linear-gradient(130deg, var(--m1) 0%, var(--m1) 50%, #46325c); */
   width: 0;
-  height: 100%;
+  height: 3px;
   position: fixed;
-  top: 50%;
+  top: 0%;
   left: 0;
-  transform: translatey(-50%);
-  z-index: -1;
-  -webkit-transform: translatey(-50%);
-  -moz-transform: translatey(-50%);
-  -ms-transform: translatey(-50%);
-  -o-transform: translatey(-50%);
+  z-index: 1;
 }
 .section-title {
   padding-bottom: var(--title-padding);
@@ -541,9 +526,6 @@ nav .container ul li {
   transition: var(--tran-4);
 }
 nav .container ul li:hover {
-  background-color: var(--ltest4);
-}
-nav .container ul li.active-li {
   background-color: var(--ltest4);
 }
 nav .container ul li a.active-li-a {
