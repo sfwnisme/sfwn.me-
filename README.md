@@ -4,13 +4,11 @@
 
 ## Web App Structure
 
-- **Intro**
-- **Skills**
-- **What I Can Do**
+- **About**
+- **Services**
 - **Wrok Space**
-- **Blog** \_ new html
-  - Articles
-  - Study Sources
+- **Editting Platforms** → inprogress
+- **Technologies**
 - **Footer** \_ in Js
 
 ## New To Me

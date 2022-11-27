@@ -266,6 +266,11 @@ const reviews = [
     name: "Flexible Structure",
     text: "Programming languages updates constantly and stop supporting some codes and methods for improve the development environment. Thus you should test and update your web project yearly at least",
   },
+  {
+    id: 5,
+    name: "Salla Platform",
+    text: "I provied Salla css and javascript services. Those services able you to edit and style your Salla web interface and control the whole shape as you like",
+  },
 ];
 // select items
 
