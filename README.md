@@ -7,7 +7,9 @@
 - **About**
 - **Services**
 - **Wrok Space**
-- **Editting Platforms** → inprogress
+  - image sizes 500x500
+- **Modifying Websites** → inprogress
+  - image sizes 500x500
 - **Technologies**
 - **Footer** \_ in Js
 
