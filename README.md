@@ -11,6 +11,8 @@
 - **Modifying Websites** → inprogress
   - image sizes 500x500
 - **Technologies**
+- **Hire Me!**
+  - timeline style
 - **Footer** \_ in Js
 
 ## New To Me
