@@ -799,7 +799,7 @@ section .container .skills .skill::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -1.4rem;
+  left: -1.35rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
