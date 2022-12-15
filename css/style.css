@@ -807,7 +807,7 @@ section .container .skills .skill::before {
   transform: translateY(-50%);
   background-color: var(--m4);
   inline-size: 0.8rem;
-  block-size: 1.9rem;
+  block-size: 1.5rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -821,13 +821,13 @@ section .container .skills .skill::before {
   background-color: transparent !important;
 }
 .still-working-on::before {
-  animation: updown var(--tran-1) infinite linear;
-  -webkit-animation: updown var(--tran-1) infinite linear;
+  animation: updown var(--tran-1) infinite step-start;
+  -webkit-animation: updown var(--tran-1) infinite step-start;
 }
 
 @keyframes updown {
   50% {
-    opacity: 0.3;
+    opacity: 0;
   }
 }
 
@@ -842,8 +842,8 @@ section .container .skills .skill::after {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   inline-size: 1.1rem;
-  block-size: 2.2rem;
-  border: 0.1px solid var(--lter4);
+  block-size: 1.7rem;
+  border: 1px solid var(--lter4);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
