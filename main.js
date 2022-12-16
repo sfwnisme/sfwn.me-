@@ -226,9 +226,10 @@ let footerContainer = document.createElement("div");
 footerContainer.className = "container";
 
 let footerContent = document.createElement("p");
+let date = new Date;
+console.log(date.getFullYear())
 footerContent.className = "flex j-c-c align-items-c gap-05-rem";
-footerContent.innerHTML = "&copy;2022 Deployed By";
-
+footerContent.innerHTML = `&copy;${date.getFullYear()} Deployed By`;
 let footerLink = document.createElement("a");
 footerLink.href = "https://github.com/sfwnisme";
 footerLink.innerHTML = "SFWN";

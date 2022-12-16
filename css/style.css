@@ -316,29 +316,6 @@ button,
   );
   position: relative;
 }
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  left: -1.75rem;
-  top: 50%;
-  background-color: var(--lter3);
-  border: 2px solid var(--m3);
-  inline-size: 1rem;
-  block-size: 60%;
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-  border-radius: var(--small-radius);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-animation: 2s traffic infinite step-end;
-  animation: 2s traffic infinite step-end;
-}
-
 .box-text-content p.box-name-content {
   color: var(--font);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
@@ -770,6 +747,7 @@ section .container .skills {
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   row-gap: 2rem;
   position: relative;
+  margin-left: 1.5rem;
 }
 section .container .skills::before {
   content: "";
@@ -799,15 +777,16 @@ section .container .skills .skill::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -1.35rem;
+  left: -1.55rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--m4);
-  inline-size: 0.8rem;
-  block-size: 1.5rem;
+  background-color: var(--lter4);
+  inline-size: 1rem;
+  block-size: 2rem;
+  border: 1px solid var(--m4);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -827,15 +806,16 @@ section .container .skills .skill::before {
 
 @keyframes updown {
   50% {
-    opacity: 0;
+    /* opacity: 0; */
+    background-color: transparent;
   }
 }
 
 section .container .skills .skill::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 50%;
-  left: -1.6rem;
+  left: -16.5px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -933,14 +913,6 @@ footer a {
 /* End Footer */
 
 /* Start Keyframes */
-@keyframes traffic {
-  50% {
-    background-color: var(--ltest3);
-  }
-  100% {
-    background-color: var(--lter3);
-  }
-}
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
