@@ -801,7 +801,7 @@ section .container .skills .skill::before {
 }
 .still-working-on::before {
   animation: updown 1.9s infinite step-start;
-  -webkit-animation: updown 1.9s infinite step-start;
+  -webkit-animation: updown 1.9s infinite steps(1000);
 }
 
 @keyframes updown {
