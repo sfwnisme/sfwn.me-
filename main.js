@@ -226,8 +226,8 @@ let footerContainer = document.createElement("div");
 footerContainer.className = "container";
 
 let footerContent = document.createElement("p");
-let date = new Date;
-console.log(date.getFullYear())
+let date = new Date();
+console.log(date.getFullYear());
 footerContent.className = "flex j-c-c align-items-c gap-05-rem";
 footerContent.innerHTML = `&copy;${date.getFullYear()} Deployed By`;
 let footerLink = document.createElement("a");
@@ -328,13 +328,13 @@ console.log(mainColor);
 
 /* REMOVE */
 
-let stdySrcs = document.querySelector(".stdy-srcs")
+let stdySrcs = document.querySelector(".stdy-srcs");
 stdySrcs.remove();
-
 
 /* --Start Page Scroll Progress */
 let el = document.querySelector(".scroller");
-let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+let height =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
 console.log(document.documentElement.scrollHeight);
 console.log(document.documentElement.clientHeight);
