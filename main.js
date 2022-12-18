@@ -345,3 +345,24 @@ window.addEventListener("scroll", () => {
   el.style.width = `${(scrollTop / height) * 100}%`;
 });
 /* --End Page Scroll Progress */
+
+/* ====================[Github API]==================== */
+
+const github = document.querySelector(".github");
+const avatar = document.querySelector(".avatar img");
+const username = document.querySelector(".username");
+const repos = document.querySelector(".repos");
+const visit = document.querySelector(".visit");
+const stars = document.querySelector(".stars");
+
+fetch(`https://api.github.com/users/sfwnisme`)
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+    // avatar
+    avatar.src = data.avatar_url;
+    username.innerText = data.login;
+    username.href = data.html_url;
+    username.setAttribute("target", "_blank");
+    repos.innerText = `${data.public_repos} Repos`;
+  });

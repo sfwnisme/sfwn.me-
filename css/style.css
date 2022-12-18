@@ -1260,3 +1260,76 @@ input:checked + .slider .feather-sun {
   opacity: 0;
   transform: translateX(-4px);
 }
+
+/* ====================[Github API]==================== */
+.github-box .container .github {
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  -webkit-border-radius: var(--large-radius);
+  -moz-border-radius: var(--large-radius);
+  -ms-border-radius: var(--large-radius);
+  -o-border-radius: var(--large-radius);
+  /* border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px; */
+  box-shadow: 0 0 50px var(--lter1);
+}
+
+.github-box .container .section-title h2 {
+  text-align: center !important;
+}
+.github .avatar {
+  overflow: hidden;
+  width: 10rem;
+}
+.github .avatar img {
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.github .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--font);
+  gap: 10px;
+}
+.github .username {
+  color: var(--font);
+  font-weight: 600;
+  font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
+  color: var(--l1);
+  background-color: var(--m4);
+  padding: 5px 20px;
+  justify-items: flex-end;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+  box-shadow: 0 0px 0 black;
+  transition: var(--tran-3);
+  -webkit-transition: var(--tran-3);
+  -moz-transition: var(--tran-3);
+  -ms-transition: var(--tran-3);
+  -o-transition: var(--tran-3);
+}
+.github .repos {
+  font-size: var(--hero-text-phone);
+  font-weight: 100;
+  color: var(--l2);
+}
+
+.github .username:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  box-shadow: 0 5px 0 var(--box-title-font-color);
+}
