@@ -1272,8 +1272,6 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  /* border-top-left-radius: 60px;
-  border-bottom-left-radius: 60px; */
   box-shadow: 0 0 50px var(--lter1);
 }
 
