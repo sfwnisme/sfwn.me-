@@ -800,8 +800,8 @@ section .container .skills .skill::before {
   background-color: transparent !important;
 }
 .still-working-on::before {
-  animation: updown 1.9s infinite step-start;
-  -webkit-animation: updown 1.9s infinite steps(1000);
+  animation: updown 1.9s infinite steps(2);
+  -webkit-animation: updown 1.9s infinite steps(2);
 }
 
 @keyframes updown {
