@@ -54,6 +54,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 10px;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -596,6 +597,29 @@ main .container .hero-box p {
 /* End Main Landing */
 
 /* Start Slide */
+.hide {
+  opacity: 0;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+}
+.show {
+  transform: translatey(0);
+  -webkit-transform: translatey(0);
+  -moz-transform: translatey(0);
+  -ms-transform: translatey(0);
+  -o-transform: translatey(0);
+  transition: 1000ms;
+  -webkit-transition: 1000ms;
+  -moz-transition: 1000ms;
+  -ms-transition: 1000ms;
+  -o-transition: 1000ms;
+  opacity: 1;
+}
+.services {
+}
 .services .container .service-box {
   padding: 3rem;
   border-radius: calc(var(--large-radius) + 0rem);
