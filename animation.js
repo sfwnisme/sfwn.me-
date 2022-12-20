@@ -1,15 +1,19 @@
-console.log("#".repeat(34));
-let docWidth = Math.max(document.body.offsetWidth);
-console.log(docWidth);
-let ser = document.querySelectorAll("[data-up=up]");
-console.log(ser);
+let boxes = document.querySelectorAll(`[data-up=up]`);
+console.log(boxes);
 
-window.onscroll = function () {
-  ser.forEach((e) => {
-    if (window.scrollY >= e.offsetTop - e.offsetHeight * 0.7) {
-      e.classList.add("show");
+window.addEventListener("scroll", check);
+check();
+function check() {
+  let trigger = window.innerHeight;
+  console.log(trigger);
+  boxes.forEach((box) => {
+    let boxTop = box.getBoundingClientRect().top;
+    console.log(boxTop);
+    if ( boxTop < trigger) {
+      box.classList.add("show");
     } else {
-      e.classList.add("hide");
+      let wid = window.innerWidth;
+      box.classList.remove("show");
     }
   });
-};
+}
