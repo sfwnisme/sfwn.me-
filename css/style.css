@@ -611,14 +611,12 @@ main .container .hero-box p {
   -moz-transform: translatey(0);
   -ms-transform: translatey(0);
   -o-transform: translatey(0);
-  transition: 1000ms;
-  -webkit-transition: 1000ms;
-  -moz-transition: 1000ms;
-  -ms-transition: 1000ms;
-  -o-transition: 1000ms;
+  transition: 800ms;
+  -webkit-transition: 800ms;
+  -moz-transition: 800ms;
+  -ms-transition: 800ms;
+  -o-transition: 800ms;
   opacity: 1;
-}
-.services {
 }
 .services .container .service-box {
   padding: 3rem;
