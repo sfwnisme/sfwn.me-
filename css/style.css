@@ -1283,24 +1283,6 @@ input:checked + .slider .feather-sun {
   transform: translateX(-4px);
 }
 
-/* ====================[AOS]==================== */
-.show {
-  transform: translateY(0) !important;
-  -webkit-transform: translateY(0) !important;
-  -moz-transform: translateY(0) !important;
-  -ms-transform: translateY(0) !important;
-  -o-transform: translateY(0) !important;
-  opacity: 1 !important;
-  
-}
-[data-up="up"] {
-  transform: translateY(1000px);
-  -webkit-transform: translateY(1000px);
-  -moz-transform: translateY(1000px);
-  -ms-transform: translateY(1000px);
-  -o-transform: translateY(1000px);
-}
-
 /* ====================[Github API]==================== */
 .github-box .container .github {
   width: fit-content;

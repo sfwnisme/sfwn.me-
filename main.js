@@ -1,4 +1,4 @@
-// AOS.init();
+AOS.init();
 
 let navIcon = document.getElementById("nav-icon");
 let nav = document.getElementById("nav");
