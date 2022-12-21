@@ -1,6 +1,6 @@
 # sfwn.me
 
-[Live Demo](https://sfwnisme.github.io/mysite/)
+[Live Demo](https://sfwnisme.github.io/sfwn.me-/)
 
 ## Web App Structure
 
