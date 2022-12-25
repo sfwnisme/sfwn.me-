@@ -437,7 +437,7 @@ nav .overly-active {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: var(--bg-light);
+  background-color: #0e403bb4;
   -webkit-filter: blur(0);
   filter: blur(0);
   backdrop-filter: blur(0.5rem);
