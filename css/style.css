@@ -1344,17 +1344,17 @@ input:checked + .slider .feather-sun {
   -ms-transition: var(--tran-3);
   -o-transition: var(--tran-3);
 }
-.github .repos {
-  font-size: var(--hero-text-phone);
-  font-weight: 100;
-  color: var(--new-3);
-}
-
 .github .username:hover {
   transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
-  box-shadow: 0 5px 0 var(--box-title-font-color);
+  box-shadow: 0 5px 0 var(--new-3);
 }
+.github .repos {
+  font-size: var(--hero-text-phone);
+  font-weight: 100;
+  color: var(--new-3);
+}
+
