@@ -152,6 +152,10 @@ span {
   --tran-2: 0.5s;
   --tran-3: 0.25s;
   --tran-4: 0.15s;
+  /* new colors */
+  --new-1: #0e403b;
+  --new-2: #135851;
+  --new-3: #6bc2b9 ;
 }
 [data-theme="dark"] {
   --bg-main: linear-gradient(130deg, #fffaf3 0%, #fffaf3 50%, #fff7ed);
@@ -207,7 +211,8 @@ button {
   font-family: big-font;
 }
 body {
-  background-image: var(--bg-main);
+  /* background-image: var(--bg-main); */
+  background-color: var(--new-1);
   position: relative;
   transition: 0.75s !important;
   -webkit-transition: 0.75s !important;
@@ -248,11 +253,11 @@ body > main {
   color: var(--font);
 }
 .access-color {
-  color: var(--h1);
+  color: var(--new-3);
 }
-.bg-gradient,
-.work {
-  background-image: var(--box-grade);
+.bg-gradient{
+  /* background-image: var(--box-grade); */
+  background-color: var(--new-2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.051);
 }
 
@@ -1294,7 +1299,7 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  box-shadow: 0 0 50px var(--lter1);
+  box-shadow: 0 0 50px #6bc2b932;
 }
 
 .github-box .container .section-title h2 {
@@ -1323,7 +1328,7 @@ input:checked + .slider .feather-sun {
   color: var(--font);
   font-weight: 600;
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
-  color: var(--l1);
+  color: var(--new-1);
   background-color: var(--m4);
   padding: 5px 20px;
   justify-items: flex-end;
@@ -1342,7 +1347,7 @@ input:checked + .slider .feather-sun {
 .github .repos {
   font-size: var(--hero-text-phone);
   font-weight: 100;
-  color: var(--l2);
+  color: var(--new-3);
 }
 
 .github .username:hover {
