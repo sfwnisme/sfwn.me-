@@ -155,7 +155,7 @@ span {
   /* new colors */
   --new-1: #0e403b;
   --new-2: #135851;
-  --new-3: #6bc2b9 ;
+  --new-3: #9dfff5 ;
 }
 [data-theme="dark"] {
   --bg-main: linear-gradient(130deg, #fffaf3 0%, #fffaf3 50%, #fff7ed);
