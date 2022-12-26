@@ -785,6 +785,29 @@ main .container .hero-box p {
 section {
   position: relative;
 }
+section .container .section-title {
+  position: relative;
+}
+section .container .section-title h2::before {
+  content: "50%";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  background-color: #1b6a62aa;
+  width: calc((100% / 12) * 6);
+  height: 8px;
+  font-size: 10px;
+  font-weight: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+}
+
 section .container .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -796,15 +819,15 @@ section .container .skills::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -1rem;
+  left: -3rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--lter1);
+  background-color: var(--lter4);
   inline-size: 0.1rem;
-  block-size: calc(100% - 6rem);
+  block-size: calc(100% - 5rem);
   opacity: 0.3;
 }
 section .container .skills .skill {
@@ -839,6 +862,23 @@ section .container .skills .skill::before {
   justify-content: center;
   align-items: center;
 }
+section .container .skills .skill::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3rem;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: var(--lter4);
+  inline-size: 1rem;
+  block-size: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .not-started::before {
   background-color: transparent !important;
 }
@@ -852,26 +892,6 @@ section .container .skills .skill::before {
     /* opacity: 0; */
     background-color: transparent;
   }
-}
-
-section .container .skills .skill::after {
-  /* content: ""; */
-  position: absolute;
-  top: 50%;
-  left: -16.5px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  inline-size: 1.1rem;
-  block-size: 1.7rem;
-  border: 1px solid var(--lter4);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
 }
 
 section .container .skills .skill .progress {
