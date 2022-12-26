@@ -1,29 +1,41 @@
 export default function logo() {
-  /* ----------logo Scroll */
+  /* ----------up Scroll */
+  let up = document.getElementById("up");
   let logo = document.querySelector("[data-value=logo]");
 
-  let up = document.getElementById("up");
+  window.onload = () => {
+    logo.style.cssText = "top: 20px;";
+  };
 
-  // window.onload = () => {
-  //   logo.style.cssText = "top: 20px;";
-  // };
+  up.onclick = () => {
+    scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+    // Inactive the hightlight colors from nav links onclicking on up icon
+    navLis.forEach((e) => {
+      e.classList.remove("active-li");
+    });
+    navLinks.forEach((e) => {
+      e.classList.remove("active-li-a");
+    });
+  };
 
-  window.onscroll = () => {
+  window.onscroll = (e) => {
     //logo
     if (scrollY > 200) {
-      logo.style.cssText = `
-      bottom: 2vh;
-      inline-size: 5rem;
-      block-size: 5rem;
-      `;
+      logo.style.cssText = "opacity: 0; top: -20rem ;";
     } else {
-      logo.style.cssText = `bottom: 82vh`;
+      logo.style.cssText = "opacity: 1; top: 20px";
     }
     //up
     if (scrollY > 700) {
-      up.style.cssText = `opacity: 1; z-index: 1;`;
+      up.style.cssText = "opacity: 1; z-index: 1;";
     } else {
-      up.style.cssText = `opacity: 0; z-index: -1;`;
+      up.style.cssText = "opacity: 0; z-index: -1;";
     }
   };
+
+  /* ----------logo Scroll */
 }
