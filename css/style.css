@@ -1364,7 +1364,7 @@ input:checked + .slider .feather-sun {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
-  box-shadow: 0 5px 0 var(--new-3);
+  box-shadow: 0 5px 0 #0e403b;
 }
 .github .repos {
   font-size: var(--hero-text-phone);
