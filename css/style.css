@@ -155,7 +155,13 @@ span {
   /* new colors */
   --new-1: #0e403b;
   --new-2: #135851;
-  --new-3: #9dfff5 ;
+  --new-3: #9bd8d2;
+  --new-grade: linear-gradient(
+    180deg,
+    var(--new-2) 0%,
+    var(--new-2) 0%,
+    #0d4641
+  );
 }
 [data-theme="dark"] {
   --bg-main: linear-gradient(130deg, #fffaf3 0%, #fffaf3 50%, #fff7ed);
@@ -255,9 +261,10 @@ body > main {
 .access-color {
   color: var(--new-3);
 }
-.bg-gradient{
+.bg-gradient {
   /* background-image: var(--box-grade); */
-  background-color: var(--new-2);
+  /* background-color: var(--new-2); */
+  background-image: var(--new-grade);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.051);
 }
 
@@ -827,8 +834,8 @@ section .container .skills .skill::before {
   background-color: transparent !important;
 }
 .still-working-on::before {
-  animation: updown 1.9s infinite steps(2);
-  -webkit-animation: updown 1.9s infinite steps(2);
+  animation: updown 1.9s infinite steps(100);
+  -webkit-animation: updown 1.9s infinite steps(100);
 }
 
 @keyframes updown {
@@ -873,26 +880,6 @@ section .container .skills .skill .progressing {
   animation: rotate 5s linear infinite;
 }
 /* End Skills */
-
-/* Start Study Sources */
-.stdy {
-  padding: 1rem;
-  -webkit-border-radius: var(--large-radius);
-  -moz-border-radius: var(--large-radius);
-  -ms-border-radius: var(--large-radius);
-  -o-border-radius: var(--large-radius);
-  border-radius: var(--large-radius);
-}
-.stdy > img {
-  inline-size: 9rem;
-  block-size: 9rem;
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
-  border-radius: var(--small-radius);
-}
-/* End Study Sources */
 
 /* Start Contact */
 .contact {
@@ -1299,7 +1286,6 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  box-shadow: 0 0 50px #6bc2b932;
 }
 
 .github-box .container .section-title h2 {
@@ -1357,4 +1343,3 @@ input:checked + .slider .feather-sun {
   font-weight: 100;
   color: var(--new-3);
 }
-
