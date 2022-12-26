@@ -1,3 +1,6 @@
+import skills from './skills.js'
+skills()
+
 AOS.init();
 
 let navIcon = document.getElementById("nav-icon");
