@@ -819,10 +819,15 @@ section .container .skills::before {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--lter4);
-  inline-size: 0.2rem;
-  block-size: calc(100% - 4.8rem);
-  opacity: 0.3;
+  background-color: var(--m4);
+  inline-size: 0.1rem;
+  block-size: calc(100% - 5.9rem);
+  /* opacity: 0.3; */
+}
+@media (max-width: 767px) {
+  section .container .skills::before {
+    block-size: calc(100% - 4.8rem);
+  }
 }
 section .container .skills .skill {
   padding: 1.2rem;
@@ -866,7 +871,7 @@ section .container .skills .skill::after {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--lter4);
+  background-color: var(--m4);
   inline-size: 1rem;
   block-size: 1px;
   display: flex;
