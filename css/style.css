@@ -813,15 +813,15 @@ section .container .skills::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -3rem;
+  left: -2.5rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: var(--lter4);
-  inline-size: 0.1rem;
-  block-size: calc(100% - 5rem);
+  inline-size: 0.2rem;
+  block-size: calc(100% - 4.8rem);
   opacity: 0.3;
 }
 section .container .skills .skill {
@@ -860,7 +860,7 @@ section .container .skills .skill::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: -3rem;
+  left: -2.5rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
