@@ -555,17 +555,18 @@ main {
   block-size: 100vh;
   position: relative;
 }
+
 main > img {
   position: fixed;
   inline-size: 10rem;
   block-size: 10rem;
-  top: -100px;
+  bottom: 82vh;
   left: 20px;
-  -webkit-transition: var(--tran-2) ease-in;
-  -moz-transition: var(--tran-2) ease-in;
-  -ms-transition: var(--tran-2) ease-in;
-  -o-transition: var(--tran-2) ease-in;
-  transition: var(--tran-2) ease-in;
+  -webkit-transition: var(--tran-1) ease-in;
+  -moz-transition: var(--tran-1) ease-in;
+  -ms-transition: var(--tran-1) ease-in;
+  -o-transition: var(--tran-1) ease-in;
+  transition: var(--tran-1) ease-in;
   z-index: 1;
 }
 main .container {

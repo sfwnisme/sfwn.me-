@@ -1,3 +1,7 @@
+// logo
+import logo from "./extensions/logo.js";
+logo();
+
 // skills
 import skills from "./extensions/skills.js";
 skills();
@@ -59,13 +63,6 @@ navLinks.forEach((a) => {
 
 /* ----------up Scroll */
 
-let up = document.getElementById("up");
-
-let logo = document.querySelector("[data-value=logo]");
-
-window.onload = () => {
-  logo.style.cssText = "top: 20px;";
-};
 
 up.onclick = () => {
   scroll({
@@ -82,22 +79,6 @@ up.onclick = () => {
   });
 };
 
-window.onscroll = (e) => {
-  //logo
-  if (scrollY > 200) {
-    logo.style.cssText = "opacity: 0; top: -20rem ;";
-  } else {
-    logo.style.cssText = "opacity: 1; top: 20px";
-  }
-  //up
-  if (scrollY > 700) {
-    up.style.cssText = "opacity: 1; z-index: 1;";
-  } else {
-    up.style.cssText = "opacity: 0; z-index: -1;";
-  }
-};
-
-/* ----------logo Scroll */
 
 //
 //
