@@ -560,6 +560,7 @@ main > img {
   position: fixed;
   inline-size: 10rem;
   block-size: 10rem;
+  /* top: -100px; */
   top: -100px;
   left: 20px;
   -webkit-transition: var(--tran-2) ease-in;

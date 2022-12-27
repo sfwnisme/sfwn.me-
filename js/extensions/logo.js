@@ -22,12 +22,12 @@ export default function logo() {
     });
   };
 
-  window.onscroll = (e) => {
+  window.addEventListener("scroll", () => {
     //logo
     if (scrollY > 200) {
-      logo.style.cssText = "opacity: 0; top: -20rem ;";
+      logo.style.cssText = "opacity: 0; top: -20rem;";
     } else {
-      logo.style.cssText = "opacity: 1; top: 20px";
+      logo.style.cssText = "opacity: 1; top: 20px;";
     }
     //up
     if (scrollY > 700) {
@@ -35,7 +35,5 @@ export default function logo() {
     } else {
       up.style.cssText = "opacity: 0; z-index: -1;";
     }
-  };
-
-  /* ----------logo Scroll */
+  });
 }

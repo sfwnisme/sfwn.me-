@@ -1,27 +1,28 @@
-// logo
-import logo from "./extensions/logo.js";
-logo();
-
-// skills
+/* .........skills......... */
 import skills from "./extensions/skills.js";
 skills();
 
-// github
+/* .........logo......... */
+import logo from "./extensions/logo.js";
+logo();
+
+/* .........github......... */
 import github from "./extensions/github.js";
 github();
 
-// contact
+/* .........contact......... */
 import contact from "./extensions/contact.js";
 contact();
 
-// footer
+/* .........footer......... */
 import footer from "./extensions/footer.js";
 footer();
 
-// services
+/* .........services......... */
 import services from "./extensions/services.js";
 services();
 
+/* .........AOS......... */
 AOS.init();
 
 let navIcon = document.getElementById("nav-icon");
@@ -60,25 +61,6 @@ navLinks.forEach((a) => {
     a.classList.add("active-li-a");
   });
 });
-
-/* ----------up Scroll */
-
-
-up.onclick = () => {
-  scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-  // Inactive the hightlight colors from nav links onclicking on up icon
-  navLis.forEach((e) => {
-    e.classList.remove("active-li");
-  });
-  navLinks.forEach((e) => {
-    e.classList.remove("active-li-a");
-  });
-};
-
 
 //
 //
