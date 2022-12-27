@@ -789,7 +789,6 @@ section {
 section .container .section-title .skills-progress {
   background-color: #1b6a62aa;
   color: white;
-  width: calc((100% / 12) * 6);
   height: 8px;
   font-size: 10px;
   font-weight: 100;
@@ -801,6 +800,11 @@ section .container .section-title .skills-progress {
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
+  transition: var(--tran-1);
+  -webkit-transition: var(--tran-1);
+  -moz-transition: var(--tran-1);
+  -ms-transition: var(--tran-1);
+  -o-transition: var(--tran-1);
 }
 
 section .container .skills {
