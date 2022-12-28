@@ -1,3 +1,5 @@
+/* ========== this window.onscroll override on other onscroll options => use addEventListener instead */
+
 // export default function skills() {
 //   let skills = document.querySelectorAll(".skills .skill").length;
 //   let done = document.querySelectorAll(".skills .skill.done").length;
@@ -41,3 +43,5 @@ export default function skills() {
     }
   });
 }
+
+
