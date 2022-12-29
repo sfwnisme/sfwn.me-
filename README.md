@@ -101,7 +101,7 @@ then tried the last chance => `@import url();`
 
 - **External Files => `<link/>`**
 
-  - While we prefer to separate files to many branches`(like css files => style.css, font.css, colors.css, framework.css)` on google LIGHTHOUSE side it brach files eats a large part of the performance and increase the delay
+  - While we prefer to separate files to many branches`(like css files => style.css, font.css, colors.css, framework.css)` on google LIGHTHOUSE side the external files eats a large part of the performance and increase the delay
     sometimes tokes more than `10seconds` to load a single page, while the save zoon of the best performace should be less than `2seconds`
   - Large files as `css` make latency play around your project, that we should decrease css lines as possible as we can.
   -
