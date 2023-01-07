@@ -173,20 +173,25 @@ span {
   );
 }
 [data-theme="dark"] {
-  --bg-main: linear-gradient(130deg, #fffaf3 0%, #fffaf3 50%, #fff7ed);
-  --box-grade: linear-gradient(-310deg, var(--m2) 0%, var(--m2) 0%, #fff6ea);
+  --bg-main: linear-gradient(130deg, var(--m1) 0%, var(--m1) 50%, #46325c);
+  --box-grade: linear-gradient(
+    -310deg,
+    var(--m2) 0%,
+    var(--m2) 0%,
+    hsl(253, 33%, 30%)
+  );
   --bg: #151f32;
   --bg-light: #1a253ba1;
   --font: rgb(0, 0, 0);
-  --m1: #ffffff;
-  --m2: #fffbf5;
-  --m4: #ff6363;
-  --m3: #ffbd69;
+  --m1: #202040;
+  --m2: #543864;
+  --m3: #ff6363;
+  --m4: #ffbd69;
   --l1: #6f6f9b;
   --l2: #a581b9;
   --l3: #ff9797;
   --l4: #ffd8a6;
-  --h1: #1d1d5d;
+  --h1: #d0d0ff;
   --h2: #eed0ff;
   --h3: #ffcece;
   --h4: #ffe8ca;
@@ -200,15 +205,15 @@ span {
   --ltest4: hsla(34, 100%, 71%, 0.05);
   --box-title-font-color: #7373ad;
   --light-mode: #fff3e5;
-  --hero-title-laptop: 15rem;
-  --hero-title-phone: 3rem;
+  --hero-title-laptop: 25rem;
+  --hero-title-phone: 4rem;
   --hero-text-laptop: 1.8rem;
   --hero-text-phone: 1.6rem;
   --section-title-laptop: 4.5rem;
   --section-title-phone: 2.8rem;
-  --box-title-laptop: 2.2rem;
-  --box-title-phone: 1.6rem;
-  --box-text-laptop: 1.8rem;
+  --box-title-laptop: 2.5rem;
+  --box-title-phone: 1.8rem;
+  --box-text-laptop: 2rem;
   --box-text-phone: 1.4rem;
   --box-link-laptop: 1.6rem;
   --box-link-phone: 1.2rem;
@@ -220,6 +225,13 @@ span {
   --tran-2: 0.5s;
   --tran-3: 0.25s;
   --tran-4: 0.15s;
+  /* new colors */
+  --new-1: #fffdf9;
+  --new-2: #ff5e1e;
+  --new-3: rgb(255, 127, 127);
+  --new-4: rgb(255, 162, 162);
+  --new-5: rgb(255, 245, 245);
+  --new-grade: linear-gradient(180deg, #ffe3e3 0%, #ffe3e3 0%, #ffd3d3);
 }
 body,
 button {
@@ -265,16 +277,18 @@ body > main {
 
 /* Start Components */
 .main-color {
-  color: var(--font);
+  color: var(--new-2);
 }
 .access-color {
-  color: var(--new-3);
+  color: var(--font);
 }
 .bg-gradient {
-  /* background-image: var(--box-grade); */
-  /* background-color: var(--new-2); */
   background-image: var(--new-grade);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.051);
+}
+.box-color {
+  background-color: var(--new-5);
+  box-shadow: 0 0 20px #ffcece56;
 }
 
 a + svg,
@@ -283,7 +297,7 @@ button,
   cursor: pointer;
 }
 .icon-tabler {
-  color: var(--m4);
+  color: var(--new-2);
   stroke-width: 1.5px;
 }
 .up {
@@ -559,8 +573,9 @@ main {
 main > img {
   position: fixed;
   inline-size: 10rem;
-  block-size: 10rem;
-  /* top: -100px; */
+  /*block-size: 10rem;
+  */ /*top: -100px;
+  */
   top: -100px;
   left: 20px;
   -webkit-transition: var(--tran-2) ease-in;
@@ -569,6 +584,8 @@ main > img {
   -o-transition: var(--tran-2) ease-in;
   transition: var(--tran-2) ease-in;
   z-index: 1;
+  /* filter: drop-shadow(0 0 2px rgb(218, 218, 218));
+  -webkit-filter: drop-shadow(0 0 2px rgb(218, 218, 218)); */
 }
 main .container {
   margin-top: 10rem;
@@ -606,9 +623,9 @@ main .container .hero-box h1 {
   font-size: clamp(var(--hero-title-phone), 6vw, var(--hero-title-laptop));
   margin-top: 1rem;
   /* color: transparent; */
-  -webkit-text-stroke: var(--m4) 0.7px;
+  /* -webkit-text-stroke: var(--m4) 0.7px; */
   font-weight: 900;
-  text-decoration: underline var(--m4) clamp(5px, 1vw, 10px);
+  text-decoration: underline var(--new-3) clamp(5px, 1vw, 10px);
   line-height: 1;
 }
 main .container .hero-box p {
@@ -713,15 +730,15 @@ main .container .hero-box p {
 }
 
 .services .container button {
-  background-color: transparent;
-  color: var(--m4);
+  background-color: var(--new-3);
+  color: var(--new-1);
   min-inline-size: 10rem;
   padding: 0.8rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
-  border: 1px solid var(--m4);
+  border: none;
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
@@ -732,6 +749,7 @@ main .container .hero-box p {
   -ms-transition: var(--tran-3) background-color;
   -o-transition: var(--tran-3) background-color;
   transition: var(--tran-3) background-color;
+  box-shadow: -3px 3px var(--new-4);
 }
 @media (max-width: 767px) {
   .services .container button {
@@ -739,10 +757,10 @@ main .container .hero-box p {
   }
 }
 .services .container button:hover {
-  background-color: var(--ltest4);
+  background-color: var(--new-4);
 }
 .services .container button:active {
-  background-color: var(--lter4);
+  background-color: var(--new-2);
 }
 /* End Slide */
 
@@ -788,7 +806,7 @@ section {
   position: relative;
 }
 section .container .section-title .skills-progress {
-  color: white;
+  color: var(--new-2);
   height: 8px;
   font-size: 10px;
   font-weight: 100;
@@ -835,6 +853,7 @@ section .container .skills::before {
   }
 }
 section .container .skills .skill {
+  background-color: var(--new-5) !important;
   padding: 1.2rem;
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
@@ -853,7 +872,7 @@ section .container .skills .skill::before {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--lter4);
+  background-color: var(--new-3);
   inline-size: 1rem;
   block-size: 2rem;
   border: 1px solid var(--m4);
@@ -1216,7 +1235,6 @@ footer a {
   top: 1.6rem;
   right: 1.6rem;
   z-index: 2;
-  display: none;
 }
 .theme-switch-wrapper em {
   margin-left: 10px;
@@ -1348,7 +1366,7 @@ input:checked + .slider .feather-sun {
   font-weight: 600;
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   color: var(--new-1);
-  background-color: var(--m4);
+  background-color: var(--new-3);
   padding: 5px 20px;
   justify-items: flex-end;
   border-radius: var(--small-radius);
@@ -1365,11 +1383,11 @@ input:checked + .slider .feather-sun {
 }
 .github .username:hover {
   transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
-  box-shadow: 0 5px 0 #0e403b;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
+  box-shadow: 0 5px 0 var(--new-4);
 }
 .github .repos {
   font-size: var(--hero-text-phone);
