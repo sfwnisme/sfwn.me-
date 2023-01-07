@@ -22,9 +22,13 @@ footer();
 import services from "./extensions/services.js";
 services();
 
+// /* .........services......... */
+// import themee from "./extensions/theme.js";
+// themee();
+
 /* .........services......... */
-import themee from "./extensions/theme.js";
-themee();
+import preloader from "./extensions/preloader.js";
+preloader();
 
 /* .........AOS......... */
 AOS.init();
