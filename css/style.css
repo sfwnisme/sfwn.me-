@@ -776,7 +776,6 @@ main .container .hero-box p {
   -ms-transition: var(--tran-3);
   -o-transition: var(--tran-3);
   transition: var(--tran-3);
-  /* box-shadow: -3px 3px var(--new-4); */
 }
 @media (max-width: 767px) {
   .services .container button {
@@ -971,15 +970,16 @@ section .container .skills .skill .progressing {
   max-inline-size: 40px;
 }
 .contact .container a svg {
-  inline-size: 40px;
-  block-size: 40px;
-  /*stroke-width: 0.5px;
-  */
-  -webkit-transition: var(--tran-3);
-  -moz-transition: var(--tran-3);
-  -ms-transition: var(--tran-3);
-  -o-transition: var(--tran-3);
-  transition: var(--tran-3);
+ inline-size: 40px;
+ block-size: 40px;
+ /*stroke-width: 0.5px;
+ */-webkit-transition: var(--tran-3);
+ -moz-transition: var(--tran-3);
+ -ms-transition: var(--tran-3);
+ -o-transition: var(--tran-3);
+ transition: var(--tran-3);
+ filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
+ -webkit-filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
 }
 .contact .container div:hover a svg {
   -webkit-transform: scale(1.1) translateY(-1rem);
@@ -1003,7 +1003,7 @@ footer p {
   font-weight: 200;
 }
 footer a {
-  color: var(--m4);
+  color: var(--new-3);
   font-size: 1.4rem;
 }
 
