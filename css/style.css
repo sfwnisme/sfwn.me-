@@ -226,12 +226,20 @@ span {
   --tran-3: 0.25s;
   --tran-4: 0.15s;
   /* new colors */
-  --new-1: #fffdf9;
-  --new-2: #ff5e1e;
-  --new-3: rgb(255, 127, 127);
-  --new-4: rgb(255, 162, 162);
+  --new-1: rgb(255, 253, 249);
+  --new-2: rgb(255, 79, 0);
+  --new-3: rgb(255, 116, 52);
+  /* --new-3: rgb(255, 127, 127); */
+  --new-4: rgb(255, 170, 130);
+  /* --new-4: rgb(255, 162, 162); */
   --new-5: rgb(255, 245, 245);
-  --new-grade: linear-gradient(180deg, #ffe3e3 0%, #ffe3e3 0%, #ffd3d3);
+  --new-6: #fff3e6;
+  --new-grade: linear-gradient(
+    180deg,
+    var(--new-4) 0%,
+    var(--new-4) 0%,
+    #ffd3d3
+  );
 }
 body,
 button {
@@ -287,8 +295,8 @@ body > main {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.051);
 }
 .box-color {
-  background-color: var(--new-5);
-  box-shadow: 0 0 20px #ffcece56;
+  background-color: var(--new-6);
+  /* box-shadow: 0 0 20px #ffcece56; */
 }
 
 a + svg,
@@ -297,7 +305,7 @@ button,
   cursor: pointer;
 }
 .icon-tabler {
-  color: var(--new-2);
+  color: var(--new-3);
   stroke-width: 1.5px;
 }
 .up {
@@ -623,7 +631,7 @@ main .container .hero-box h1 {
   /* color: transparent; */
   /* -webkit-text-stroke: var(--m4) 0.7px; */
   font-weight: 900;
-  text-decoration: underline var(--new-3) clamp(5px, 1vw, 10px);
+  /* text-decoration: underline var(--new-3) clamp(5px, 1vw, 10px); */
   line-height: 1;
 }
 main .container .hero-box p {
@@ -851,7 +859,6 @@ section .container .skills::before {
   }
 }
 section .container .skills .skill {
-  background-color: var(--new-5) !important;
   padding: 1.2rem;
   -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
