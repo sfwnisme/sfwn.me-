@@ -55,21 +55,18 @@
   font-family: newfont;
   font-weight: 600;
   font-style: normal;
-
 }
 @font-face {
   src: url(../fonts/Degular/Degular-Semibold.ttf);
   font-family: newfont;
   font-weight: 700;
   font-style: normal;
-
 }
 @font-face {
   src: url(../fonts/Degular/Degular_Display-Bold.ttf);
   font-family: newfont;
   font-weight: 800;
   font-style: normal;
-
 }
 
 /* Start Reset Page */
@@ -972,7 +969,8 @@ section .container .skills .skill .progressing {
 .contact .container a svg {
   inline-size: 40px;
   block-size: 40px;
-  /* stroke-width: 0.5px; */
+  /*stroke-width: 0.5px;
+  */
   -webkit-transition: var(--tran-3);
   -moz-transition: var(--tran-3);
   -ms-transition: var(--tran-3);
@@ -1403,7 +1401,7 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
-  box-shadow: 0 0px 0 black;
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(255, 81, 0, 0.30), 0 4px 12px rgba(255, 81, 0, 0.15); */
   transition: var(--tran-3);
   -webkit-transition: var(--tran-3);
   -moz-transition: var(--tran-3);
@@ -1412,11 +1410,12 @@ input:checked + .slider .feather-sun {
 }
 .github .username:hover {
   transform: translateY(-5px);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
-  box-shadow: 0 5px 0 var(--new-4);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12), 0 6px 20px rgba(255, 81, 0, 0.3),
+    0 3px 10px rgba(255, 81, 0, 0.15);
 }
 .github .repos {
   font-size: var(--hero-text-phone);
