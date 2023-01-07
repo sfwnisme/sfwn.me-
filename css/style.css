@@ -467,7 +467,7 @@ nav .overly-active {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #0e403bb4;
+  background-color: var(--new-1);
   -webkit-filter: blur(0);
   filter: blur(0);
   backdrop-filter: blur(0.5rem);
@@ -539,10 +539,11 @@ nav .container ul li {
   transition: var(--tran-4);
 }
 nav .container ul li:hover {
-  background-color: var(--ltest4);
+  background-color: var(--new-4);
 }
 nav .container ul li a.active-li-a {
-  color: var(--m4);
+  color: var(--new-3);
+  text-decoration: underline 3px var(--new-4);
 }
 nav .container ul li a {
   inline-size: 100%;
@@ -553,10 +554,7 @@ nav .container ul li a {
   padding-block: 3rem;
 }
 nav .container ul li:hover a {
-  color: var(--m4);
-}
-nav .container ul li.active-link {
-  color: var(--m4);
+  color: var(--new-1);
 }
 /* End Nav */
 
