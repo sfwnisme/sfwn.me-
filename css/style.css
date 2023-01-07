@@ -568,7 +568,7 @@ nav .container ul li {
   transition: var(--tran-4);
 }
 nav .container ul li:hover {
-  background-color: var(--new-4);
+  background-color: var(--new-2);
 }
 nav .container ul li a.active-li-a {
   color: var(--new-3);
@@ -873,7 +873,7 @@ section .container .skills::before {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--m4);
+  background-color: var(--new-4);
   inline-size: 0.1rem;
   block-size: calc(100% - 5.9rem);
   /* opacity: 0.3; */
@@ -902,7 +902,7 @@ section .container .skills .skill::before {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--new-3);
+  background-color: var(--new-2);
   inline-size: 1rem;
   block-size: 2rem;
   border: 1px solid var(--m4);
@@ -925,7 +925,7 @@ section .container .skills .skill::after {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: var(--m4);
+  background-color: var(--new-2);
   inline-size: 1rem;
   block-size: 1px;
   display: flex;
