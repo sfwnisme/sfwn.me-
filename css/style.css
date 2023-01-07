@@ -49,6 +49,29 @@
   font-style: normal;
 }
 
+/* new font */
+@font-face {
+  src: url(../fonts/Degular/Degular-Medium.ttf);
+  font-family: newfont;
+  font-weight: 600;
+  font-style: normal;
+
+}
+@font-face {
+  src: url(../fonts/Degular/Degular-Semibold.ttf);
+  font-family: newfont;
+  font-weight: 700;
+  font-style: normal;
+
+}
+@font-face {
+  src: url(../fonts/Degular/Degular_Display-Bold.ttf);
+  font-family: newfont;
+  font-weight: 800;
+  font-style: normal;
+
+}
+
 /* Start Reset Page */
 
 html {
@@ -626,6 +649,7 @@ main .container .hero-box > span {
   position: relative;
 }
 main .container .hero-box h1 {
+  /* font-family: newfont; */
   font-size: clamp(var(--hero-title-phone), 6vw, var(--hero-title-laptop));
   margin-top: 1rem;
   /* color: transparent; */
