@@ -83,8 +83,8 @@ html {
 }
 
 ::selection {
-  background-color: var(--ltest4);
-  color: var(--m4);
+  background-color: #000;
+  color: var(--new-1);
 }
 
 ::-webkit-scrollbar {
@@ -193,38 +193,6 @@ span {
   --preloader-time: ;
 } */
 :root {
-  --bg-main: linear-gradient(130deg, var(--m1) 0%, var(--m1) 50%, #46325c);
-  --box-grade: linear-gradient(
-    -310deg,
-    var(--m2) 0%,
-    var(--m2) 0%,
-    hsl(253, 33%, 30%)
-  );
-  --bg: #151f32;
-  --bg-light: #1a253ba1;
-  --font: rgb(0, 0, 0);
-  --m1: #202040;
-  --m2: #543864;
-  --m3: #ff6363;
-  --m4: #ffbd69;
-  --l1: #6f6f9b;
-  --l2: #a581b9;
-  --l3: #ff9797;
-  --l4: #ffd8a6;
-  --h1: #d0d0ff;
-  --h2: #eed0ff;
-  --h3: #ffcece;
-  --h4: #ffe8ca;
-  --lter1: hsla(240, 18%, 52%, 0.4);
-  --lter2: hsla(278, 28%, 31%, 0.4);
-  --lter3: hsla(0, 100%, 69%, 0.4);
-  --lter4: hsla(34, 100%, 71%, 0.4);
-  --ltest1: hsla(240, 18%, 52%, 0.05);
-  --ltest2: hsla(278, 28%, 31%, 0.05);
-  --ltest3: hsla(0, 100%, 69%, 0.05);
-  --ltest4: hsla(34, 100%, 71%, 0.05);
-  --box-title-font-color: #7373ad;
-  --light-mode: #fff3e5;
   --hero-title-laptop: 25rem;
   --hero-title-phone: 4rem;
   --hero-text-laptop: 1.8rem;
@@ -249,9 +217,7 @@ span {
   --new-1: rgb(255, 253, 249);
   --new-2: rgb(255, 79, 0);
   --new-3: rgb(255, 116, 52);
-  /* --new-3: rgb(255, 127, 127); */
   --new-4: rgb(255, 170, 130);
-  /* --new-4: rgb(255, 162, 162); */
   --new-5: rgb(255, 245, 245);
   --new-6: #fff3e6;
   --new-grade: linear-gradient(
@@ -267,7 +233,6 @@ button {
   font-family: big-font;
 }
 body {
-  /* background-image: var(--bg-main); */
   background-color: var(--new-1);
   position: relative;
   transition: 0.75s !important;
