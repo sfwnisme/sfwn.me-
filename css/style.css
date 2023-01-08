@@ -220,6 +220,7 @@ span {
   --new-4: rgb(255, 170, 130);
   --new-5: rgb(255, 245, 245);
   --new-6: #fff3e6;
+  --new-7: #cefff8;
   --new-grade: linear-gradient(
     180deg,
     var(--new-4) 0%,
@@ -283,6 +284,7 @@ body > main {
 .box-color {
   background-color: var(--new-6);
   /* box-shadow: 0 0 20px #ffcece56; */
+  position: relative;
 }
 
 a + svg,
@@ -628,7 +630,7 @@ main .container .hero-box p {
   line-height: 1.5;
 }
 /* End Main Landing */
-
+/* start services */
 /* Start Slide */
 .hide {
   opacity: 0;
@@ -651,13 +653,19 @@ main .container .hero-box p {
   -o-transition: 800ms;
   opacity: 1;
 }
+.services .container {
+  position: relative;
+  z-index: 1;
+}
 .services .container .service-box {
+  background-color: var(--new-6);
   padding: 3rem;
   border-radius: calc(var(--large-radius) + 0rem);
   -webkit-border-radius: calc(var(--large-radius) + 0rem);
   -moz-border-radius: calc(var(--large-radius) + 0rem);
   -ms-border-radius: calc(var(--large-radius) + 0rem);
   -o-border-radius: calc(var(--large-radius) + 0rem);
+  position: relative;
 }
 @media (max-width: 991px) {
   .services .container .service-box {
@@ -774,6 +782,7 @@ main .container .hero-box p {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  /* border: 2px solid rgb(147, 147, 147); */
 }
 .work-space .container .works .work img {
   inline-size: 100%;
@@ -823,13 +832,20 @@ section .container .section-title .skills-progress {
 
 section .container .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
   position: relative;
   margin-left: 1.5rem;
 }
+@media (max-width: 767px) {
+  section .container .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+  }
+}
 section .container .skills::before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 50%;
   left: -2.5rem;
@@ -842,6 +858,7 @@ section .container .skills::before {
   inline-size: 0.1rem;
   block-size: calc(100% - 5.9rem);
   /* opacity: 0.3; */
+  border: 1px solid var(--new-2);
 }
 @media (max-width: 767px) {
   section .container .skills::before {
@@ -861,38 +878,21 @@ section .container .skills .skill::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -1.55rem;
+  left: -1.2rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: var(--new-2);
-  inline-size: 1rem;
+  inline-size: 0.7rem;
   block-size: 2rem;
-  border: 1px solid var(--m4);
+  border: 1px solid var(--new-2);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section .container .skills .skill::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -2.5rem;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: var(--new-2);
-  inline-size: 1rem;
-  block-size: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1396,25 +1396,15 @@ input:checked + .slider .feather-sun {
 /* preloader */
 
 .preloader {
-  background-color: var(--new-1);
-  background: linear-gradient(
-    0deg,
-    var(--new-1) 0%,
-    var(--new-1) 10%,
-    var(--new-6)
-  );
+  background-color: var(--new-2);
+  /* background: var(--new-2); */
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top:0;
+  left:0;
   opacity: 1;
   z-index: 2;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
 }
 .preloader.inactive {
   transition: var(--preloader-time);
@@ -1422,7 +1412,7 @@ input:checked + .slider .feather-sun {
   -moz-transition: var(--preloader-time);
   -ms-transition: var(--preloader-time);
   -o-transition: var(--preloader-time);
-  width: 0;
+  width: 100%;
   height: 0;
-  opacity: 0;
+  /* opacity: 0; */
 }
