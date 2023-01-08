@@ -35,7 +35,7 @@ export default function skills() {
   window.addEventListener("scroll", () => {
     if (scrollY > section.offsetTop - 300) {
       console.log(skillProgress);
-      // setInterval(()=> ,1000)
+      // skillProgress.innerHTML = calc;
       skillProgress.innerHTML = calc;
       prog.setAttribute("style", `width: ${calc}`);
     } else {
@@ -44,5 +44,3 @@ export default function skills() {
     }
   });
 }
-
-
