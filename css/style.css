@@ -1407,12 +1407,13 @@ input:checked + .slider .feather-sun {
   z-index: 2;
 }
 .preloader.inactive {
-  transition: var(--preloader-time);
-  -webkit-transition: var(--preloader-time);
-  -moz-transition: var(--preloader-time);
-  -ms-transition: var(--preloader-time);
-  -o-transition: var(--preloader-time);
+  transition: var(--preloader-time) ease-in;
+  -webkit-transition: var(--preloader-time) ease-in;
+  -moz-transition: var(--preloader-time) ease-in;
+  -ms-transition: var(--preloader-time) ease-in;
+  -o-transition: var(--preloader-time) ease-in;
   width: 100%;
   height: 0;
-  /* opacity: 0; */
+  /*opacity: 0;
+  */:;
 }

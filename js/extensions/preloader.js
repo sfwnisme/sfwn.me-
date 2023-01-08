@@ -1,5 +1,5 @@
 export default function preloader() {
-  let time= 3000;
+  let time= 1500;
   let preloaderElement = document.querySelector(".preloader");
   document.documentElement.style.setProperty("--preloader-time", `${time}ms`);
   console.log(performance.now());
