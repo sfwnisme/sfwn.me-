@@ -1407,11 +1407,11 @@ input:checked + .slider .feather-sun {
   z-index: 2;
 }
 .preloader.inactive {
-  transition: var(--preloader-time) ease-in;
-  -webkit-transition: var(--preloader-time) ease-in;
-  -moz-transition: var(--preloader-time) ease-in;
-  -ms-transition: var(--preloader-time) ease-in;
-  -o-transition: var(--preloader-time) ease-in;
+  transition: var(--preloader-time) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: var(--preloader-time) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: var(--preloader-time) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: var(--preloader-time) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: var(--preloader-time) cubic-bezier(0.455, 0.03, 0.515, 0.955);
   width: 100%;
   height: 0;
 }
