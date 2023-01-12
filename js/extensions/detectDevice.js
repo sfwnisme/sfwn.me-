@@ -15,7 +15,7 @@ export default function detectDevice() {
   }
   setTimeout(() => {
     detectDom();
-  }, 1000);
+  }, 10000);
 
   function detectDom() {
     let detectParent = document.createElement("div");
