@@ -34,7 +34,6 @@ export default function skills() {
   let skillProgress = document.querySelector(".skills-progress");
   window.addEventListener("scroll", () => {
     if (scrollY > section.offsetTop - 300) {
-      console.log(skillProgress);
       // skillProgress.innerHTML = calc;
       skillProgress.innerHTML = calc;
       prog.setAttribute("style", `width: ${calc}`);

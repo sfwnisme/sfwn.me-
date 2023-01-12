@@ -34,6 +34,10 @@ preloader();
 import cursroFunction from "./extensions/cursor.js";
 cursroFunction();
 
+/* .........services......... */
+import detectDevice from "./extensions/detectDevice.js";
+detectDevice();
+
 /* .........AOS......... */
 AOS.init();
 
@@ -114,27 +118,3 @@ window.addEventListener("scroll", () => {
   el.style.width = `${(scrollTop / height) * 100}%`;
 });
 /* --End Page Scroll Progress */
-
-/* 
-
-detective device
-
-*/
-
-var a;
-// var answer = document.getElementById("result"); function myfunction() {
-if (
-  navigator.userAgent.match(/Android/i) ||
-  navigator.userAgent.match(/webOS/i) ||
-  navigator.userAgent.match(/iPhone/i) ||
-  navigator.userAgent.match(/iPad/i) ||
-  navigator.userAgent.match(/iPod/i) ||
-  navigator.userAgent.match(/BlackBerry/i) ||
-  navigator.userAgent.match(/Windows Phone/i)
-) {
-  a = 'mobile';
-} else {
-  a = 'desktop';
-}
-alert(`your using ${a}`);
-//  answer.innerHTML = a;
