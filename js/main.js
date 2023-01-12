@@ -118,3 +118,13 @@ window.addEventListener("scroll", () => {
   el.style.width = `${(scrollTop / height) * 100}%`;
 });
 /* --End Page Scroll Progress */
+
+let allA = document.querySelectorAll("a");
+let allBtn = document.querySelectorAll("button");
+let cursor = document.querySelector(".cursor");
+allA.forEach((a) => {
+  a.addEventListener("click", () => {
+    cursor.classList.add("active");
+    console.log("lllllllll");
+  });
+});

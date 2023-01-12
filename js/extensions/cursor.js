@@ -6,5 +6,7 @@ export default function cursorFunction() {
 
     cursor.style.left = `${x}px`;
     cursor.style.top = `${y}px`;
+
+    
   });
 }

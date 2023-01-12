@@ -1368,10 +1368,10 @@ input:checked + .slider .feather-sun {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   z-index: 2;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(2px);
 }
 .detect-overlay {
-  background-color: var(--new-6);
+  background-color: var(--new-2);
   padding: 50px;
   position: absolute;
   top: 50%;
@@ -1391,11 +1391,13 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.132);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 0 3px 10px rgba(0, 0, 0, 0.075);
   width: 300px;
+  /* border: 2px dashed var(--new-2); */
 }
 .detect-overlay p {
   font-size: 16px;
+  color: white;
 }
 .x {
   position: absolute;
@@ -1414,12 +1416,15 @@ input:checked + .slider .feather-sun {
   -moz-transition: var(--tran-1);
   -ms-transition: var(--tran-1);
   -o-transition: var(--tran-1);
+  cursor: pointer;
 }
 .x:hover {
-  background-color: var(--new-2);
+  background-color: var(--new-4);
 }
-.x svg {
-  color: var(--new-1);
+.detect-overlay .x svg {
   width: 20px;
   height: 20px;
+}
+.detect-overlay svg {
+  color: var(--new-1);
 }
