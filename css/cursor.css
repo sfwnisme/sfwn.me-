@@ -7,6 +7,14 @@
   z-index: 10;
   overflow: visible;
 }
+@media (max-width: 600px) {
+  .cursor {
+    display: none !important;
+  }
+  html {
+    cursor: auto;
+  }
+}
 .cursor::before {
   content: "";
   position: absolute;

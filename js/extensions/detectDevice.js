@@ -10,7 +10,6 @@ export default function detectDevice() {
     navigator.userAgent.match(/Windows Phone/i)
   ) {
     a = "mobile";
-    document.documentElement.style.cursor = "none !important";
   } else {
     a = "desktop";
   }
