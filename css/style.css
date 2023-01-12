@@ -75,12 +75,15 @@ html {
   scroll-behavior: smooth;
   font-size: 10px;
   overflow-x: hidden;
+  cursor: none;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+
 
 ::selection {
   background-color: #000;
@@ -1415,3 +1418,5 @@ input:checked + .slider .feather-sun {
   width: 100%;
   height: 0;
 }
+
+
