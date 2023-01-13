@@ -26,23 +26,25 @@ export default function detectDevice() {
 
     let detectMsg = document.createElement("p");
     detectMsg.className = "detect-msg";
-    detectMsg.innerHTML = `[test] You'r using ${a}`;
+    detectMsg.innerHTML = `Welcome to my beta version for ${a}`;
 
     let alertIcon = document.createElement("div");
     alertIcon.className = "alert-icon";
-    alertIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-    <path d="M12 9v2m0 4v.01"></path>
-    <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"></path>
-</svg>`;
+    alertIcon.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-versions" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <rect x="10" y="5" width="10" height="14" rx="2"></rect>
+        <line x1="7" y1="7" x2="7" y2="17"></line>
+        <line x1="4" y1="8" x2="4" y2="16"></line>
+      </svg>`;
 
     let x = document.createElement("div");
     let xIcon = `
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-<line x1="18" y1="6" x2="6" y2="18"></line>
-<line x1="6" y1="6" x2="18" y2="18"></line>
-</svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
 `;
     x.className = "x";
     x.innerHTML = xIcon;
@@ -57,6 +59,7 @@ export default function detectDevice() {
         !e.target.classList.contains("detect-msg")
       ) {
         detectParent.remove();
+        localStorage.setItem("popup", "none");
       }
     });
 
