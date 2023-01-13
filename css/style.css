@@ -75,13 +75,14 @@ html {
   scroll-behavior: smooth;
   font-size: 10px;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: none; */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 ::selection {
@@ -226,8 +227,8 @@ body > main {
 
 a + svg,
 button,
-.up {
-  cursor: pointer;
+.up ~ .CURO {
+  /* cursor: pointer; */
 }
 .icon-tabler {
   color: var(--new-3);
@@ -428,7 +429,7 @@ nav .container .nav-icon {
   position: absolute;
   top: -5rem;
   left: 50%;
-  cursor: pointer;
+  /* cursor: pointer; */
   -webkit-transform: translate(-50%, -20px);
   -moz-transform: translate(-50%, -20px);
   -ms-transform: translate(-50%, -20px);
@@ -709,7 +710,7 @@ main .container .hero-box p {
   border-radius: var(--large-radius);
   overflow: hidden;
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .work-space .container .works .work img {
   inline-size: 100%;
@@ -1164,7 +1165,7 @@ footer a {
 .slider {
   border: 1px solid var(--m4);
   bottom: 0;
-  cursor: pointer;
+  /* cursor: pointer; */
   left: 0;
   position: absolute;
   right: 0;
@@ -1390,7 +1391,7 @@ input:checked + .slider .feather-sun {
   -moz-transition: var(--tran-1);
   -ms-transition: var(--tran-1);
   -o-transition: var(--tran-1);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .x:hover {
   background-color: var(--new-4);
@@ -1405,4 +1406,11 @@ input:checked + .slider .feather-sun {
 .detect-overlay .alert-icon svg {
   width: 40px;
   height: 40px;
+}
+a ~ .cursor {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }

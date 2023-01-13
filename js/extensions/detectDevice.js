@@ -59,6 +59,7 @@ export default function detectDevice() {
         !e.target.classList.contains("detect-msg")
       ) {
         detectParent.remove();
+        localStorage.setItem("popup", "none");
       }
     });
 
