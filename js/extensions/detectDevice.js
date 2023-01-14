@@ -52,14 +52,15 @@ export default function detectDevice() {
       detectParent.style.display = "none";
       localStorage.setItem("popup", "none");
     });
-
+    console.log(detectParent);
     //===|ATTENTION  this event for prevent any nested clickable element
     detectOverlay.addEventListener("click", (e) => {
       e.stopPropagation();
     });
     document.addEventListener("click", (e) => {
       if (!e.target.contains(detectOverlay)) {
-        detectParent.remove();
+        detectParent.style.display = "none";
+        // detectParent.remove()
         localStorage.setItem("popup", "none");
         console.log("sadfasfd");
       }
