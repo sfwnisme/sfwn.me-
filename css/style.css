@@ -1425,3 +1425,23 @@ input:checked + .slider .feather-sun {
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
 } */
+
+/* ==========[email]========== */
+
+.email {
+}
+.emial .email-box form {
+  display: flex;
+}
+.emial .email-box .name-email {
+  display: none;
+  flex-direction: row;
+}
+.email .email-box label {
+  display: flex;
+  margin-inline: 0;
+}
+.email .email-box input {
+  display: flex;
+  margin-inline: 0;
+}
