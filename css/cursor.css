@@ -16,12 +16,23 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
-  -ms-transition: 0.1s;
-  -o-transition: 0.1s;
-  border: 2px solid black;
+  transition: 0.1s width, 0.1 height;
+  -webkit-transition: 0.1s width, 0.1 height;
+  -moz-transition: 0.1s width, 0.1 height;
+  -ms-transition: 0.1s width, 0.1 height;
+  -o-transition: 0.1s width, 0.1 height;
+  border: 2px dotted black;
+  animation: cercular 20s infinite;
+  -webkit-animation: cercular 20s infinite;
+}
+@keyframes cercular {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 @media (max-width: 600px) {
   .cursor {
@@ -79,17 +90,19 @@
 
 .cursor.cursor-pointer {
   background-color: rgba(0, 0, 0, 0.197);
-  transform: translate(-50%, -50%) scale(1.5);
-  -webkit-transform: translate(-50%, -50%) scale(1.5);
-  -moz-transform: translate(-50%, -50%) scale(1.5);
-  -ms-transform: translate(-50%, -50%) scale(1.5);
-  -o-transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transition: 0.1s;
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   border: none;
+  width: 70px;
+  height: 70px;
 }
 .cursor.cursor-pointer::after {
   content: "";
