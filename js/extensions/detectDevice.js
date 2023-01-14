@@ -52,29 +52,18 @@ export default function detectDevice() {
       detectParent.style.display = "none";
       localStorage.setItem("popup", "none");
     });
-
+    detectOverlay.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
     document.addEventListener("click", (e) => {
-      // if (
-      //   !e.target.classList.contains("detect-overlay") &&
-      //   !e.target.classList.contains("detect-msg")
-      // ) {
-      //   detectParent.remove();
-      //   localStorage.setItem("popup", "none");
-      // }
-
-      if (
-        !e.target.contains(detectOverlay) &&
-        !e.target.contains(detectMsg) &&
-        !e.target.contains(alertIcon)
-      ) {
+      if (!e.target.contains(detectOverlay)) {
         detectParent.remove();
         localStorage.setItem("popup", "none");
-        console.log(!e.target.contains(detectOverlay));
+        console.log("sadfasfd");
       }
     });
 
     // appending
-
     detectOverlay.append(alertIcon);
     detectOverlay.append(detectMsg);
     detectOverlay.append(x);
