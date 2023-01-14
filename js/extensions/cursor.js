@@ -9,33 +9,29 @@ export default function cursorFunction() {
   });
   let allLinks = document.documentElement.querySelectorAll("a");
   let allBtns = document.documentElement.querySelectorAll("button");
-  console.log(allLinks)
+  console.log(allLinks);
   let big;
   allLinks.forEach((link) => {
-
     link.addEventListener("mouseover", (e) => {
-      cursor.classList.add("cursor-pointer")
+      cursor.classList.add("cursor-pointer");
       // console.log(e)
-    })
+    });
 
     link.addEventListener("mouseout", (e) => {
-      cursor.classList.remove("cursor-pointer")
+      cursor.classList.remove("cursor-pointer");
       // console.log(e)
-    })
-    
-  })
+    });
+  });
 
   allBtns.forEach((btn) => {
-
     btn.addEventListener("mouseover", (e) => {
-      cursor.classList.add("cursor-pointer")
+      cursor.classList.add("cursor-pointer");
       // console.log(e)
-    })
+    });
 
     btn.addEventListener("mouseout", (e) => {
-      cursor.classList.remove("cursor-pointer")
+      cursor.classList.remove("cursor-pointer");
       // console.log(e)
-    })
-    
-  })
+    });
+  });
 }

@@ -1329,8 +1329,8 @@ input:checked + .slider .feather-sun {
   height: 0;
 }
 
-/* DETECT DEVICE */
-.detect-parent {
+/* popup DEVICE */
+.popup-parent {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1342,9 +1342,9 @@ input:checked + .slider .feather-sun {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   z-index: 2;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
 }
-.detect-overlay {
+.popup-box {
   background-color: var(--new-2);
   padding: 50px;
   position: absolute;
@@ -1367,15 +1367,22 @@ input:checked + .slider .feather-sun {
   -o-border-radius: var(--large-radius);
   box-shadow: 0 6px 20px rgba(255, 81, 0, 0.3),
     0 3px 10px rgba(255, 81, 0, 0.15);
-  max-width: 500px;
+  width: 400px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .detect-overlay {
+  .popup-box {
     padding: 3rem 2rem;
+    width: 300px;
   }
 }
-.detect-overlay p {
+@media (max-width: 350px) {
+  .popup-box {
+    padding: 3rem 2rem;
+    width: 230px;
+  }
+}
+.popup-box p {
   font-size: 16px;
   color: white;
 }
@@ -1396,19 +1403,18 @@ input:checked + .slider .feather-sun {
   -moz-transition: var(--tran-1);
   -ms-transition: var(--tran-1);
   -o-transition: var(--tran-1);
-  /* cursor: pointer; */
 }
 .x:hover {
   background-color: var(--new-4);
 }
-.detect-overlay .x svg {
+.popup-box .x svg {
   width: 20px;
   height: 20px;
 }
-.detect-overlay svg {
+.popup-box svg {
   color: var(--new-1);
 }
-.detect-overlay .alert-icon svg {
+.popup-box .alert-icon svg {
   width: 40px;
   height: 40px;
 }

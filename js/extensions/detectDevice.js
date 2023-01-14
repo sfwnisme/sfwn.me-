@@ -1,4 +1,4 @@
-export default function detectDevice() {
+export default function popupDevice() {
   var a;
   if (
     navigator.userAgent.match(/Android/i) ||
@@ -14,19 +14,19 @@ export default function detectDevice() {
     a = "desktop";
   }
   setTimeout(() => {
-    detectDom();
+    popupDom();
   }, 1000);
 
-  function detectDom() {
-    let detectParent = document.createElement("div");
-    detectParent.className = "detect-parent";
+  function popupDom() {
+    let popupParent = document.createElement("div");
+    popupParent.className = "popup-parent";
 
-    let detectOverlay = document.createElement("div");
-    detectOverlay.className = "detect-overlay";
+    let popupBox = document.createElement("div");
+    popupBox.className = "popup-box";
 
-    let detectMsg = document.createElement("p");
-    detectMsg.className = "detect-msg";
-    detectMsg.innerHTML = `Welcome to my beta version for ${a}`;
+    let popupMsg = document.createElement("p");
+    popupMsg.className = "popup-msg";
+    popupMsg.innerHTML = `Welcome to my beta version for ${a}`;
 
     let alertIcon = document.createElement("div");
     alertIcon.className = "alert-icon";
@@ -49,36 +49,33 @@ export default function detectDevice() {
     x.className = "x";
     x.innerHTML = xIcon;
     x.addEventListener("click", () => {
-      detectParent.style.display = "none";
+      popupParent.style.display = "none";
       localStorage.setItem("popup", "none");
     });
-    console.log(detectParent);
+    console.log(popupParent);
     //===|ATTENTION  this event for prevent any nested clickable element
-    detectOverlay.addEventListener("click", (e) => {
+    popupBox.addEventListener("click", (e) => {
       e.stopPropagation();
     });
-    document.addEventListener("click", (e) => {
-      if (!e.target.contains(detectOverlay)) {
-        detectParent.style.display = "none";
-        // detectParent.remove()
-        localStorage.setItem("popup", "none");
-        console.log("sadfasfd");
-      }
+    popupParent.addEventListener("click", (e) => {
+      e.target.remove();
+      localStorage.setItem("popup", "none");
+      localStorage.setItem("popup", "none");
     });
 
     // appending
-    detectOverlay.append(alertIcon);
-    detectOverlay.append(detectMsg);
-    detectOverlay.append(x);
-    detectParent.append(detectOverlay);
+    popupBox.append(alertIcon);
+    popupBox.append(popupMsg);
+    popupBox.append(x);
+    popupParent.append(popupBox);
 
-    document.body.append(detectParent);
+    document.body.append(popupParent);
 
     //===| if the alert popup appeard and you closed it
     // your localStorage will save the property that remove
     // the popup
     if (localStorage.popup) {
-      detectParent.style.display = localStorage.popup;
+      popupParent.style.display = localStorage.popup;
     }
   }
 }

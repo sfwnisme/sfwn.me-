@@ -1,4 +1,5 @@
 .cursor {
+  /* background-color: black; */
   position: fixed;
   width: 30px;
   height: 30px;
@@ -6,6 +7,16 @@
   display: block;
   z-index: 10;
   overflow: visible;
+  transition: 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -ms-transition: 0s;
+  -o-transition: 0s;
+  transform: ;
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
 }
 @media (max-width: 600px) {
   .cursor {
