@@ -1370,6 +1370,11 @@ input:checked + .slider .feather-sun {
   max-width: 500px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .detect-overlay {
+    padding: 3rem 2rem;
+  }
+}
 .detect-overlay p {
   font-size: 16px;
   color: white;
@@ -1407,10 +1412,10 @@ input:checked + .slider .feather-sun {
   width: 40px;
   height: 40px;
 }
-a ~ .cursor {
+/* a ~ .cursor {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-}
+} */
