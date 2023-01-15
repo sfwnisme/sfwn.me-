@@ -1403,6 +1403,7 @@ input:checked + .slider .feather-sun {
   -moz-transition: var(--tran-1);
   -ms-transition: var(--tran-1);
   -o-transition: var(--tran-1);
+  border: none;
 }
 .x:hover {
   background-color: var(--new-4);
@@ -1440,6 +1441,7 @@ input:checked + .slider .feather-sun {
 .email .email-box label {
   display: flex;
   margin-inline: 0;
+  width: fit-content;
 }
 .email .email-box input {
   display: flex;

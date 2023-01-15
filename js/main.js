@@ -31,7 +31,7 @@ import preloader from "./extensions/preloader.js";
 preloader();
 
 /* .........services......... */
-import cursroFunction from "./extensions/cursor.js";
+import cursroFunction from "./extensions/cursor2.js";
 cursroFunction();
 
 /* .........services......... */

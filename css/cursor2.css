@@ -1,0 +1,95 @@
+html,
+* {
+  cursor: none;
+}
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 700px) {
+  * {
+    cursor: auto !important;
+  }
+}
+:root {
+  --cursor-one: 50px;
+  --cursor-one-active: calc(var(--cursor-one) * 1.5);
+  --cursor-one-clicked: calc(var(--cursor-one-active) * 1.5);
+  --cursor-two: 5px;
+  --cursor-two-disable: none;
+}
+.cursor-box {
+  overflow: visible;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .cursor-box {
+    display: none;
+  }
+}
+.cursor-one {
+  width: var(--cursor-one);
+  height: var(--cursor-one);
+  border: 2px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  /* pointer-events: none; */
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  /*thisoverflowwillforceAOSlibrarytonothidethecursor*/
+  overflow: visible !important;
+  z-index: 10;
+}
+.cursor-one.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: var(--cursor-one-active);
+  width: var(--cursor-one-active);
+  border: none;
+}
+.cursor-one.clicked {
+  background-color: rgba(0, 0, 0, 0.564);
+  height: var(--cursor-one-clicked);
+  width: var(--cursor-one-clicked);
+  border: none;
+}
+.cursor-two {
+  background-color: black;
+  width: var(--cursor-two);
+  height: var(--cursor-two);
+  display: block;
+  /* pointer-events: none; */
+  z-index: 10;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: visible;
+}
+.cursor-two.disable {
+  display: var(--cursor-two-disable);
+}

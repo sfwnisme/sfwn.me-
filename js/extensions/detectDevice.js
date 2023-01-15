@@ -20,6 +20,8 @@ export default function popupDevice() {
   function popupDom() {
     let popupParent = document.createElement("div");
     popupParent.className = "popup-parent";
+    popupParent.classList.add("clickable");
+
 
     let popupBox = document.createElement("div");
     popupBox.className = "popup-box";
@@ -38,7 +40,7 @@ export default function popupDevice() {
         <line x1="4" y1="8" x2="4" y2="16"></line>
       </svg>`;
     // alertIcon.innerText = "attention";
-    let x = document.createElement("div");
+    let x = document.createElement("button");
     let xIcon = `
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -47,6 +49,7 @@ export default function popupDevice() {
       </svg>
 `;
     x.className = "x";
+    x.classList.add("clickable");
     x.innerHTML = xIcon;
     x.addEventListener("click", () => {
       popupParent.style.display = "none";
