@@ -22,7 +22,6 @@ export default function popupDevice() {
     popupParent.className = "popup-parent";
     popupParent.classList.add("clickable");
 
-
     let popupBox = document.createElement("div");
     popupBox.className = "popup-box";
 
@@ -56,13 +55,12 @@ export default function popupDevice() {
       localStorage.setItem("popup", "none");
     });
     console.log(popupParent);
-    //===|ATTENTION  this event for prevent any nested clickable element
+    // //===|ATTENTION  this event for prevent any nested clickable element
     popupBox.addEventListener("click", (e) => {
       e.stopPropagation();
     });
     popupParent.addEventListener("click", (e) => {
       e.target.remove();
-      localStorage.setItem("popup", "none");
       localStorage.setItem("popup", "none");
     });
 

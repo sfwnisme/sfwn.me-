@@ -19,6 +19,8 @@ body {
 }
 .cursor-box {
   overflow: visible;
+
+  /* to excute the cursor */
   pointer-events: none;
 }
 
@@ -37,19 +39,20 @@ body {
   -o-border-radius: 50%;
   border-radius: 50%;
   display: block;
-  /* pointer-events: none; */
+  /*pointer-events: none;
+  */
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: 0.1s;
+  /*-webkit-transition: 0.1s;
   -moz-transition: 0.1s;
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
-  /*thisoverflowwillforceAOSlibrarytonothidethecursor*/
+  */ /*thisoverflowwillforceAOSlibrarytonothidethecursor*/
   overflow: visible !important;
   z-index: 10;
 }
@@ -70,7 +73,8 @@ body {
   width: var(--cursor-two);
   height: var(--cursor-two);
   display: block;
-  /* pointer-events: none; */
+  /*pointer-events: none;
+  */
   z-index: 10;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
@@ -78,11 +82,11 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: 0.15s;
-  -moz-transition: 0.15s;
-  -ms-transition: 0.15s;
-  -o-transition: 0.15s;
-  transition: 0.15s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
