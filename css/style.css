@@ -157,7 +157,7 @@ span {
   --new-2: rgb(255, 79, 0);
   --new-3: rgb(255, 116, 52);
   --new-4: rgb(255, 170, 130);
-  --new-5: rgb(255, 245, 245);
+  --new-5: #ffe7ce;
   --new-6: #fff3e6;
   --new-7: #cefff8;
   --new-grade: linear-gradient(
@@ -1418,9 +1418,8 @@ input:checked + .slider .feather-sun {
 }
 
 .email .email-box {
-  flex: 1;
+  flex: 80%;
   max-width: 50rem;
-  
 }
 .email .email-box form {
   display: flex;
@@ -1449,26 +1448,36 @@ input:checked + .slider .feather-sun {
 }
 
 .email .email-box input {
-  background-color: var(--new-1);
+  background-color: var(--new-6);
   display: flex;
   justify-content: center;
   width: 100%;
   border: none;
-  border-bottom: 1px solid black;
-  padding: 0.5rem;
+  /* border-bottom: 1px solid black; */
+  padding: 1.5rem 0.5rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
 }
 .email .email-box textarea {
-  background-color: var(--new-1);
+  background-color: var(--new-6);
   border: none;
-  border-bottom: 1px solid black;
   resize: none;
   padding: 0.5rem;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
 }
 .email .email-box form input:focus,
 .email .email-box textarea:focus {
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--new-2);
+  /* border-bottom: 1px solid var(--new-2); */
+  background-color: var(--new-5);
 }
 .email .email-box form input[type="submit"] {
   background-color: var(--new-2);
@@ -1491,8 +1500,9 @@ input:checked + .slider .feather-sun {
 }
 
 .info-box {
+  background-color: var(--new-5);
   /* align-self: flex-end; */
-  width: fit-content;
+  width: 100%;
 }
 .info-box .info {
   display: flex;
@@ -1515,8 +1525,8 @@ input:checked + .slider .feather-sun {
   font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
 }
 .info-box .info .email-location p svg {
-  inline-size:20px;
-  block-size:20px;
+  inline-size: 20px;
+  block-size: 20px;
 }
 .info-box .info .contact-icons {
   border-top: 1px solid black;

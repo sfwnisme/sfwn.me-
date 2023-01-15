@@ -34,10 +34,12 @@ export default function cursor2() {
   let allbtns = document.querySelectorAll("button");
   let allLinks = document.querySelectorAll("a");
   let allSvgs = document.querySelectorAll("svg");
+  let allInputs = document.querySelectorAll("input");
 
   addAndRemove(allbtns, cursorOne, cursorTwo);
   addAndRemove(allLinks, cursorOne, cursorTwo);
   addAndRemove(allSvgs, cursorOne, cursorTwo);
+  addAndRemove(allInputs, cursorOne, cursorTwo);
 
   function addAndRemove(element, one, two) {
     element.forEach((ele) => {
