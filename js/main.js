@@ -11,8 +11,8 @@ import github from "./extensions/github.js";
 github();
 
 /* .........contact......... */
-import contact from "./extensions/contact.js";
-contact();
+// import contact from "./extensions/contact.js";
+// contact();
 
 /* .........footer......... */
 import footer from "./extensions/footer.js";

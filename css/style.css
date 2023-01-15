@@ -169,7 +169,7 @@ span {
   --preloader-time: ;
 }
 body,
-button {
+* {
   font-family: big-font;
 }
 body {
@@ -858,27 +858,7 @@ section .container .skills .skill .progressing {
 .contact {
   position: relative;
 }
-.contact .container a {
-  max-inline-size: 40px;
-}
-.contact .container a svg {
-  inline-size: 40px;
-  block-size: 40px;
-  -webkit-transition: var(--tran-3);
-  -moz-transition: var(--tran-3);
-  -ms-transition: var(--tran-3);
-  -o-transition: var(--tran-3);
-  transition: var(--tran-3);
-  filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
-  -webkit-filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
-}
-.contact .container div:hover a svg {
-  -webkit-transform: scale(1.1) translateY(-1rem);
-  -moz-transform: scale(1.1) translateY(-1rem);
-  -ms-transform: scale(1.1) translateY(-1rem);
-  -o-transform: scale(1.1) translateY(-1rem);
-  transform: scale(1.1) translateY(-1rem);
-}
+
 /* End Contact */
 
 /* Start Footer */
@@ -1430,20 +1410,140 @@ input:checked + .slider .feather-sun {
 /* ==========[email]========== */
 
 .email {
+  height: 100vh;
 }
-.emial .email-box form {
+.email .contact-box {
   display: flex;
+  gap: 10rem;
 }
-.emial .email-box .name-email {
-  display: none;
-  flex-direction: row;
+
+.email .email-box {
+  flex: 1;
+  max-width: 50rem;
+  
 }
+.email .email-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.email .email-box form .name-email {
+  display: flex;
+  gap: 2rem;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .email .email-box .name-email {
+    flex-direction: column;
+  }
+}
+
 .email .email-box label {
   display: flex;
-  margin-inline: 0;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+
+  /* margin: 0; */
+}
+
+.email .email-box input {
+  background-color: var(--new-1);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+.email .email-box textarea {
+  background-color: var(--new-1);
+  border: none;
+  border-bottom: 1px solid black;
+  resize: none;
+  padding: 0.5rem;
+}
+.email .email-box form input:focus,
+.email .email-box textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--new-2);
+}
+.email .email-box form input[type="submit"] {
+  background-color: var(--new-2);
+  color: white;
+  width: fit-content;
+  display: flex;
+  padding: 1rem 2rem;
+  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
+  border: none;
+  border-radius: var(--small-radius);
+  -webkit-border-radius: var(--small-radius);
+  -moz-border-radius: var(--small-radius);
+  -ms-border-radius: var(--small-radius);
+  -o-border-radius: var(--small-radius);
+  margin-top: 1rem;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.379);
+}
+
+.info-box {
+  /* align-self: flex-end; */
   width: fit-content;
 }
-.email .email-box input {
+.info-box .info {
   display: flex;
-  margin-inline: 0;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  gap: 4rem;
+}
+.info-box .info .logo {
+  width: 20rem;
+}
+.info-box .info .logo img {
+  width: 20rem;
+}
+.info-box .info .email-location {
+}
+.info-box .info .email-location p {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
+}
+.info-box .info .email-location p svg {
+  inline-size:20px;
+  block-size:20px;
+}
+.info-box .info .contact-icons {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.info-box .info .contact-icons a {
+  max-inline-size: 40px;
+}
+.info-box .info .contact-icons a svg {
+  inline-size: 40px;
+  block-size: 40px;
+  -webkit-transition: var(--tran-3);
+  -moz-transition: var(--tran-3);
+  -ms-transition: var(--tran-3);
+  -o-transition: var(--tran-3);
+  transition: var(--tran-3);
+  filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
+  -webkit-filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
+}
+.info-box .info .contact-icons div:hover a svg {
+  -webkit-transform: scale(1.1) translateY(-1rem);
+  -moz-transform: scale(1.1) translateY(-1rem);
+  -ms-transform: scale(1.1) translateY(-1rem);
+  -o-transform: scale(1.1) translateY(-1rem);
+  transform: scale(1.1) translateY(-1rem);
 }
