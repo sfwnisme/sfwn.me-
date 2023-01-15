@@ -52,7 +52,7 @@ body {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
-  */ /*thisoverflowwillforceAOSlibrarytonothidethecursor*/
+  /*thisoverflowwillforceAOSlibrarytonothidethecursor*/
   overflow: visible !important;
   z-index: 10;
 }
@@ -82,11 +82,11 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
-  -ms-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.07s;
+  -moz-transition: 0.07s;
+  -ms-transition: 0.07s;
+  -o-transition: 0.07s;
+  transition: 0.07s;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
