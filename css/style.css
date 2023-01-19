@@ -1521,6 +1521,11 @@ input:checked + .slider .feather-sun {
   background-repeat: no-repeat;
   background-size: 90%;
 }
+@media (max-width: 767px) {
+  .info-box {
+    padding-bottom: 2rem;
+  }
+}
 .info-box .info {
   display: flex;
   flex-direction: column;
