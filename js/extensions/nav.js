@@ -2,6 +2,7 @@ export default function navigation() {
   let nav = document.getElementById("nav");
   let overlay = document.getElementById("overlay");
   let navIcon = document.getElementById("nav-icon");
+  let navIconSvg = document.querySelector(".nav-icon svg");
   let navIconOne = document.querySelector(".nav-icon svg .one");
   let navIconTwo = document.querySelector(".nav-icon svg .two");
   console.log(navIconOne.getAttribute("y1"));
@@ -12,7 +13,7 @@ export default function navigation() {
 
   navIcon.addEventListener("click", () => {
     overlay.classList.toggle("overlay-active");
-    navIconOne.setAttribute("y1", 8);
+    navIconSvg.classList.toggle('nav-icon-active')
     navList.forEach((list) => {
       list.classList.toggle("list-active");
     });

@@ -44,6 +44,14 @@
   position: fixed;
   top: 2rem;
   right: 2rem;
+  transition: var(--tran-3);
+  -webkit-transition: var(--tran-3);
+  -moz-transition: var(--tran-3);
+  -ms-transition: var(--tran-3);
+  -o-transition: var(--tran-3);
+}
+.nav-icon-active {
+  color: white;
 }
 .nav .container .nav-icon svg {
   width: 4rem;
