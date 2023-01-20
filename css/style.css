@@ -1511,7 +1511,7 @@ input:checked + .slider .feather-sun {
   width: 100%;
   border: 1px solid black;
   /* border-bottom: 1px solid black; */
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
@@ -1623,6 +1623,11 @@ input:checked + .slider .feather-sun {
   transition: var(--tran-3);
   /* filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
   -webkit-filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3)); */
+}
+@media (max-width: 767px) {
+  .info-box .info .contact-icons a svg {
+    inline-size: 25px;
+    block-size: 25px;}
 }
 .info-box .info .contact-icons a:hover svg {
   -webkit-transform: scale(1.1) translateY(-0.1rem);
