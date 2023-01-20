@@ -1,0 +1,172 @@
+.nav {
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.nav .overlay {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  background-color: var(--new-2);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: -1rem;
+  right: -1rem;
+  transition: var(--tran-1);
+  -webkit-transition: var(--tran-1);
+  -moz-transition: var(--tran-1);
+  -ms-transition: var(--tran-1);
+  -o-transition: var(--tran-1);
+  transition-property: transform;
+  /* opacity: 0; */
+}
+.nav .overlay-active {
+  transform: scale(400);
+  -webkit-transform: scale(400);
+  -moz-transform: scale(400);
+  -ms-transform: scale(400);
+  -o-transform: scale(400);
+  opacity: 1;
+  /* border: 1px solid; */
+}
+
+.nav .container {
+  position: relative;
+  height: 100%;
+}
+.nav .container .nav-icon {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+.nav .container .nav-icon svg {
+  width: 4rem;
+  height: 4rem;
+  overflow: visible;
+  position: relative;
+}
+/* .nav .container .nav-icon svg line:first-of-type {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: absolute;
+}
+.nav .container .nav-icon svg line:last-of-type {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+} */
+.nav .container ul {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ */
+}
+.nav .container ul li {
+  padding: 3rem 2rem;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  transform: translateY(70rem);
+  -webkit-transform: translateY(70rem);
+  -moz-transform: translateY(70rem);
+  -ms-transform: translateY(70rem);
+  -o-transform: translateY(70rem);
+  transition: var(--tran-2);
+  -webkit-transition: var(--tran-2);
+  -moz-transition: var(--tran-2);
+  -ms-transition: var(--tran-2);
+  -o-transition: var(--tran-2);
+  transition-property: transform;
+}
+
+.nav .container ul li.list-active:nth-child(1) {
+  transition-delay: 100ms;
+}
+.nav .container ul li.list-active:nth-child(2) {
+  transition-delay: 200ms;
+}
+.nav .container ul li.list-active:nth-child(3) {
+  transition-delay: 300ms;
+}
+.nav .container ul li.list-active:nth-child(4) {
+  transition-delay: 400ms;
+}
+.nav .container ul li.list-active:nth-child(5) {
+  transition-delay: 500ms;
+}
+.nav .container ul li.list-active {
+  transform: translateY(0rem);
+  -webkit-transform: translateY(0rem);
+  -moz-transform: translateY(0rem);
+  -ms-transform: translateY(0rem);
+  -o-transform: translateY(0rem);
+}
+
+.nav .container ul li:nth-child(1) {
+  transition-delay: 500ms;
+}
+.nav .container ul li:nth-child(2) {
+  transition-delay: 400ms;
+}
+.nav .container ul li:nth-child(3) {
+  transition-delay: 300ms;
+}
+.nav .container ul li:nth-child(4) {
+  transition-delay: 200ms;
+}
+.nav .container ul li:nth-child(5) {
+  transition-delay: 100ms;
+}
+
+.nav .container ul li a {
+  width: 100%;
+  display: flex;
+  font-size: clamp(
+    var(--section-title-phone),
+    2vw,
+    var(--section-title-laptop)
+  );
+  transition: var(--tran-3) letter-spacing;
+  -webkit-transition: var(--tran-3) letter-spacing;
+  -moz-transition: var(--tran-3) letter-spacing;
+  -ms-transition: var(--tran-3) letter-spacing;
+  -o-transition: var(--tran-3) letter-spacing;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: var(--font-white);
+}
+.nav .container ul li:hover a {
+  letter-spacing: 2px;
+}
+.nav .container ul .active {
+  text-decoration: line-through black 3px;
+  transition: var(--tran-2);
+  -webkit-transition: var(--tran-2);
+  -moz-transition: var(--tran-2);
+  -ms-transition: var(--tran-2);
+  -o-transition: var(--tran-2);
+}

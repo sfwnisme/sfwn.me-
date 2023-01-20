@@ -14,7 +14,7 @@ export default function logo() {
       behavior: "smooth",
     });
     // Inactive the hightlight colors from nav links onclicking on up icon
-    navLis.forEach((e) => {
+    navList.forEach((e) => {
       e.classList.remove("active-li");
     });
     navLinks.forEach((e) => {

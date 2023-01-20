@@ -13,7 +13,7 @@
     <!-- Css Files -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Cursor Files -->
-    <!-- <link rel="stylesheet" href="css/cursor.css" /> -->
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/cursor2.css" />
     <!-- Browser Icon -->
     <link
@@ -41,7 +41,7 @@
 
     <!-- Start Nav -->
     <nav id="nav" class="nav">
-      <span id="overly" class="overly"></span>
+      <span id="overlay" class="overlay"></span>
       <div class="container">
         <div class="nav-icon flex flex-d-c gap-1-rem" id="nav-icon">
           <svg
@@ -57,8 +57,8 @@
             stroke-linejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <line x1="4" y1="8" x2="20" y2="8"></line>
-            <line x1="4" y1="16" x2="20" y2="16"></line>
+            <line class="one" x1="4" y1="8" x2="20" y2="8"></line>
+            <line class="two" x1="4" y1="16" x2="20" y2="16"></line>
           </svg>
         </div>
         <ul class="nav-list flex flex-d-c j-c-c align-items-c" id="nav-list">
@@ -773,7 +773,7 @@
             <img src="" alt="" />
           </div>
           <div class="info">
-            <a href="" class="username  btn-color"></a>
+            <a href="" class="username btn-color"></a>
             <div class="repos font-black"></div>
           </div>
         </div>
