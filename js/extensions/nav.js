@@ -33,6 +33,8 @@ export default function navigation() {
           l.classList.remove("list-active");
           overlay.classList.toggle("overlay-active");
         });
+    navIconSvg.classList.remove('nav-icon-active')
+
     });
   });
 
