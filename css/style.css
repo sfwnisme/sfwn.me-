@@ -203,6 +203,9 @@ span {
     var(--new-4) 0%,
     #ffd3d3
   );
+  --font-white: rgb(255, 255, 255);
+  --font-black: rgb(0, 0, 0);
+
   --preloader-time: ;
 }
 body,
@@ -247,18 +250,18 @@ body > main {
 }
 
 /* Start Components */
-.main-color {
-  color: var(--new-2);
+.font-black {
+  color: var(--font-black);
 }
-.access-color {
-  color: var(--font);
+.font-white {
+  color: var(--font-white);
 }
 .bg-gradient {
   background-image: var(--new-grade);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.051);
 }
 .box-color {
-  background-color: var(--new-6);
+  /* background-color: var(--new-6); */
   position: relative;
 }
 
@@ -268,7 +271,7 @@ button,
   /* cursor: pointer; */
 }
 .icon-tabler {
-  color: var(--new-3);
+  color: var(--font-black);
   stroke-width: 1.5px;
 }
 .up {
@@ -315,7 +318,6 @@ button,
   padding-bottom: var(--title-padding);
 }
 .section-title h2 {
-  color: var(--font);
   font-size: clamp(
     var(--section-title-phone),
     4vw,
@@ -324,7 +326,6 @@ button,
   position: relative;
 }
 .box-text-content p.box-name-content {
-  color: var(--font);
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   font-weight: 600;
   position: relative;
@@ -389,6 +390,10 @@ button,
   -ms-transform: translatey(0px);
   -o-transform: translatey(0px);
   transform: translatey(0px);
+}
+.btn-color {
+  background-color: var(--new-2);
+  color: var(--font-white);
 }
 
 /* End Components */
@@ -585,6 +590,7 @@ main .container .hero-box > span {
   position: relative;
 }
 main .container .hero-box h1 {
+  color: var(--new-2);
   font-size: clamp(var(--hero-title-phone), 6vw, var(--hero-title-laptop));
   margin-top: 1rem;
   font-weight: 900;
@@ -624,7 +630,6 @@ main .container .hero-box p {
   z-index: 1;
 }
 .services .container .service-box {
-  background-color: var(--new-6);
   padding: 3rem;
   border-radius: calc(var(--large-radius) + 0rem);
   -webkit-border-radius: calc(var(--large-radius) + 0rem);
@@ -698,8 +703,6 @@ main .container .hero-box p {
 }
 
 .services .container button {
-  background-color: var(--new-3);
-  color: var(--new-1);
   min-inline-size: 10rem;
   padding: 0.8rem 0rem;
   display: flex;
@@ -777,7 +780,8 @@ section {
   position: relative;
 }
 section .container .section-title .skills-progress {
-  color: var(--new-2);
+  background-color: black;
+  color: var(--font-white);
   height: 8px;
   font-size: 10px;
   font-weight: 100;
@@ -908,7 +912,7 @@ footer {
 }
 
 footer p {
-  color: var(--font);
+  color: var(--font-black);
   font-size: 1.4rem;
   font-weight: 200;
 }
@@ -1289,11 +1293,9 @@ input:checked + .slider .feather-sun {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: var(--font);
   gap: 10px;
 }
 .github .username {
-  color: var(--font);
   font-weight: 600;
   font-size: clamp(var(--box-title-phone), 2vw, var(--box-title-laptop));
   color: var(--new-1);
@@ -1323,7 +1325,6 @@ input:checked + .slider .feather-sun {
 .github .repos {
   font-size: var(--hero-text-phone);
   font-weight: 100;
-  color: var(--new-3);
 }
 
 /* preloader */
@@ -1537,8 +1538,6 @@ input:checked + .slider .feather-sun {
   border: 1px solid var(--new-2);
 }
 .email .email-box form input[type="submit"] {
-  background-color: var(--new-2);
-  color: white;
   width: fit-content;
   display: flex;
   padding: 1rem 2rem;
@@ -1625,10 +1624,11 @@ input:checked + .slider .feather-sun {
   /* filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3));
   -webkit-filter: drop-shadow(0 4px 5px rgba(255, 81, 0, 0.3)); */
 }
-.info-box .info .contact-icons div:hover a svg {
-  -webkit-transform: scale(1.1) translateY(-1rem);
-  -moz-transform: scale(1.1) translateY(-1rem);
-  -ms-transform: scale(1.1) translateY(-1rem);
-  -o-transform: scale(1.1) translateY(-1rem);
-  transform: scale(1.1) translateY(-1rem);
+.info-box .info .contact-icons a:hover svg {
+  -webkit-transform: scale(1.1) translateY(-0.1rem);
+  -moz-transform: scale(1.1) translateY(-0.1rem);
+  -ms-transform: scale(1.1) translateY(-0.1rem);
+  -o-transform: scale(1.1) translateY(-0.1rem);
+  transform: scale(1.1) translateY(-0.1rem);
+  color: var(--new-2);
 }
