@@ -42,43 +42,41 @@
     <!-- Start Nav -->
     <nav id="nav" class="nav">
       <span id="overlay" class="overlay"></span>
-      <div class="container">
-        <div class="nav-icon flex flex-d-c gap-1-rem" id="nav-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-menu"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <line class="one" x1="4" y1="8" x2="20" y2="8"></line>
-            <line class="two" x1="4" y1="16" x2="20" y2="16"></line>
-          </svg>
-        </div>
-        <ul class="nav-list flex flex-d-c j-c-c align-items-c" id="nav-list">
-          <li class="bg-lighter-1">
-            <a href="#about" class="font-black">About</a>
-          </li>
-          <li class="bg-lighter-1">
-            <a href="#services" class="font-black">Services</a>
-          </li>
-          <li class="bg-lighter-1">
-            <a href="#work-space" class="font-black">Work Space</a>
-          </li>
-          <li class="bg-lighter-1">
-            <a href="#skills" class="font-black">Technologies</a>
-          </li>
-          <li class="bg-lighter-1">
-            <a href="#contact" class="font-black">Contact</a>
-          </li>
-        </ul>
+      <div class="nav-icon flex flex-d-c gap-1-rem" id="nav-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-menu"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="1"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <line class="one" x1="4" y1="8" x2="20" y2="8"></line>
+          <line class="two" x1="4" y1="16" x2="20" y2="16"></line>
+        </svg>
       </div>
+      <ul class="nav-list flex flex-d-c j-c-c align-items-c" id="nav-list">
+        <li class="bg-lighter-1">
+          <a href="#about" class="font-black">About</a>
+        </li>
+        <li class="bg-lighter-1">
+          <a href="#services" class="font-black">Services</a>
+        </li>
+        <li class="bg-lighter-1">
+          <a href="#work-space" class="font-black">Work Space</a>
+        </li>
+        <li class="bg-lighter-1">
+          <a href="#skills" class="font-black">Technologies</a>
+        </li>
+        <li class="bg-lighter-1">
+          <a href="#contact" class="font-black">Contact</a>
+        </li>
+      </ul>
     </nav>
     <!-- End Nav -->
     <!-- Start Main -->
@@ -610,7 +608,7 @@
                 <h3 class="font-black">
                   Ready to shine your appearience to the world js contact me
                 </h3>
-                <p>
+                <a href="mailto:">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-mail"
@@ -628,7 +626,7 @@
                     <polyline points="3 7 12 13 21 7"></polyline>
                   </svg>
                   safwan@sfwn.me
-                </p>
+                </a>
               </div>
               <div class="contact-icons">
                 <a
@@ -653,11 +651,13 @@
                     ></path>
                   </svg>
                 </a>
-
-                <a href="mailto:safwan@sfwn.me" aria-label="contact email">
+                <a
+                  href="https://www.instagram.com/sfwnisme"
+                  aria-label="visit instagram"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-at"
+                    class="icon icon-tabler icon-tabler-brand-instagram"
                     width="40"
                     height="40"
                     viewBox="0 0 24 24"
@@ -668,10 +668,9 @@
                     stroke-linejoin="round"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <circle cx="12" cy="12" r="4"></circle>
-                    <path
-                      d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"
-                    ></path>
+                    <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
                   </svg>
                 </a>
 
@@ -697,14 +696,10 @@
                     ></path>
                   </svg>
                 </a>
-
-                <a
-                  href="https://www.instagram.com/sfwnisme"
-                  aria-label="visit instagram"
-                >
+                <a href="mailto:safwan@sfwn.me" aria-label="contact email">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-brand-instagram"
+                    class="icon icon-tabler icon-tabler-at"
                     width="40"
                     height="40"
                     viewBox="0 0 24 24"
@@ -715,9 +710,10 @@
                     stroke-linejoin="round"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path
+                      d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"
+                    ></path>
                   </svg>
                 </a>
               </div>

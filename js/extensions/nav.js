@@ -7,16 +7,20 @@ export default function navigation() {
   let navIconTwo = document.querySelector(".nav-icon svg .two");
   console.log(navIconOne.getAttribute("y1"));
 
+  let navUl = document.querySelector("nav ul");
   let navList = document.querySelectorAll("nav ul li");
   let navLinks = document.querySelectorAll("nav ul li a");
-  console.log(navList);
+  console.log(navUl);
 
-  navIcon.addEventListener("click", () => {
+  navIcon.addEventListener("click", (e) => {
+    nav.classList.toggle("nav-active");
+    navUl.classList.toggle("ul-active");
     overlay.classList.toggle("overlay-active");
-    navIconSvg.classList.toggle('nav-icon-active')
+    navIconSvg.classList.toggle("nav-icon-active");
     navList.forEach((list) => {
       list.classList.toggle("list-active");
     });
+    e.stopPropagation();
   });
   navList.forEach((list) => {
     list.addEventListener("click", (li) => {
@@ -27,15 +31,40 @@ export default function navigation() {
           console.log(e);
         });
       li.target.classList.add("active");
-      li.currentTarget.parentElement
-        .querySelectorAll(".list-active")
-        .forEach((l) => {
-          l.classList.remove("list-active");
-          overlay.classList.toggle("overlay-active");
-        });
-    navIconSvg.classList.remove('nav-icon-active')
 
+      // li.currentTarget.parentElement
+      //   .querySelectorAll(".list-active")
+      //   .forEach((l) => {
+      //     l.classList.remove("list-active");
+      //     // overlay.classList.toggle("overlay-active");
+      //   });
+      // navIconSvg.classList.remove('nav-icon-active')
+      // navUl.classList.remove("ul-active")
     });
+
+    // list.addEventListener("mouseover", (li) => {
+    //   li.target.parentElement.parentElement
+    //     .querySelectorAll(".active")
+    //     .forEach((e) => {
+    //       e.classList.remove("active");
+    //       console.log(e);
+    //     });
+    //   li.target.classList.add("active");
+    // });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (e.target.className !== "nav-icon") {
+      console.log("kkkkkkkkkkk");
+      nav.classList.remove("nav-active");
+      navIconSvg.classList.remove("nav-icon-active");
+      navUl.classList.remove("ul-active");
+      overlay.classList.remove("overlay-active");
+
+      navList.forEach((list) => {
+        list.classList.remove("list-active");
+      });
+    }
   });
 
   //
