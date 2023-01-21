@@ -395,13 +395,23 @@ button,
   transform: translatey(0px);
 }
 .btn-color {
-  background-color: var(--new-2);
-  color: var(--font-white);
+  background-color: var(--new-2) !important;
+  color: var(--font-white) !important;
+  transition: var(--tran-4) !important;
+  -webkit-transition: var(--tran-4) !important;
+  -moz-transition: var(--tran-4) !important;
+  -ms-transition: var(--tran-4) !important;
+  -o-transition: var(--tran-4) !important;
 }
 .btn-color:hover {
-  /* box-shadow: 0 6px 20px rgba(255 79 0 / 30%), 0 3px 10px rgba(255 79 0 / 15%); */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.15);
-  letter-spacing: 0.3px;
+  /*box-shadow: 0 6px 20px rgba(255 79 0 / 30%), 0 3px 10px rgba(255 79 0 / 15%);
+  */box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.15);
+  /*letter-spacing: 0.3px;
+  */transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 .btn-color:active {
   transform: scale(1.03);
@@ -1232,7 +1242,7 @@ input:checked + .slider .feather-sun {
   backdrop-filter: blur(5px);
 }
 .popup-box {
-  background-color: var(--new-2);
+  background-color: var(--new-1);
   padding: 50px;
   position: absolute;
   top: 50%;
@@ -1252,8 +1262,7 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  box-shadow: 0 6px 20px rgba(255, 81, 0, 0.3),
-    0 3px 10px rgba(255, 81, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.15);
   width: 400px;
   text-align: center;
 }
@@ -1271,7 +1280,7 @@ input:checked + .slider .feather-sun {
 }
 .popup-box p {
   font-size: 16px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .x {
   position: absolute;
@@ -1283,25 +1292,20 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
-  background-color: var(--new-3);
+  /*background-color: var(--new-3);
+  */
   display: flex;
-  transition: var(--tran-1);
-  -webkit-transition: var(--tran-1);
-  -moz-transition: var(--tran-1);
-  -ms-transition: var(--tran-1);
-  -o-transition: var(--tran-1);
   border: none;
 }
-.x:hover {
-  background-color: var(--new-4);
-}
+
 .popup-box .x svg {
   width: 20px;
   height: 20px;
+  color: white;
 }
-.popup-box svg {
-  color: var(--new-1);
-}
+/* .popup-box svg {
+  color: var(--new-2);
+} */
 .popup-box .alert-icon svg {
   width: 40px;
   height: 40px;

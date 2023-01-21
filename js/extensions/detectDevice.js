@@ -47,8 +47,8 @@ export default function popupDevice() {
         <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
 `;
-    x.className = "x";
-    x.classList.add("clickable");
+    x.className = "x btn-color";
+    // x.classList.add("btn-color");
     x.innerHTML = xIcon;
     x.addEventListener("click", () => {
       popupParent.style.display = "none";
