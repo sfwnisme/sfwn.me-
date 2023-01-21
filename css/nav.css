@@ -1,3 +1,11 @@
+main > img {
+
+}
+main .logo-invert {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
 .nav {
   height: 100svh;
   z-index: 1;
