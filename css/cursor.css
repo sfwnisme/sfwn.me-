@@ -25,6 +25,7 @@
   animation: cercular 20s infinite;
   -webkit-animation: cercular 20s infinite;
   pointer-events: none;
+  backdrop-filter: grayscale();
 }
 @keyframes cercular {
   100% {
