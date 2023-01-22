@@ -219,13 +219,16 @@ body,
 }
 body {
   background-color: var(--new-1);
+  /* background: linear-gradient(300deg, var(--new-1) 0,  var(--new-1) 50%,  var(--content)); */
   position: relative;
   transition: 0.75s !important;
   -webkit-transition: 0.75s !important;
   -moz-transition: 0.75s !important;
   -ms-transition: 0.75s !important;
   -o-transition: 0.75s !important;
+  position: relative;
 }
+
 /* Fix AOS library mobile inline responsiveness */
 body > div,
 body > section,
@@ -323,6 +326,24 @@ button,
 }
 .section-title {
   padding-bottom: var(--title-padding);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  background-color: rgb(25, 72, 142);
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  /* opacity: 0.2; */
 }
 .section-title h2 {
   font-size: clamp(
@@ -676,8 +697,8 @@ section {
   position: relative;
 }
 section .container .section-title .skills-progress {
-  background-color: black;
-  color: var(--font-one);
+  background-color: var(--content);
+  color: var(--font-two);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.656);
   height: 8px;
   font-size: 10px;
@@ -685,11 +706,6 @@ section .container .section-title .skills-progress {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-radius: var(--small-radius);
-  -webkit-border-radius: var(--small-radius);
-  -moz-border-radius: var(--small-radius);
-  -ms-border-radius: var(--small-radius);
-  -o-border-radius: var(--small-radius);
   transition: var(--tran-1);
   -webkit-transition: var(--tran-1);
   -moz-transition: var(--tran-1);
@@ -813,7 +829,7 @@ footer p {
   font-weight: 200;
 }
 footer a {
-  color: var(--new-3);
+  color: var(--new-2);
   font-size: 1.4rem;
 }
 
@@ -1394,17 +1410,19 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
+  color: var(--font-two);
 }
 .email .email-box textarea {
   background-color: transparent;
   border: 1px solid var(--font-two);
   resize: none;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
+  color: var(--font-two);
 }
 .email .email-box form input:focus,
 .email .email-box textarea:focus {
@@ -1418,7 +1436,7 @@ input:checked + .slider .feather-sun {
   width: fit-content;
   display: flex;
   padding: 1rem 2rem;
-  font-size: clamp(var(--box-link-phone), 2vw, var(--box-link-laptop));
+  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
   border: none;
   border-radius: var(--small-radius);
   -webkit-border-radius: var(--small-radius);
@@ -1435,6 +1453,7 @@ input:checked + .slider .feather-sun {
 }
 ::placeholder {
   color: var(--font-two);
+  font-size: clamp(var(--box-text-phone), 2vw, var(--box-text-laptop));
 }
 
 .info-box {

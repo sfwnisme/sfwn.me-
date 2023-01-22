@@ -42,6 +42,10 @@ detectDevice();
 import navigation from "./extensions/nav.js";
 navigation();
 
+/* .........services......... */
+import emailFunction from "./extensions/email.js";
+emailFunction();
+
 /* .........AOS......... */
 AOS.init();
 
