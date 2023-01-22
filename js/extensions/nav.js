@@ -18,7 +18,6 @@ export default function navigation() {
     navUl.classList.toggle("ul-active");
     overlay.classList.toggle("overlay-active");
     navIconSvg.classList.toggle("nav-icon-active");
-    logo.classList.toggle("logo-invert");
     navList.forEach((list) => {
       list.classList.toggle("list-active");
     });
@@ -38,7 +37,6 @@ export default function navigation() {
 
   document.addEventListener("click", (e) => {
     if (e.target.className !== "nav-icon") {
-      logo.classList.remove("logo-invert");
       nav.classList.remove("nav-active");
       navIconSvg.classList.remove("nav-icon-active");
       navUl.classList.remove("ul-active");
