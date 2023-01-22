@@ -1270,7 +1270,7 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(4, 11, 21, 0.3), 0 3px 10px rgba(4, 11, 21, 0.15);
   width: 400px;
   text-align: center;
 }
@@ -1288,7 +1288,7 @@ input:checked + .slider .feather-sun {
 }
 .popup-box p {
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: var(--font-two);
 }
 .x {
   position: absolute;
@@ -1300,8 +1300,7 @@ input:checked + .slider .feather-sun {
   -moz-border-radius: var(--small-radius);
   -ms-border-radius: var(--small-radius);
   -o-border-radius: var(--small-radius);
-  /*background-color: var(--new-3);
-  */
+
   display: flex;
   border: none;
 }
@@ -1309,7 +1308,7 @@ input:checked + .slider .feather-sun {
 .popup-box .x svg {
   width: 20px;
   height: 20px;
-  color: white;
+  color: var(--font-two);
 }
 /* .popup-box svg {
   color: var(--new-2);
