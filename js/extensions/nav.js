@@ -47,47 +47,22 @@ export default function navigation() {
     }
   });
 
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  // navIcon.addEventListener("click", function (e) {
-  //   nav.classList.toggle("nav-active");
-  //   this.classList.toggle("displayInitial");
-  //   overlay.classList.toggle("overlay-active");
-  //   e.stopPropagation();
-
-  //   // Remove The Navigation Bar If Click On overlay Or Links
-  //   // This Solution Source Is => "https://www.youtube.com/watch?v=iP63fDXk-W8"
-  //   document.onclick = function (e) {
-  //     if (e.target.id !== "nav" && e.target.id !== "nav-icon") {
-  //       nav.classList.remove("nav-active");
-  //       navIcon.classList.remove("displayInitial");
-  //       overlay.classList.remove("overlay-active");
-  //     }
-  //     e.stopPropagation();
-  //   };
-  // });
-
-  // // Active highlight nav links on cliking
-  // navLinks.forEach((a) => {
-  //   a.addEventListener("click", (e) => {
-  //     navLinks.forEach((e) => {
-  //       e.classList.remove("active-li-a");
-  //     });
-  //     a.classList.add("active-li-a");
-  //   });
-  // });
+  /* 
+  ======| scroll to section function
+  */
+  let sectionName = document.querySelectorAll(".nav ul li a");
+  smoothScroll(sectionName);
+  function smoothScroll(element) {
+    console.log(element);
+    element.forEach((ele) => {
+      ele.addEventListener("click", (e) => {
+        e.preventDefault();
+        let data = document.querySelector(e.target.dataset.nav);
+        console.log(data);
+        data.scrollIntoView({
+          behaviour: "smooth",
+        });
+      });
+    });
+  }
 }
