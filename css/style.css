@@ -86,8 +86,8 @@ html {
 }
 
 ::selection {
-  background-color: #000;
-  color: var(--new-1);
+  background-color: var(--font-two);
+  color: var(--font-one);
 }
 
 ::-webkit-scrollbar {
@@ -266,6 +266,8 @@ body > main {
 .box-color {
   /* background-color: var(--new-6); */
   position: relative;
+  background-color: rgb(7, 18, 34);
+  /* border: 1px solid var(--font-two); */
 }
 
 a + svg,
@@ -534,7 +536,6 @@ main .container .hero-box p {
   -ms-border-radius: calc(var(--large-radius) + 0rem);
   -o-border-radius: calc(var(--large-radius) + 0rem);
   position: relative;
-  border: 1px solid var(--font-two);
 }
 @media (max-width: 991px) {
   .services .container .service-box {
@@ -632,11 +633,11 @@ main .container .hero-box p {
   padding-block: var(--section-padding);
 }
 .work-space .container .works .work {
-  -webkit-border-radius: var(--large-radius);
+  /* -webkit-border-radius: var(--large-radius);
   -moz-border-radius: var(--large-radius);
   -ms-border-radius: var(--large-radius);
   -o-border-radius: var(--large-radius);
-  border-radius: var(--large-radius);
+  border-radius: var(--large-radius); */
   overflow: hidden;
   position: relative;
   /* cursor: pointer; */
@@ -652,8 +653,9 @@ main .container .hero-box p {
   -ms-transition: var(--tran-2);
   -o-transition: var(--tran-2);
   transition: var(--tran-2);
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
+  /* filter: grayscale(1);
+  -webkit-filter: grayscale(1); */
+  /* border: 3px solid black; */
 }
 .work-space .container .works .work:hover img {
   -webkit-transform: scale(1.1);
@@ -661,8 +663,8 @@ main .container .hero-box p {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
+  /* filter: grayscale(0);
+  -webkit-filter: grayscale(0); */
 }
 
 /* End Work Space */
@@ -735,7 +737,6 @@ section .container .skills .skill {
   -o-border-radius: var(--large-radius);
   border-radius: var(--large-radius);
   position: relative;
-  border: 1px solid var(--font-two);
 }
 section .container .skills .skill::before {
   content: "";
@@ -1164,7 +1165,6 @@ input:checked + .slider .feather-sun {
   -o-border-radius: var(--large-radius);
   -webkit-border-radius: var(--large-radius);
   border-radius: var(--large-radius);
-  border: 1px solid var(--font-two);
 }
 
 .github-box .container .section-title h2 {
