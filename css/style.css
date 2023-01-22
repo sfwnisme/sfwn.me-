@@ -192,7 +192,8 @@ span {
   --tran-3: 0.25s;
   --tran-4: 0.15s;
   /* new colors */
-  --new-1: rgb(0, 0, 0);
+  --new-1: rgb(7, 18, 34);
+  /* --new-1: rgb(0, 0, 0); */
   --new-2: rgb(255, 79, 0);
   /* --new-2: rgb(34, 34, 34); */
   --new-3: rgb(255, 116, 52);
@@ -208,6 +209,7 @@ span {
   );
   --font-one: rgb(0, 0, 0);
   --font-two: rgb(255, 255, 255);
+  --content: rgb(17, 28, 46);
 
   --preloader-time: ;
 }
@@ -266,7 +268,7 @@ body > main {
 .box-color {
   /* background-color: var(--new-6); */
   position: relative;
-  background-color: rgb(7, 18, 34);
+  background-color: var(--content);
   /* border: 1px solid var(--font-two); */
 }
 
