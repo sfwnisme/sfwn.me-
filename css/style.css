@@ -75,7 +75,6 @@ html {
   scroll-behavior: smooth;
   font-size: 10px;
   overflow-x: hidden;
-  /* cursor: none; */
 }
 
 * {
@@ -1539,4 +1538,19 @@ input:checked + .slider .feather-sun {
   -o-transform: scale(1.1) translateY(-0.1rem);
   transform: scale(1.1) translateY(-0.1rem);
   color: var(--new-2);
+}
+.lang-btn {
+  position: fixed;
+  top: 2.2rem;
+  right: 8rem;
+  background-color: var(--new-2);
+  color: var(--font-two);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  z-index: 10;
 }
