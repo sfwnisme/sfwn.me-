@@ -6,6 +6,7 @@ export default function github() {
   const username = document.querySelector(".username");
   const repos = document.querySelector(".repos");
 
+  document.querySelector(".github-box").remove();
   fetch(`https://api.github.com/users/sfwnisme`)
     .then((res) => res.json())
     .then((data) => {

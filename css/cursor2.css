@@ -11,11 +11,13 @@ body {
   }
 }
 :root {
-  --cursor-one: 50px;
-  --cursor-one-active: calc(var(--cursor-one) * 1.5);
+  --cursor-one: 30px;
+  --cursor-one-active: calc(var(--cursor-one) * 2);
   --cursor-one-clicked: calc(var(--cursor-one-active) * 1.5);
-  --cursor-two: 5px;
+  --cursor-two: 3px;
   --cursor-two-disable: none;
+  --cursor-strok: 2px;
+  --opacity: 0.2;
 }
 .cursor-box {
   overflow: visible;
@@ -32,26 +34,24 @@ body {
 .cursor-one {
   width: var(--cursor-one);
   height: var(--cursor-one);
-  border: 2px solid var(--font-two);
+  border: var(--cursor-strok) solid var(--font-two);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   display: block;
-  /*pointer-events: none;
-  */
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  /*-webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
-  -ms-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.05s;
+  -moz-transition: 0.05s;
+  -ms-transition: 0.05s;
+  -o-transition: 0.05s;
+  transition: 0.05s;
   /*thisoverflowwillforceAOSlibrarytonothidethecursor*/
   overflow: visible !important;
   z-index: 10;
@@ -61,7 +61,7 @@ body {
   height: var(--cursor-one-active);
   width: var(--cursor-one-active);
   border: none;
-  opacity: 0.3;
+  opacity: var(--opacity);
 }
 .cursor-one.clicked {
   background-color: rgba(0, 0, 0, 0.564);
@@ -74,8 +74,6 @@ body {
   width: var(--cursor-two);
   height: var(--cursor-two);
   display: block;
-  /*pointer-events: none;
-  */
   z-index: 10;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
@@ -83,11 +81,11 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: 0.07s;
-  -moz-transition: 0.07s;
-  -ms-transition: 0.07s;
-  -o-transition: 0.07s;
-  transition: 0.07s;
+  -webkit-transition: 0.09s;
+  -moz-transition: 0.09s;
+  -ms-transition: 0.09s;
+  -o-transition: 0.09s;
+  transition: 0.09s;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;

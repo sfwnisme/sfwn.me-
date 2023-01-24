@@ -326,14 +326,14 @@ button,
 .section-title {
   padding-bottom: var(--title-padding);
 }
-.section-title h2::after {
+.section-title h2:not(.github-title)::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 50px;
   left: -100px;
   background-color: rgb(25, 72, 142);
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   z-index: -1;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -342,7 +342,7 @@ button,
   -o-border-radius: 50%;
   filter: blur(50px);
   -webkit-filter: blur(50px);
-  /* opacity: 0.2; */
+  opacity: 0.3;
 }
 .section-title h2 {
   font-size: clamp(
