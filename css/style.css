@@ -326,7 +326,7 @@ button,
 .section-title {
   padding-bottom: var(--title-padding);
 }
-.section-title h2:not(.github-title)::after {
+.section-title h2:not(.github-title)::before {
   content: "";
   position: absolute;
   top: 50px;
@@ -342,6 +342,77 @@ button,
   -o-border-radius: 50%;
   filter: blur(50px);
   -webkit-filter: blur(50px);
+  opacity: 0.3;
+}
+.light1 {
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  background-color: rgba(29, 91, 184, 0.512);
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  opacity: 0.3;
+}
+
+.light2 {
+  position: absolute;
+  top: 150vh;
+  right: 100px;
+  background-color: rgba(29, 91, 184, 0.679);
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  opacity: 0.3;
+}
+
+.light3 {
+  position: absolute;
+  top: 250vh;
+  right: -100px;
+  background-color: rgba(29, 91, 184, 0.679);
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  opacity: 0.3;
+}
+
+.light4 {
+  position: absolute;
+  bottom: 0vh;
+  right: 100px;
+  background-color: rgba(29, 91, 184, 0.679);
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
   opacity: 0.3;
 }
 .section-title h2 {
