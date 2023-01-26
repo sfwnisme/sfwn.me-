@@ -500,22 +500,18 @@ button,
 }
 .btn-color:hover {
   box-shadow: 0 5px 16px rgba(255 79 0 / 30%), 0 2px 6px rgba(255 79 0 / 15%);
-
-  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.15); */
-  /*letter-spacing: 0.3px;
-  */
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
 }
 .btn-color:active {
-  transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
 }
 /* End Components */
 
@@ -895,12 +891,17 @@ footer {
 
 footer p {
   color: var(--font-two);
-  font-size: 1.4rem;
-  font-weight: 200;
+  font-size: 1.1rem;
+  /* font-weight: 200; */
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  padding-inline: 1rem;
 }
 footer a {
   color: var(--new-2);
   font-size: 1.4rem;
+}
+footer a:first-letter {
+  font-weight: 900;
 }
 
 /* End Footer */
@@ -1524,7 +1525,7 @@ input:checked + .slider .feather-sun {
 ::placeholder {
   color: var(--font-two);
   font-size: 1.2rem;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .info-box {

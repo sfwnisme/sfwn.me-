@@ -12,7 +12,7 @@ export default function footer() {
   footerContent.innerHTML = `&copy;${date.getFullYear()} Deployed By`;
   let footerLink = document.createElement("a");
   footerLink.href = "https://github.com/sfwnisme";
-  footerLink.innerHTML = "SFWN";
+  footerLink.innerHTML = "_sfwn";
   footerContent.append(footerLink);
 
   let footerBox = document.createElement("div");
