@@ -188,3 +188,6 @@ nav .ul-active {
   -o-transition: var(--tran-2);
   opacity: 1;
 }
+.prevent-scroll {
+  overflow-y: hidden;
+}

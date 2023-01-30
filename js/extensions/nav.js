@@ -14,7 +14,8 @@ export default function navigation() {
   console.log(logo);
 
   navIcon.addEventListener("click", (e) => {
-    document.documentElement.style.overflowY = "hidden";
+    // document.documentElement.style.overflowY = "hidden";
+    document.documentElement.classList.toggle("prevent-scroll");
     nav.classList.toggle("nav-active");
     navUl.classList.toggle("ul-active");
     overlay.classList.toggle("overlay-active");
@@ -37,8 +38,9 @@ export default function navigation() {
   });
 
   document.addEventListener("click", (e) => {
-    if (e.target.className !== "nav-icon") {
-      document.documentElement.style.overflowY = "auto";
+    if (e.target) {
+      // document.documentElement.style.overflowY = "auto";
+      document.documentElement.classList.remove("prevent-scroll");
       nav.classList.remove("nav-active");
       navIconSvg.classList.remove("nav-icon-active");
       navUl.classList.remove("ul-active");
