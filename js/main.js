@@ -48,7 +48,7 @@ emailFunction();
 
 /* .........services......... */
 import lang from "./extensions/lang.js";
-lang();
+// lang();
 
 /* .........AOS......... */
 AOS.init();
