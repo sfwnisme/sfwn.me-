@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Front End Developer Html CSS Sass Java Script"
-    />
-    <meta name="keywords" content="Work Space Skills Articles" />
-    <meta name="copyright" content="Sfwn" />
-    <!-- Css Files -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Cursor Files -->
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/cursor2.css" />
-    <!-- Browser Icon -->
-    <link
-      rel="shortcut icon"
-      href="https://res.cloudinary.com/dvulujf9k/image/upload/v1675694339/sfwn.me/imgs/icon_f7ysnz.ico"
-    />
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Sfwn</title>
-  </head>
 
-  <body>
-    <div class="scroller"></div>
-    <!-- Theme -->
-    <!-- <div class="theme-switch-wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Front End Developer Html CSS Sass Java Script" />
+  <meta name="keywords" content="Work Space Skills Articles" />
+  <meta name="copyright" content="Sfwn" />
+  <!-- Css Files -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
+  <!-- Cursor Files -->
+  <!-- <link rel="stylesheet" href="css/nav.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/nav.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
+  <!-- <link rel="stylesheet" href="css/cursor2.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/cursor2.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
+  <!-- Browser Icon -->
+  <link rel="shortcut icon"
+    href="https://res.cloudinary.com/dvulujf9k/image/upload/v1675694339/sfwn.me/imgs/icon_f7ysnz.ico" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Sfwn</title>
+</head>
+
+<body>
+  <div class="scroller"></div>
+  <!-- Theme -->
+  <!-- <div class="theme-switch-wrapper">
       <label class="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
         <div class="slider">
@@ -39,583 +38,387 @@
       </label>
     </div> -->
 
-    <!-- Start Nav -->
-    <nav id="nav" class="nav">
-      <span id="overlay" class="overlay"></span>
-      <div class="nav-icon flex flex-d-c gap-1-rem" id="nav-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-menu"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="1"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <line class="one" x1="4" y1="8" x2="20" y2="8"></line>
-          <line class="two" x1="4" y1="16" x2="20" y2="16"></line>
-        </svg>
+  <!-- Start Nav -->
+  <nav id="nav" class="nav">
+    <span id="overlay" class="overlay"></span>
+    <div class="nav-icon flex flex-d-c gap-1-rem" id="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line class="one" x1="4" y1="8" x2="20" y2="8"></line>
+        <line class="two" x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </div>
+    <ul class="nav-list flex flex-d-c j-c-c align-items-c" id="nav-list">
+      <li class="bg-lighter-1">
+        <a class="font-black" data-nav=".about-section">About</a>
+      </li>
+      <li class="bg-lighter-1">
+        <a class="font-black" data-nav=".services-section">Services</a>
+      </li>
+      <li class="bg-lighter-1">
+        <a class="font-black" data-nav=".work-space-section">Work Space</a>
+      </li>
+      <li class="bg-lighter-1">
+        <a class="font-black" data-nav=".technologies-section">Technologies</a>
+      </li>
+      <li class="bg-lighter-1">
+        <a class="font-black" data-nav=".contact-section">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End Nav -->
+  <!-- Start Main -->
+  <main id="about" class="about-section">
+    <img src="https://res.cloudinary.com/dvulujf9k/image/upload/v1674378539/sfwn.me/imgs/Asset_3img7_z1ui5s.png"
+      alt="logo" data-value="logo" />
+    <div class="container flex j-c-bt align-items-c gap-2-rem">
+      <div class="hero-box">
+        <div class="hero-overly"></div>
+        <span class="font-black" data-lang="name">SAFWAN MOHAMED</span>
+        <h1 data-lang="title">FRONT-END DEVELOPER</h1>
+        <p class="font-black" data-lang="description">
+          Excutes Pure Code Structure, Best Practice Ways Results Ultimate
+          Possible Performance With Flexibility For Your Web Application
+          Interface, And Attract Your Client By The First Blush
+        </p>
       </div>
-      <ul class="nav-list flex flex-d-c j-c-c align-items-c" id="nav-list">
-        <li class="bg-lighter-1">
-          <a class="font-black" data-nav=".about-section">About</a>
+    </div>
+  </main>
+  <!-- End Main -->
+
+  <!-- Start Services -->
+  <div class="services pd-b-6 services-section" id="services">
+    <div class="container">
+      <!-- title -->
+      <div class="section-title" data-aos="fade-up">
+        <h2 class="font-black" data-lang="services">SERVICES</h2>
+      </div>
+
+      <!-- service -->
+      <div class="service-box box-color" data-aos="fade-up">
+        <div class="service-overlay"></div>
+        <div class="service">
+          <div class="content">
+            <div class="box-text-content">
+              <p id="ability" data="ability" class="box-name-content font-black">
+                Service Name
+              </p>
+              <p id="info" data="info" class="box-info-content font-black">
+                Description
+              </p>
+            </div>
+          </div>
+          <!-- prev next buttons-->
+          <div class="button-container">
+            <button class="prev-btn btn-color" data="prev-btn" aria-label="prev-btn">
+              Previous
+            </button>
+            <button class="next-btn btn-color" data="next-btn" aria-label="next-btn">
+              Next
+            </button>
+          </div>
+          <!-- random button -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+
+  <!-- Start Work Space -->
+  <div class="work-space work-space-section" id="work-space" data-value="work-space">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2 class="font-black">WORKSPACE</h2>
+      </div>
+      <div class="works grid grid-t-c gap-05-rem" data-value="works">
+        <div class="work" data-aos="fade-up">
+          <a href="https://sfwnisme.github.io/scrollAnimation/"><img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564147/sfwn.me/imgs/projects/zak_snowh3.webp"
+              alt="Zak.com" /></a>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <a href="https://sfwnisme.github.io/draft/" id="work-link">
+            <img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/draft_uw1m44.webp"
+              alt="Draft" /></a>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <a href="https://sfwnisme.github.io/Template-Three/">
+            <img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564150/sfwn.me/imgs/projects/elzero_cndlmn.webp"
+              alt="Elzero" /></a>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <a href="https://sfwnisme.github.io/Template-One/">
+            <img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/leon_jbpatg.webp"
+              alt="Leon" /></a>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <a href="https://eldonn.com">
+            <img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564148/sfwn.me/imgs/projects/eldon_z6m32w.webp"
+              alt="Eldon" /></a>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <a href="https://sfwnisme.github.io/Template-Two/">
+            <img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/kasper_zv2b7w.webp"
+              alt="Kasper" /></a>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <a href="https://sfwnisme.github.io/montgati-carwasher.com/">
+            <img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564146/sfwn.me/imgs/projects/car_washer_kxvwjs.webp"
+              alt="car-washer" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Work Space -->
+
+  <!-- Start EDITING Platforms -->
+  <div class="work-space" id="work-space" data-value="work-space">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2 class="font-black">MODIFY WEBSITES</h2>
+      </div>
+      <div class="works grid grid-t-c gap-3-rem" data-value="works">
+        <div class="work" data-aos="fade-up">
+          <a href="https://davin.store"><img
+              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1669550980/sfwn.me/imgs/modifying%20websites/davin_salla_pp0qon.png"
+              alt="davin.store" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End EDITING Platforms -->
+
+  <!-- Start Section -->
+  <section id="skills" class="pd-b-6 technologies-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2 class="font-black">TECHNOLOGIES</h2>
+        <div class="skills-progress box-color"></div>
+      </div>
+      <ul class="skills">
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem done" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Html</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="done icon icon-tabler icon-tabler-circle-check" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg>
+          </div>
         </li>
-        <li class="bg-lighter-1">
-          <a class="font-black" data-nav=".services-section">Services</a>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem done" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">CSS</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="done icon icon-tabler icon-tabler-circle-check" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg>
+          </div>
         </li>
-        <li class="bg-lighter-1">
-          <a class="font-black" data-nav=".work-space-section">Work Space</a>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem done" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Responsive</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="done icon icon-tabler icon-tabler-circle-check" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg>
+          </div>
         </li>
-        <li class="bg-lighter-1">
-          <a class="font-black" data-nav=".technologies-section"
-            >Technologies</a
-          >
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem done" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Git & Github</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="done icon icon-tabler icon-tabler-circle-check" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg>
+          </div>
         </li>
-        <li class="bg-lighter-1">
-          <a class="font-black" data-nav=".contact-section">Contact</a>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem done" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Command Line</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="done icon icon-tabler icon-tabler-circle-check" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem done" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">SEO Basics</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="done icon icon-tabler icon-tabler-circle-check" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem still-working-on" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">JavaScript</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="done icon icon-tabler icon-tabler-circle-check" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Sass</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+              <line x1="12" y1="9" x2="12" y2="15"></line>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Bootstrap</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="pin icon icon-tabler icon-tabler-circle-plus" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+              <line x1="12" y1="9" x2="12" y2="15"></line>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Pugjs</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="pin icon icon-tabler icon-tabler-circle-plus" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+              <line x1="12" y1="9" x2="12" y2="15"></line>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Glupjs</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="pin icon icon-tabler icon-tabler-circle-plus" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+              <line x1="12" y1="9" x2="12" y2="15"></line>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">Unit Testing [Jest]</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="pin icon icon-tabler icon-tabler-circle-plus" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+              <line x1="12" y1="9" x2="12" y2="15"></line>
+            </svg>
+          </div>
+        </li>
+        <li class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started" data-aos="fade-up">
+          <div class="box-text-content">
+            <p class="box-name-content font-black">React.js</p>
+          </div>
+          <div class="progress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+              <line x1="12" y1="9" x2="12" y2="15"></line>
+            </svg>
+          </div>
         </li>
       </ul>
-    </nav>
-    <!-- End Nav -->
-    <!-- Start Main -->
-    <main id="about" class="about-section">
-      <img
-        src="https://res.cloudinary.com/dvulujf9k/image/upload/v1674378539/sfwn.me/imgs/Asset_3img7_z1ui5s.png"
-        alt="logo"
-        data-value="logo"
-      />
-      <div class="container flex j-c-bt align-items-c gap-2-rem">
-        <div class="hero-box">
-          <div class="hero-overly"></div>
-          <span class="font-black" data-lang="name">SAFWAN MOHAMED</span>
-          <h1 data-lang="title">FRONT-END DEVELOPER</h1>
-          <p class="font-black" data-lang="description">
-            Excutes Pure Code Structure, Best Practice Ways Results Ultimate
-            Possible Performance With Flexibility For Your Web Application
-            Interface, And Attract Your Client By The First Blush
-          </p>
-        </div>
-      </div>
-    </main>
-    <!-- End Main -->
-
-    <!-- Start Services -->
-    <div class="services pd-b-6 services-section" id="services">
-      <div class="container">
-        <!-- title -->
-        <div class="section-title" data-aos="fade-up">
-          <h2 class="font-black" data-lang="services">SERVICES</h2>
-        </div>
-
-        <!-- service -->
-        <div class="service-box box-color" data-aos="fade-up">
-          <div class="service-overlay"></div>
-          <div class="service">
-            <div class="content">
-              <div class="box-text-content">
-                <p
-                  id="ability"
-                  data="ability"
-                  class="box-name-content font-black"
-                >
-                  Service Name
-                </p>
-                <p id="info" data="info" class="box-info-content font-black">
-                  Description
-                </p>
-              </div>
-            </div>
-            <!-- prev next buttons-->
-            <div class="button-container">
-              <button
-                class="prev-btn btn-color"
-                data="prev-btn"
-                aria-label="prev-btn"
-              >
-                Previous
-              </button>
-              <button
-                class="next-btn btn-color"
-                data="next-btn"
-                aria-label="next-btn"
-              >
-                Next
-              </button>
-            </div>
-            <!-- random button -->
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- End Services -->
+  </section>
+  <!-- End Section -->
 
-    <!-- Start Work Space -->
-    <div
-      class="work-space work-space-section"
-      id="work-space"
-      data-value="work-space"
-    >
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2 class="font-black">WORKSPACE</h2>
-        </div>
-        <div class="works grid grid-t-c gap-05-rem" data-value="works">
-          <div class="work" data-aos="fade-up">
-            <a href="https://sfwnisme.github.io/scrollAnimation/"
-              ><img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564147/sfwn.me/imgs/projects/zak_snowh3.webp"
-                alt="Zak.com"
-            /></a>
-          </div>
-          <div class="work" data-aos="fade-up">
-            <a href="https://sfwnisme.github.io/draft/" id="work-link">
-              <img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/draft_uw1m44.webp"
-                alt="Draft"
-            /></a>
-          </div>
-          <div class="work" data-aos="fade-up">
-            <a href="https://sfwnisme.github.io/Template-Three/">
-              <img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564150/sfwn.me/imgs/projects/elzero_cndlmn.webp"
-                alt="Elzero"
-            /></a>
-          </div>
-          <div class="work" data-aos="fade-up">
-            <a href="https://sfwnisme.github.io/Template-One/">
-              <img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/leon_jbpatg.webp"
-                alt="Leon"
-            /></a>
-          </div>
-          <div class="work" data-aos="fade-up">
-            <a href="https://eldonn.com">
-              <img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564148/sfwn.me/imgs/projects/eldon_z6m32w.webp"
-                alt="Eldon"
-            /></a>
-          </div>
-          <div class="work" data-aos="fade-up">
-            <a href="https://sfwnisme.github.io/Template-Two/">
-              <img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/kasper_zv2b7w.webp"
-                alt="Kasper"
-            /></a>
-          </div>
-          <div class="work" data-aos="fade-up">
-            <a href="https://sfwnisme.github.io/montgati-carwasher.com/">
-              <img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564146/sfwn.me/imgs/projects/car_washer_kxvwjs.webp"
-                alt="car-washer"
-            /></a>
-          </div>
-        </div>
+  <!-- ==========[start email form]========== -->
+
+  <div class="email pd-b-6 contact-section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="font-black">Email</h2>
       </div>
-    </div>
-    <!-- End Work Space -->
-
-    <!-- Start EDITING Platforms -->
-    <div class="work-space" id="work-space" data-value="work-space">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2 class="font-black">MODIFY WEBSITES</h2>
-        </div>
-        <div class="works grid grid-t-c gap-3-rem" data-value="works">
-          <div class="work" data-aos="fade-up">
-            <a href="https://davin.store"
-              ><img
-                src="https://res.cloudinary.com/dvulujf9k/image/upload/v1669550980/sfwn.me/imgs/modifying%20websites/davin_salla_pp0qon.png"
-                alt="davin.store"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End EDITING Platforms -->
-
-    <!-- Start Section -->
-    <section id="skills" class="pd-b-6 technologies-section">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2 class="font-black">TECHNOLOGIES</h2>
-          <div class="skills-progress box-color"></div>
-        </div>
-        <ul class="skills">
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem done"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Html</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="done icon icon-tabler icon-tabler-circle-check"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M9 12l2 2l4 -4"></path>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem done"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">CSS</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="done icon icon-tabler icon-tabler-circle-check"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M9 12l2 2l4 -4"></path>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem done"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Responsive</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="done icon icon-tabler icon-tabler-circle-check"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M9 12l2 2l4 -4"></path>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem done"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Git & Github</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="done icon icon-tabler icon-tabler-circle-check"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M9 12l2 2l4 -4"></path>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem done"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Command Line</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="done icon icon-tabler icon-tabler-circle-check"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M9 12l2 2l4 -4"></path>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem done"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">SEO Basics</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="done icon icon-tabler icon-tabler-circle-check"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M9 12l2 2l4 -4"></path>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem still-working-on"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">JavaScript</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="done icon icon-tabler icon-tabler-circle-check"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M9 12l2 2l4 -4"></path>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Sass</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-circle-plus"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <line x1="9" y1="12" x2="15" y2="12"></line>
-                <line x1="12" y1="9" x2="12" y2="15"></line>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Bootstrap</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="pin icon icon-tabler icon-tabler-circle-plus"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <line x1="9" y1="12" x2="15" y2="12"></line>
-                <line x1="12" y1="9" x2="12" y2="15"></line>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Pugjs</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="pin icon icon-tabler icon-tabler-circle-plus"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <line x1="9" y1="12" x2="15" y2="12"></line>
-                <line x1="12" y1="9" x2="12" y2="15"></line>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Glupjs</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="pin icon icon-tabler icon-tabler-circle-plus"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <line x1="9" y1="12" x2="15" y2="12"></line>
-                <line x1="12" y1="9" x2="12" y2="15"></line>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">Unit Testing [Jest]</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="pin icon icon-tabler icon-tabler-circle-plus"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <line x1="9" y1="12" x2="15" y2="12"></line>
-                <line x1="12" y1="9" x2="12" y2="15"></line>
-              </svg>
-            </div>
-          </li>
-          <li
-            class="skill box-color flex j-c-bt align-items-c gap-2-rem not-started"
-            data-aos="fade-up"
-          >
-            <div class="box-text-content">
-              <p class="box-name-content font-black">React.js</p>
-            </div>
-            <div class="progress">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-circle-plus"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="9"></circle>
-                <line x1="9" y1="12" x2="15" y2="12"></line>
-                <line x1="12" y1="9" x2="12" y2="15"></line>
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- End Section -->
-
-    <!-- ==========[start email form]========== -->
-
-    <div class="email pd-b-6 contact-section" id="contact">
-      <div class="container">
-        <div class="section-title">
-          <h2 class="font-black">Email</h2>
-        </div>
-        <div class="contact-box">
-          <div class="info-box">
-            <div class="info">
-              <!-- <div class="logo">
+      <div class="contact-box">
+        <div class="info-box">
+          <div class="info">
+            <!-- <div class="logo">
                 <img
                   src="https://res.cloudinary.com/dvulujf9k/image/upload/v1673081353/sfwn.me/imgs/new%20logo/Untitled-1_ah7czg.png"
                   alt="logo"
                 />
               </div> -->
-              <div class="email-location">
-                <h3 class="font-black">
-                  Ready to shine your appearance upon the world get in touch for
-                  more
-                </h3>
-                <!-- <a href="mailto:safwan@sfwn.me">
+            <div class="email-location">
+              <h3 class="font-black">
+                Ready to shine your appearance upon the world get in touch for
+                more
+              </h3>
+              <!-- <a href="mailto:safwan@sfwn.me">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-mail"
@@ -634,193 +437,122 @@
                   </svg>
                   safwan@sfwn.me
                 </a> -->
-              </div>
-              <div class="contact-icons">
-                <a
-                  href="https://www.facebook.com/sfwnisme"
-                  aria-label="visit facebook"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-brand-facebook"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    stroke-width="1"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                    ></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://www.instagram.com/sfwnisme"
-                  aria-label="visit instagram"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-brand-instagram"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    stroke-width="1"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-                  </svg>
-                </a>
+            </div>
+            <div class="contact-icons">
+              <a href="https://www.facebook.com/sfwnisme" aria-label="visit facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40"
+                  height="40" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/sfwnisme" aria-label="visit instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40"
+                  height="40" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                </svg>
+              </a>
 
-                <a
-                  href="https://www.github.com/sfwnisme"
-                  aria-label="visit github"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-brand-github"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    stroke-width="1"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="mailto:safwan@sfwn.me" aria-label="contact email">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-at"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    stroke-width="1"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <circle cx="12" cy="12" r="4"></circle>
-                    <path
-                      d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
+              <a href="https://www.github.com/sfwnisme" aria-label="visit github">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40"
+                  height="40" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                  </path>
+                </svg>
+              </a>
+              <a href="mailto:safwan@sfwn.me" aria-label="contact email">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="40" height="40"
+                  viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="email-box">
-            <form action="" method="get">
-              <div class="name-email">
-                <label for="name">
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                </label>
-                <label for="email">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </label>
-              </div>
-              <label for="title">
-                <input
-                  type="text"
-                  name="title"
-                  id="title"
-                  placeholder="Title"
-                />
+        </div>
+        <div class="email-box">
+          <form action="" method="get">
+            <div class="name-email">
+              <label for="name">
+                <input type="text" name="name" id="name" placeholder="Name" />
               </label>
-              <textarea
-                name="textarea"
-                id="textarea"
-                cols="30"
-                rows="10"
-                placeholder="Topic"
-              ></textarea>
-              <input type="submit" class="btn-color" value="Submit" />
-            </form>
-          </div>
+              <label for="email">
+                <input type="email" name="email" id="email" placeholder="Email" />
+              </label>
+            </div>
+            <label for="title">
+              <input type="text" name="title" id="title" placeholder="Title" />
+            </label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Topic"></textarea>
+            <input type="submit" class="btn-color" value="Submit" />
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- ==========[end email form]========== -->
+  <!-- ==========[end email form]========== -->
 
-    <!-- Start Github -->
-    <div class="github-box pd-6 flex j-c-c align-items-c">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2 class="font-black github-title">GITHUB</h2>
+  <!-- Start Github -->
+  <div class="github-box pd-6 flex j-c-c align-items-c">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2 class="font-black github-title">GITHUB</h2>
+      </div>
+      <div class="github box-color" data-aos="fade-up">
+        <div class="avatar">
+          <img src="" alt="" />
         </div>
-        <div class="github box-color" data-aos="fade-up">
-          <div class="avatar">
-            <img src="" alt="" />
-          </div>
-          <div class="info">
-            <a href="" class="username btn-color"></a>
-            <div class="repos font-black"></div>
-          </div>
+        <div class="info">
+          <a href="" class="username btn-color"></a>
+          <div class="repos font-black"></div>
         </div>
       </div>
     </div>
-    <!-- End Github -->
+  </div>
+  <!-- End Github -->
 
-    <!-- ==========[go up icon]========== -->
-    <div class="up" id="up">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-caret-up"
-        width="30"
-        height="30"
-        viewBox="0 0 24 24"
-        stroke-width="1"
-        stroke="currentColor"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M18 14l-6 -6l-6 6h12"></path>
-      </svg>
-    </div>
-    <!-- ==========[preloader]========== -->
-    <div class="preloader">
-      <div class="preloader-animation"></div>
-    </div>
+  <!-- ==========[go up icon]========== -->
+  <div class="up" id="up">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-up" width="30" height="30"
+      viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M18 14l-6 -6l-6 6h12"></path>
+    </svg>
+  </div>
+  <!-- ==========[preloader]========== -->
+  <div class="preloader">
+    <div class="preloader-animation"></div>
+  </div>
 
-    <!-- ==========[cursor]========== -->
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
-    <div class="cursor3"></div>
+  <!-- ==========[cursor]========== -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <div class="cursor3"></div>
 
-    <!-- End Up Buttons -->
-    <button class="lang-btn">EN</button>
-    <!-- light -->
-    <div class="light1"></div>
-    <div class="light2"></div>
-    <div class="light3"></div>
-    <div class="light4"></div>
-    <script src="js/main.js" type="module"></script>
-    <!-- <script src="animation.js"></script> -->
-    <!-- <script src="theme.js"></script> -->
-  </body>
+  <!-- End Up Buttons -->
+  <button class="lang-btn">EN</button>
+  <!-- light -->
+  <div class="light1"></div>
+  <div class="light2"></div>
+  <div class="light3"></div>
+  <div class="light4"></div>
+  <!-- <script src="js/main.js" type="module"></script> -->
+  <script src="js/main.js?<?php echo date('l jS \of F Y h:i:s A'); ?> " type="module"></script>
+
+  <!-- <script src="animation.js"></script> -->
+  <!-- <script src="theme.js"></script> -->
+</body>
+
 </html>
