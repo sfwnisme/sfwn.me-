@@ -47,8 +47,8 @@ import emailFunction from "./extensions/email.js";
 emailFunction();
 
 /* .........services......... */
-import lang from "./extensions/lang.js";
-lang();
+// import lang from "./extensions/lang.js";
+// lang();
 
 /* .........AOS......... */
 AOS.init();
