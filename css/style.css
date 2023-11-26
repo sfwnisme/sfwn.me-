@@ -1574,6 +1574,7 @@ input:checked+.slider .feather-sun {
 
 .email {
   /* height: 100vh; */
+  display: none;
 }
 
 .email .contact-box {

@@ -34,7 +34,7 @@ body {
 .cursor-one {
   width: var(--cursor-one);
   height: var(--cursor-one);
-  border: var(--cursor-strok) solid var(--font-two);
+  border: var(--cursor-strok) solid var(--font-one);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -57,7 +57,7 @@ body {
   z-index: 10;
 }
 .cursor-one.active {
-  background-color: var(--font-two);
+  background-color: var(--font-one);
   height: var(--cursor-one-active);
   width: var(--cursor-one-active);
   border: none;
@@ -70,7 +70,7 @@ body {
   border: none;
 }
 .cursor-two {
-  background-color: var(--font-two);
+  background-color: var(--font-one);
   width: var(--cursor-two);
   height: var(--cursor-two);
   display: block;
