@@ -825,9 +825,9 @@ section {
 }
 
 section .container .section-title .skills-progress {
-  background-color: var(--content);
-  color: var(--font-two);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.656);
+  background-color: var(--new-4);
+  color: var(--font-one);
+  text-shadow: 0 0 10px rgb(255, 92, 16);
   height: 8px;
   font-size: 10px;
   font-weight: 100;

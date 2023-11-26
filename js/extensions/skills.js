@@ -9,7 +9,7 @@ export default function skills() {
   let prog = document.querySelector(".skills-progress");
   let skillProgress = document.querySelector(".skills-progress");
   window.addEventListener("scroll", () => {
-    if (scrollY > section.offsetTop - 300) {
+    if (scrollY > section.offsetTop - 500) {
       // skillProgress.innerHTML = calc;
       skillProgress.innerHTML = calc;
       prog.setAttribute("style", `width: ${calc}`);
