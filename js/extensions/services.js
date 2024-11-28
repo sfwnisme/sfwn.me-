@@ -36,7 +36,6 @@ export default function services() {
 
   const prevBtn = document.querySelector("[data=prev-btn]");
   const nextBtn = document.querySelector("[data=next-btn]");
-  console.log(nextBtn);
 
   // set starting item
   let currentItem = 0;

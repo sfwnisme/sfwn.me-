@@ -54,8 +54,7 @@ export default function popupDevice() {
       popupParent.style.display = "none";
       localStorage.setItem("popup", "none");
     });
-    console.log(popupParent);
-    // //===|ATTENTION  this event for prevent any nested clickable element
+    // ===|ATTENTION  this event for prevent any nested clickable element
     popupBox.addEventListener("click", (e) => {
       e.stopPropagation();
     });

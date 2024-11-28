@@ -61,7 +61,6 @@ AOS.init();
 let work = document.querySelectorAll(".works .work");
 let workImage = document.querySelectorAll(".works .work img");
 let workImageName = document.querySelectorAll(".works .work a");
-console.log(work);
 
 for (let i = 0; i < work.length; i++) {
   work[i].title = work[i].innerText;
@@ -71,11 +70,9 @@ for (let i = 0; i < work.length; i++) {
 */
 
 let theme = document.querySelector("[data-theme = theme]");
-console.log(theme);
 let svgs = document.querySelectorAll("svg");
 let body = document.querySelector("body");
 let mainColor = document.querySelectorAll(".main-color");
-console.log(mainColor);
 
 /* ------------------------------------------------------------- */
 
@@ -83,10 +80,6 @@ console.log(mainColor);
 let el = document.querySelector(".scroller");
 let height =
   document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-console.log(document.documentElement.scrollHeight);
-console.log(document.documentElement.clientHeight);
-console.log(height);
 
 window.addEventListener("scroll", () => {
   const scrollTop = document.documentElement.scrollTop;
@@ -100,6 +93,5 @@ let cursor = document.querySelector(".cursor");
 allA.forEach((a) => {
   a.addEventListener("click", () => {
     cursor.classList.add("active");
-    console.log("lllllllll");
   });
 });
