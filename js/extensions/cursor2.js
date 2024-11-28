@@ -1,69 +1,61 @@
 export default function cursor2() {
-  /* =====[CURSOR ELEMENTS]===== */
-  // cursor box
-  let cursorBox = document.createElement("div");
-  cursorBox.className = "cursor-box";
+  const allClickableElements = document.querySelectorAll(
+    ":where(button, a, svg, input)"
+  );
+  const [cursorOne, cursorTwo] = getCursorElements();
 
-  // cursor elements
-  let cursorOne = document.createElement("div");
+  document.addEventListener("mousemove", (event) =>
+    handleCursorMove(event, cursorOne, cursorTwo)
+  );
+
+  handleCursorState(allClickableElements, cursorOne, cursorTwo);
+}
+
+function getCursorElements() {
+  const cursorBox = document.createElement("div");
+  const cursorOne = document.createElement("div");
+  const cursorTwo = document.createElement("div");
+
+  cursorBox.className = "cursor-box";
   cursorOne.className = "cursor-one";
-  let cursorTwo = document.createElement("div");
   cursorTwo.className = "cursor-two";
 
-  //append childs
   cursorBox.appendChild(cursorOne);
   cursorBox.appendChild(cursorTwo);
-  // append
   document.body.append(cursorBox);
-  /* =============================== */
 
-  /* =====[CURSOR EVENTS]===== */
-  function cursorBOM(first, second) {
-    document.addEventListener("mousemove", (event) => {
-      let x = event.clientX;
-      let y = event.clientY;
+  return [cursorOne, cursorTwo, cursorBox];
+}
 
-      first.style.left = second.style.left = `${x}px`;
-      first.style.top = second.style.top = `${y}px`;
+function handleCursorMove(event, cursorOne, cursorTwo) {
+  const x = event.clientX;
+  const y = event.clientY;
+
+  cursorOne.style.left = cursorTwo.style.left = `${x}px`;
+  cursorOne.style.top = cursorTwo.style.top = `${y}px`;
+}
+
+function handleCursorState(elements, cursorOne, cursorTwo) {
+  elements.forEach((ele) => {
+    ele.addEventListener("mouseenter", () => {
+      cursorOne.classList.add("active");
+      cursorTwo.classList.add("disable");
     });
-  }
-  cursorBOM(cursorOne, cursorTwo);
-  /* =============================== */
+  });
 
-  /* =====[CURSOR AUTO FUNCTION]===== */
-  let allbtns = document.querySelectorAll("button");
-  let allLinks = document.querySelectorAll("a");
-  let allSvgs = document.querySelectorAll("svg");
-  let allInputs = document.querySelectorAll("input");
+  elements.forEach((ele) => {
+    // you can also use 'mouseout'
+    ele.addEventListener("mouseleave", () => {
+      cursorOne.classList.remove("active");
+      cursorTwo.classList.remove("disable");
+    });
+  });
 
-  addAndRemove(allbtns, cursorOne, cursorTwo);
-  addAndRemove(allLinks, cursorOne, cursorTwo);
-  addAndRemove(allSvgs, cursorOne, cursorTwo);
-  addAndRemove(allInputs, cursorOne, cursorTwo);
-
-  function addAndRemove(element, one, two) {
-    element.forEach((ele) => {
-      ele.addEventListener("mouseenter", (e) => {
-        one.classList.add("active");
-        two.classList.add("disable");
-      });
+  elements.forEach((ele) => {
+    // you can also use 'mouseout'
+    ele.addEventListener("click", () => {
+      cursorOne.classList.add("clicked");
+      setTimeout(() => cursorOne.classList.remove("clicked"), 50);
     });
-    element.forEach((ele) => {
-      // you can also use 'mouseout'
-      ele.addEventListener("mouseleave", (e) => {
-        one.classList.remove("active");
-        two.classList.remove("disable");
-      });
-    });
-    element.forEach((ele) => {
-      // you can also use 'mouseout'
-      ele.addEventListener("click", (e) => {
-        one.classList.add("clicked");
-        setTimeout(() => {
-          one.classList.remove("clicked");
-        }, 50);
-      });
-    });
-  }
-  /* =============================== */
+  });
 }
