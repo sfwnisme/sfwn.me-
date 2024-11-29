@@ -794,6 +794,9 @@ main .container .hero-box p {
 .work-space .container .works .work img {
   inline-size: 100%;
   block-size: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
