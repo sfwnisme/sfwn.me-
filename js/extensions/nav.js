@@ -3,13 +3,9 @@ export default function navigation() {
   let overlay = document.getElementById("overlay");
   let navIcon = document.getElementById("nav-icon");
   let navIconSvg = document.querySelector(".nav-icon svg");
-  let navIconOne = document.querySelector(".nav-icon svg .one");
-  let navIconTwo = document.querySelector(".nav-icon svg .two");
 
   let navUl = document.querySelector("nav ul");
   let navList = document.querySelectorAll("nav ul li");
-  let navLinks = document.querySelectorAll("nav ul li a");
-  let logo = document.querySelector("[data-value=logo]");
 
   navIcon.addEventListener("click", (e) => {
     // document.documentElement.style.overflowY = "hidden";
@@ -23,6 +19,7 @@ export default function navigation() {
     });
     e.stopPropagation();
   });
+
   navList.forEach((list) => {
     list.addEventListener("click", (li) => {
       li.target.parentElement.parentElement
@@ -47,21 +44,4 @@ export default function navigation() {
       });
     }
   });
-
-  /* 
-  ======| scroll to section function
-  */
-  let sectionName = document.querySelectorAll(".nav ul li a");
-  smoothScroll(sectionName);
-  function smoothScroll(element) {
-    element.forEach((ele) => {
-      ele.addEventListener("click", (e) => {
-        e.preventDefault();
-        let data = document.querySelector(e.target.dataset.nav);
-        data.scrollIntoView({
-          behaviour: "smooth",
-        });
-      });
-    });
-  }
 }
