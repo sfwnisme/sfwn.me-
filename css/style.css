@@ -962,7 +962,6 @@ footer {
 }
 
 footer p {
-  color: var(--font-two);
   font-size: 1.1rem;
   /* font-weight: 200; */
   border: 1px solid rgba(255, 255, 255, 0.253);
