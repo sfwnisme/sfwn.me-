@@ -40,6 +40,8 @@ export default function popupDevice() {
       </svg>`;
     // alertIcon.innerText = "attention";
     let x = document.createElement("button");
+    x.setAttribute("title", "Close alert");
+
     let xIcon = `
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -54,8 +56,7 @@ export default function popupDevice() {
       popupParent.style.display = "none";
       localStorage.setItem("popup", "none");
     });
-    console.log(popupParent);
-    // //===|ATTENTION  this event for prevent any nested clickable element
+    // ===|ATTENTION  this event for prevent any nested clickable element
     popupBox.addEventListener("click", (e) => {
       e.stopPropagation();
     });

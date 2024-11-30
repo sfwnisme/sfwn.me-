@@ -4,22 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Front End Developer Html CSS Sass Java Script" />
-  <meta name="keywords" content="Work Space Skills Articles" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Front End Developer Html CSS Sass JavaScript" />
+  <meta name="keywords" content="Work Space Skills Articles, Front-end, Developer, Portfolio" />
   <meta name="copyright" content="Sfwn" />
-  <!-- Css Files -->
-  <!-- <link rel="stylesheet" href="css/style.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
-  <!-- Cursor Files -->
-  <!-- <link rel="stylesheet" href="css/nav.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/nav.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
-  <!-- <link rel="stylesheet" href="css/cursor2.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/cursor2.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
-  <!-- Browser Icon -->
-  <link rel="shortcut icon"
-    href="https://res.cloudinary.com/dvulujf9k/image/upload/v1680694955/sfwn.me/imgs/Vector_1_n2dzr2.ico" />
-  <!-- AOS -->
+  <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Sfwn</title>
@@ -27,59 +19,49 @@
 
 <body>
   <div class="scroller"></div>
-  <!-- Theme -->
-  <!-- <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider">
-          <svgOfSun />
-          <svgOfMoon />
-        </div>
-      </label>
-    </div> -->
 
   <!-- Start Nav -->
   <nav id="nav" class="nav">
     <span id="overlay" class="overlay"></span>
     <div class="nav-icon flex flex-d-c gap-1-rem" id="nav-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24"
-        viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-        stroke-linejoin="round">
+      <svg class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
+        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <line class="one" x1="4" y1="8" x2="20" y2="8"></line>
         <line class="two" x1="4" y1="16" x2="20" y2="16"></line>
       </svg>
     </div>
+
     <ul class="nav-list flex flex-d-c j-c-c align-items-c" id="nav-list">
       <li class="bg-lighter-1">
-        <a class="font-black" data-nav=".about-section">About</a>
+        <a class="font-black" href="#about">About</a>
       </li>
       <li class="bg-lighter-1">
-        <a class="font-black" data-nav=".services-section">Services</a>
+        <a class="font-black" href="#services">Services</a>
       </li>
       <li class="bg-lighter-1">
-        <a class="font-black" data-nav=".work-space-section">Work Space</a>
+        <a class="font-black" href="#work-space">Work Space</a>
       </li>
       <li class="bg-lighter-1">
-        <a class="font-black" data-nav=".technologies-section">Technologies</a>
+        <a class="font-black" href="#technologies">Technologies</a>
       </li>
       <li class="bg-lighter-1">
-        <a class="font-black" data-nav=".contact-section">Contact</a>
+        <a class="font-black" href="#contact">Contact</a>
       </li>
     </ul>
   </nav>
   <!-- End Nav -->
+
   <!-- Start Main -->
   <main id="about" class="about-section">
-    <img src="https://res.cloudinary.com/daa68wahe/image/upload/v1700999882/Asset_2_id04vx.png" alt="logo"
-      data-value="logo" />
+    <img src="./imgs/red-logo.webp" alt="logo" data-value="logo" />
     <div class="container flex j-c-bt align-items-c gap-2-rem">
       <div class="hero-box">
         <div class="hero-overly"></div>
         <span class="font-black" data-lang="name">SAFWAN MOHAMED</span>
         <h1 data-lang="title">FRONT-END DEVELOPER</h1>
         <p class="font-black" data-lang="description">
-          Excutes Pure Code Structure, Best Practice Ways Results Ultimate
+          Executes Pure Code Structure, Best Practice Ways Results Ultimate
           Possible Performance With Flexibility For Your Web Application
           Interface, And Attract Your Client By The First Blush
         </p>
@@ -110,6 +92,7 @@
               </p>
             </div>
           </div>
+
           <!-- prev next buttons-->
           <div class="button-container">
             <button class="prev-btn btn-color" data="prev-btn" aria-label="prev-btn">
@@ -119,7 +102,6 @@
               Next
             </button>
           </div>
-          <!-- random button -->
         </div>
       </div>
     </div>
@@ -134,45 +116,39 @@
       </div>
       <div class="works grid grid-t-c gap-05-rem" data-value="works">
         <div class="work" data-aos="fade-up">
-          <a href="https://sfwnisme.github.io/scrollAnimation/"><img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564147/sfwn.me/imgs/projects/zak_snowh3.webp"
-              alt="Zak.com" /></a>
+          <a href="https://sfwnisme.github.io/scrollAnimation/">
+            <img src="./imgs/projects/zak.webp" alt="Zak.com" loading="lazy" />
+          </a>
         </div>
         <div class="work" data-aos="fade-up">
           <a href="https://sfwnisme.github.io/draft/" id="work-link">
-            <img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/draft_uw1m44.webp"
-              alt="Draft" /></a>
+            <img src="./imgs/projects/Draft.webp" alt="Draft" loading="lazy" />
+          </a>
         </div>
         <div class="work" data-aos="fade-up">
           <a href="https://sfwnisme.github.io/Template-Three/">
-            <img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564150/sfwn.me/imgs/projects/elzero_cndlmn.webp"
-              alt="Elzero" /></a>
+            <img src="./imgs/projects/Elzero.webp" alt="Elzero" loading="lazy" />
+          </a>
         </div>
         <div class="work" data-aos="fade-up">
           <a href="https://sfwnisme.github.io/Template-One/">
-            <img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/leon_jbpatg.webp"
-              alt="Leon" /></a>
+            <img src="./imgs/projects/Leon.webp" alt="Leon" loading="lazy" />
+          </a>
         </div>
         <div class="work" data-aos="fade-up">
           <a href="https://eldonn.com">
-            <img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564148/sfwn.me/imgs/projects/eldon_z6m32w.webp"
-              alt="Eldon" /></a>
+            <img src="./imgs/projects/Eldon.webp" alt="Eldon" loading="lazy" />
+          </a>
         </div>
         <div class="work" data-aos="fade-up">
           <a href="https://sfwnisme.github.io/Template-Two/">
-            <img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564149/sfwn.me/imgs/projects/kasper_zv2b7w.webp"
-              alt="Kasper" /></a>
+            <img src="./imgs/projects/Kasper.webp" alt="Kasper" loading="lazy" />
+          </a>
         </div>
         <div class="work" data-aos="fade-up">
           <a href="https://sfwnisme.github.io/montgati-carwasher.com/">
-            <img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1665564146/sfwn.me/imgs/projects/car_washer_kxvwjs.webp"
-              alt="car-washer" /></a>
+            <img src="./imgs/projects/car washer.webp" alt="car-washer" loading="lazy" />
+          </a>
         </div>
       </div>
     </div>
@@ -180,16 +156,16 @@
   <!-- End Work Space -->
 
   <!-- Start EDITING Platforms -->
-  <div class="work-space" id="work-space" data-value="work-space">
+  <div class="work-space" data-value="work-space">
     <div class="container">
       <div class="section-title" data-aos="fade-up">
         <h2 class="font-black">MODIFY WEBSITES</h2>
       </div>
       <div class="works grid grid-t-c gap-3-rem" data-value="works">
         <div class="work" data-aos="fade-up">
-          <a href="https://davin.store"><img
-              src="https://res.cloudinary.com/dvulujf9k/image/upload/v1669550980/sfwn.me/imgs/modifying%20websites/davin_salla_pp0qon.png"
-              alt="davin.store" /></a>
+          <a href="https://davin.store">
+            <img src="./imgs/modifying websites/davin-salla.webp" alt="davin.store" loading="lazy" />
+          </a>
         </div>
       </div>
     </div>
@@ -197,7 +173,7 @@
   <!-- End EDITING Platforms -->
 
   <!-- Start Section -->
-  <section id="skills" class="pd-b-6 technologies-section">
+  <section id="technologies" class="pd-b-6 technologies-section">
     <div class="container">
       <div class="section-title" data-aos="fade-up">
         <h2 class="font-black">TECHNOLOGIES</h2>
@@ -427,7 +403,7 @@
           </div>
         </div>
         <div class="email-box">
-          <form action="" method="get">
+          <form method="get">
             <div class="name-email">
               <label for="name">
                 <input type="text" name="name" id="name" placeholder="Name" />
@@ -457,10 +433,10 @@
       </div>
       <div class="github box-color" data-aos="fade-up">
         <div class="avatar">
-          <img src="" alt="" />
+          <img src="#" alt="" />
         </div>
         <div class="info">
-          <a href="" class="username btn-color"></a>
+          <a href="#" class="username btn-color"></a>
           <div class="repos font-black"></div>
         </div>
       </div>
@@ -470,9 +446,8 @@
 
   <!-- ==========[go up icon]========== -->
   <div class="up" id="up">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-up" width="30" height="30"
-      viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-      stroke-linejoin="round">
+    <svg class="icon icon-tabler icon-tabler-caret-up" width="30" height="30" viewBox="0 0 24 24" stroke-width="1"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M18 14l-6 -6l-6 6h12"></path>
     </svg>
@@ -494,11 +469,7 @@
   <div class="light2"></div>
   <div class="light3"></div>
   <div class="light4"></div>
-  <!-- <script src="js/main.js" type="module"></script> -->
   <script src="js/main.js?<?php echo date('l jS \of F Y h:i:s A'); ?> " type="module"></script>
-
-  <!-- <script src="animation.js"></script> -->
-  <!-- <script src="theme.js"></script> -->
 </body>
 
 </html>
