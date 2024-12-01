@@ -2,10 +2,10 @@ export default function cursor2() {
   const allClickableElements = document.querySelectorAll(
     ":where(button, a, svg, input)"
   );
-  const [cursorOne, cursorTwo] = getCursorElements();
+  const [cursorOne, cursorTwo, cursorBox] = getCursorElements();
 
   document.addEventListener("mousemove", (event) =>
-    handleCursorMove(event, cursorOne, cursorTwo)
+    handleCursorMove(event, cursorBox)
   );
 
   handleCursorState(allClickableElements, cursorOne, cursorTwo);
@@ -27,12 +27,10 @@ function getCursorElements() {
   return [cursorOne, cursorTwo, cursorBox];
 }
 
-function handleCursorMove(event, cursorOne, cursorTwo) {
-  const x = event.clientX;
-  const y = event.clientY;
-
-  cursorOne.style.left = cursorTwo.style.left = `${x}px`;
-  cursorOne.style.top = cursorTwo.style.top = `${y}px`;
+function handleCursorMove(event, cursorBox) {
+  const xPosition = `${event.clientX}px`;
+  const yPosition = `${event.clientY}px`;
+  cursorBox.style.transform = `translate(${xPosition}, ${yPosition})`;
 }
 
 function handleCursorState(elements, cursorOne, cursorTwo) {
