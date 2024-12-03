@@ -1,29 +1,30 @@
-html,
 * {
   cursor: none;
 }
-body {
-  overflow-x: hidden;
-}
+
 @media (max-width: 700px) {
   * {
-    cursor: auto !important;
+    cursor: auto;
   }
 }
+
 :root {
   --cursor-one: 30px;
   --cursor-one-active: calc(var(--cursor-one) * 2);
   --cursor-one-clicked: calc(var(--cursor-one-active) * 1.5);
   --cursor-two: 3px;
   --cursor-two-disable: none;
-  --cursor-strok: 2px;
-  --opacity: 0.2;
+  --cursor-stroke: 2px;
+  --opacity: .2;
 }
-.cursor-box {
-  overflow: visible;
 
-  /* to excute the cursor */
+.cursor-box {
   pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  z-index: 1000;
 }
 
 @media (max-width: 700px) {
@@ -31,31 +32,22 @@ body {
     display: none;
   }
 }
+
 .cursor-one {
   width: var(--cursor-one);
   height: var(--cursor-one);
-  border: var(--cursor-strok) solid var(--font-one);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border: var(--cursor-stroke) solid var(--font-one);
   border-radius: 50%;
   display: block;
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: 0.05s;
-  -moz-transition: 0.05s;
-  -ms-transition: 0.05s;
-  -o-transition: 0.05s;
-  transition: 0.05s;
-  /*thisoverflowwillforceAOSlibrarytonothidethecursor*/
+  transition: .05s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
   overflow: visible !important;
   z-index: 10;
 }
+
 .cursor-one.active {
   background-color: var(--font-one);
   height: var(--cursor-one-active);
@@ -63,12 +55,14 @@ body {
   border: none;
   opacity: var(--opacity);
 }
+
 .cursor-one.clicked {
-  background-color: rgba(0, 0, 0, 0.564);
+  background-color: rgba(0, 0, 0, .564);
   height: var(--cursor-one-clicked);
   width: var(--cursor-one-clicked);
   border: none;
 }
+
 .cursor-two {
   background-color: var(--font-one);
   width: var(--cursor-two);
@@ -76,23 +70,12 @@ body {
   display: block;
   z-index: 10;
   position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: 0.09s;
-  -moz-transition: 0.09s;
-  -ms-transition: 0.09s;
-  -o-transition: 0.09s;
-  transition: 0.09s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  translate: -50% -50%;
+  transition: .09s;
   border-radius: 50%;
   overflow: visible;
 }
+
 .cursor-two.disable {
   display: var(--cursor-two-disable);
 }
